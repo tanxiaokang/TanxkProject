@@ -103,11 +103,15 @@ static FBTweak *_FBTweakCreateWithEntry(NSString *identifier, fb_tweak_entry *en
 
 + (void)load
 {
+/* https://blog.csdn.net/pjk1129/article/details/44779831
+ OSAtomicTestAndClear/OSAtomicTestAndClearBarrier( uint32_t __n, volatile void *__theAddress )：这组函数用于测试__theAddress指向的值中由__n指定的bit位，如果该位未被清除，则清除它。需要注意的是最低bit位应该是1，而不是0。对于一个64-bit的值来说，如果要清除最高位的值，则__n应该是64。
+ OSAtomicTestAndSet/OSAtomicTestAndSetBarrier(uint32_t __n, volatile void *__theAddress)：与OSAtomicTestAndClear相反，这组函数测试值后，如果指定位没有设置，则设置它。
+ */
   static uint32_t _tweaksLoaded = 0;
   if (OSAtomicTestAndSetBarrier(1, &_tweaksLoaded)) {
     return;
   }
-  
+  //如果设备是64位
 #ifdef __LP64__
   typedef uint64_t fb_tweak_value;
   typedef struct section_64 fb_tweak_section;
@@ -120,7 +124,15 @@ static FBTweak *_FBTweakCreateWithEntry(NSString *identifier, fb_tweak_entry *en
   
   FBTweakStore *store = [FBTweakStore sharedInstance];
   
+    /* https://blog.csdn.net/dragon101788/article/details/18673323
+     Dl_info 结构包含以下字段：
+        dli_fname 一个指针，指向包含address的加载模块的文件名。每次调用dladdr() 后，该内存位置的内容都可能发生更改。
+        dli_fbase 加载模块的句柄。该句柄可用作dlsym() 的第一个参数。
+        dli_sname 一个指针，指向与指定的address最接近的符号的名称。该符号要么带有相同的地址，要么是带有低位地址的最接近符号。两次调用dladdr() 后，该内存位置的内容可能发生更改。Section 3-264 Hewlett-Packard Company − 1 − HP-UX 11i Version 3: February 2007 dladdr(3C) dladdr(3C)
+        dli_saddr 最接近符号的实际地址。对于代码符号，它包含最接近代码符号的OPD（正式Plabel 描述符）的地址。
+     */
   Dl_info info;
+    //获取某个地址的符号信息
   dladdr(&_FBTweakIdentifier, &info);
   
   const fb_tweak_value mach_header = (fb_tweak_value)info.dli_fbase;
@@ -130,7 +142,10 @@ static FBTweak *_FBTweakCreateWithEntry(NSString *identifier, fb_tweak_entry *en
     return;
   }
   
-  for (fb_tweak_value addr = section->offset; addr < section->offset + section->size; addr += sizeof(fb_tweak_entry)) {
+  for (fb_tweak_value addr = section->offset;
+       addr < section->offset + section->size;
+       addr += sizeof(fb_tweak_entry))
+  {
     fb_tweak_entry *entry = (fb_tweak_entry *)(mach_header + addr);
     
     FBTweakCategory *category = [store tweakCategoryWithName:*entry->category];
