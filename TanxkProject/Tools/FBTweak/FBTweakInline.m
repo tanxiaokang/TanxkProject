@@ -132,7 +132,7 @@ static FBTweak *_FBTweakCreateWithEntry(NSString *identifier, fb_tweak_entry *en
         dli_saddr 最接近符号的实际地址。对于代码符号，它包含最接近代码符号的OPD（正式Plabel 描述符）的地址。
      */
   Dl_info info;
-    //获取某个地址的符号信息
+    //获取某个地址的符号信息 这句代码控制加载关于_FBTweakIdentifier 相关信息
   dladdr(&_FBTweakIdentifier, &info);
   
   const fb_tweak_value mach_header = (fb_tweak_value)info.dli_fbase;

@@ -83,6 +83,7 @@
 		0CD5513720F5FF1400413548 /* MDFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5513520F5FF1400413548 /* MDFTabBarController.m */; };
 		0CD5513820F5FF1400413548 /* MDFTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD5513620F5FF1400413548 /* MDFTabBarController.xib */; };
 		0CD5513C20F5FF8400413548 /* MDFTabBarController+Class.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5513B20F5FF8400413548 /* MDFTabBarController+Class.m */; };
+		0CD5513F20F6216500413548 /* MDFTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5513E20F6216500413548 /* MDFTabBarControllerConfig.m */; };
 		0CD8C0A120EC704300EB7FDA /* RegisterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */; };
 		7335C80A0A9EF4D419C7B040 /* libPods-TanxkProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A476C87C808037848059C1 /* libPods-TanxkProject.a */; };
 /* End PBXBuildFile section */
@@ -218,6 +219,8 @@
 		0CD5513620F5FF1400413548 /* MDFTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MDFTabBarController.xib; sourceTree = "<group>"; };
 		0CD5513A20F5FF8400413548 /* MDFTabBarController+Class.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDFTabBarController+Class.h"; sourceTree = "<group>"; };
 		0CD5513B20F5FF8400413548 /* MDFTabBarController+Class.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MDFTabBarController+Class.m"; sourceTree = "<group>"; };
+		0CD5513D20F6216500413548 /* MDFTabBarControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFTabBarControllerConfig.h; sourceTree = "<group>"; };
+		0CD5513E20F6216500413548 /* MDFTabBarControllerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTabBarControllerConfig.m; sourceTree = "<group>"; };
 		0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAPI.m; sourceTree = "<group>"; };
 		0CD8C0A020EC704300EB7FDA /* RegisterAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAPI.h; sourceTree = "<group>"; };
 		26803BC77E7B1AD29136AFA2 /* Pods-TanxkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanxkProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanxkProject/Pods-TanxkProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -621,6 +624,8 @@
 			children = (
 				0CD5513A20F5FF8400413548 /* MDFTabBarController+Class.h */,
 				0CD5513B20F5FF8400413548 /* MDFTabBarController+Class.m */,
+				0CD5513D20F6216500413548 /* MDFTabBarControllerConfig.h */,
+				0CD5513E20F6216500413548 /* MDFTabBarControllerConfig.m */,
 			);
 			path = ObtionViewControllers;
 			sourceTree = "<group>";
@@ -811,6 +816,7 @@
 				0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */,
 				0CCBD2E920ECA7BB00439CBF /* MDFBaseCustomNavigationBar.m in Sources */,
 				0CD8C0A120EC704300EB7FDA /* RegisterAPI.m in Sources */,
+				0CD5513F20F6216500413548 /* MDFTabBarControllerConfig.m in Sources */,
 				0CCBD30720ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.m in Sources */,
 				0CCF2E6020EB1CE20087169E /* AppDelegate.m in Sources */,
 				0CCF2E9920EB395B0087169E /* FBTweakCategory.m in Sources */,
