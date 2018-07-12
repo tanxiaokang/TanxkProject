@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
 		0CBC1EE620F6F35B0023A9B8 /* MDFTweakConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */; };
+		0CBC1EE920F6F81A0023A9B8 /* MDFTweakConfig+config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */; };
 		0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */; };
 		0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */; };
 		0CCBD2E020ECA7BB00439CBF /* LNRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BE20ECA7BB00439CBF /* LNRefreshFooter.m */; };
@@ -92,6 +93,8 @@
 		0C654EB820EE225400BAD881 /* FBTweak+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FBTweak+Config.m"; sourceTree = "<group>"; };
 		0CBC1EE420F6F35B0023A9B8 /* MDFTweakConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFTweakConfig.h; sourceTree = "<group>"; };
 		0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTweakConfig.m; sourceTree = "<group>"; };
+		0CBC1EE720F6F81A0023A9B8 /* MDFTweakConfig+config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDFTweakConfig+config.h"; sourceTree = "<group>"; };
+		0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MDFTweakConfig+config.m"; sourceTree = "<group>"; };
 		0CCBD2BB20ECA7BB00439CBF /* NSObject+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LNRefresh.h"; sourceTree = "<group>"; };
 		0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRefreshHeader.m; sourceTree = "<group>"; };
 		0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRefreshAnimator.m; sourceTree = "<group>"; };
@@ -621,6 +624,8 @@
 			children = (
 				0CBC1EE420F6F35B0023A9B8 /* MDFTweakConfig.h */,
 				0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */,
+				0CBC1EE720F6F81A0023A9B8 /* MDFTweakConfig+config.h */,
+				0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */,
 			);
 			path = ObtionViewControllers;
 			sourceTree = "<group>";
@@ -820,6 +825,7 @@
 				0CD5512B20F5F01400413548 /* TypingDemoViewController.m in Sources */,
 				0CD5512E20F5F01400413548 /* LADownloadTestViewController.m in Sources */,
 				0CCBD2EC20ECA7BB00439CBF /* MDFBaseTableViewController.m in Sources */,
+				0CBC1EE920F6F81A0023A9B8 /* MDFTweakConfig+config.m in Sources */,
 				0CCBD2ED20ECA7BB00439CBF /* MDFBaseTableViewController+LoadPlist.m in Sources */,
 				0CCBD2E420ECA7BB00439CBF /* LNHeaderDIYAnimator.m in Sources */,
 				0CCBD30820ECA87D00439CBF /* YETMuitiSetListHeaderCell.m in Sources */,

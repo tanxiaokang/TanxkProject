@@ -18,25 +18,25 @@
 
 + (BOOL)bn_clientAnalyticsUtil
 {
-    NSLog(@"haha");
     return FBTweakValue(BNTweakBaseFunctionCategory, BNTweakBaseFunctionCollection, @"开启控制台打印日志（网络请求）", NO);
 }
 #pragma mark - 环境切换
-
-#define BNTweakNetworkCategory @"环境切换"
-#define BNTweakNetworkSwitchCollection @"业务开关: 优先级\n OnLine > Test > config"
 
 + (BOOL)mdf_clientHttps {
     
      return ((^{
          FBTweak *__value_tweak = ((^{
              return ((^{
+                 //属性 unused 用于函数和变量，表示该函数或变量可能不使用，这个属性可以避免 编译器产生警告信息。used反之 。
                  __attribute__((used)) static FBTweakLiteralString category__ = @"环境切换";
                  __attribute__((used)) static FBTweakLiteralString collection__ = @"HTTPS: 线上线下环境均有效";
                  __attribute__((used)) static FBTweakLiteralString name__ = @"是否使用HTTPS";
                  __attribute__((used)) static __typeof__(__objc_yes) default__ = __objc_yes;
                  __attribute__((used)) static char *encoding__ = (char *)@encode(__typeof__(__objc_yes));
-                 __attribute__((used)) __attribute__((section ("__DATA" "," "FBTweak"))) static fb_tweak_entry entry = {
+                 
+                 // __attribute__((section("section_name"))) 其作用是将作用的函数或数据放入指定名为"section_name"输入段。
+                 __attribute__((used)) __attribute__((section ("__DATAQQQ" "," "FBTweak"))) static fb_tweak_entry entry = {
+                     
                      &category__,
                      &collection__,
                      &name__,

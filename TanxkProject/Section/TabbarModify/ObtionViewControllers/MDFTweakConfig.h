@@ -8,6 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
+
+#define MDFTweakSegmentName "__DATA"
+#define MDFTweakSectionName "MDFTweak"
+#define MDFTweakEncodingAction "__ACTION__"
+
 typedef __unsafe_unretained NSString *MDFTweakLiteralString;
 typedef struct {
     MDFTweakLiteralString *category;
@@ -17,10 +22,9 @@ typedef struct {
     void *min;
     void *max;
     char **encoding;
-} mdf_tabbarController_entry;
+} mdf_tweak_entry;
 
-extern NSString *_MDFTweakIdentifier(mdf_tabbarController_entry *entry);
-
+extern NSString *_MDFTweakIdentifier(mdf_tweak_entry *entry);
 
 @interface MDFTweakConfig : NSObject
 
