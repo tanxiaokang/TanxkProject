@@ -10,6 +10,7 @@
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
 		0CBC1EE620F6F35B0023A9B8 /* MDFTweakConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */; };
 		0CBC1EE920F6F81A0023A9B8 /* MDFTweakConfig+config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */; };
+		0CBC1EEE20F74D810023A9B8 /* MDFTweakStoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EED20F74D810023A9B8 /* MDFTweakStoreData.m */; };
 		0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */; };
 		0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */; };
 		0CCBD2E020ECA7BB00439CBF /* LNRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BE20ECA7BB00439CBF /* LNRefreshFooter.m */; };
@@ -94,6 +95,8 @@
 		0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTweakConfig.m; sourceTree = "<group>"; };
 		0CBC1EE720F6F81A0023A9B8 /* MDFTweakConfig+config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MDFTweakConfig+config.h"; sourceTree = "<group>"; };
 		0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MDFTweakConfig+config.m"; sourceTree = "<group>"; };
+		0CBC1EEC20F74D810023A9B8 /* MDFTweakStoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFTweakStoreData.h; sourceTree = "<group>"; };
+		0CBC1EED20F74D810023A9B8 /* MDFTweakStoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTweakStoreData.m; sourceTree = "<group>"; };
 		0CCBD2BB20ECA7BB00439CBF /* NSObject+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LNRefresh.h"; sourceTree = "<group>"; };
 		0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRefreshHeader.m; sourceTree = "<group>"; };
 		0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRefreshAnimator.m; sourceTree = "<group>"; };
@@ -257,10 +260,22 @@
 		0CBC1EEA20F747940023A9B8 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC1EEB20F747ED0023A9B8 /* Config */,
 				0CD5513420F5FF1400413548 /* MDFTabBarController.h */,
 				0CD5513520F5FF1400413548 /* MDFTabBarController.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		0CBC1EEB20F747ED0023A9B8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0CBC1EE420F6F35B0023A9B8 /* MDFTweakConfig.h */,
+				0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */,
+				0CBC1EEC20F74D810023A9B8 /* MDFTweakStoreData.h */,
+				0CBC1EED20F74D810023A9B8 /* MDFTweakStoreData.m */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		0CCBD2B820ECA78500439CBF /* MDFBase */ = {
@@ -627,8 +642,6 @@
 		0CD5513920F5FF2600413548 /* ObtionViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0CBC1EE420F6F35B0023A9B8 /* MDFTweakConfig.h */,
-				0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */,
 				0CBC1EE720F6F81A0023A9B8 /* MDFTweakConfig+config.h */,
 				0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */,
 			);
@@ -818,6 +831,7 @@
 				0CCBD2EB20ECA7BB00439CBF /* MDFBaseTableViewCellModel.m in Sources */,
 				0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */,
 				0CBC1EE620F6F35B0023A9B8 /* MDFTweakConfig.m in Sources */,
+				0CBC1EEE20F74D810023A9B8 /* MDFTweakStoreData.m in Sources */,
 				0CCBD2E920ECA7BB00439CBF /* MDFBaseCustomNavigationBar.m in Sources */,
 				0CD8C0A120EC704300EB7FDA /* RegisterAPI.m in Sources */,
 				0CCBD30720ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.m in Sources */,

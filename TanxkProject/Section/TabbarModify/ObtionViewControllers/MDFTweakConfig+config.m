@@ -8,11 +8,17 @@
 
 #import "MDFTweakConfig+config.h"
 #import "MDFTweakConfig.h"
+#import "ViewController.h"
 
 @implementation MDFTweakConfig (config)
 
 - (void)test {
-    MDFTweakValue(@"AAA", @"BBB", @"CCC");
+    MDFTweakValue(@"ViewController", @"首页",@"");
 }
-
+- (void)test2 {
+    MDFTweakValue(@"ViewController", @"首页2",@"");
+}
+- (void)test3 {
+    MDFTweakValue(@"ViewController", @"首页3",@"");
+}
 @end

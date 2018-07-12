@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MDFTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -15,11 +15,9 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];//这里的bundle 写nil也可以代表是mainBundle
-    UITabBarController *tvc = [storyboard  instantiateViewControllerWithIdentifier:@"tabbarvc"];
+    UITabBarController *tvc = [[MDFTabBarController alloc] init];
     
     self.window = [[FBTweakShakeWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = tvc;

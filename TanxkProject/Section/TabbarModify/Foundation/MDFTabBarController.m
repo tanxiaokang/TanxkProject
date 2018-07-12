@@ -7,6 +7,7 @@
 //
 
 #import "MDFTabBarController.h"
+#import "MDFTweakStoreData.h"
 
 @interface MDFTabBarController ()
 
@@ -14,24 +15,18 @@
 
 @implementation MDFTabBarController
 
+#pragma mark - LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    for (MDFTweakStoreData *tweak in [[MDFTweakStoreData sharedInstance] getTweakStore]) {
+        UIViewController *vc = [[NSClassFromString(tweak.category) alloc] init];
+        [self addViewController:vc title:tweak.collection];
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addViewController:(UIViewController *)vc title:(NSString *)title{
+    vc.title = title;
+    [self addChildViewController:vc];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end
