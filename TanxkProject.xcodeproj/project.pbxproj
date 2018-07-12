@@ -11,6 +11,7 @@
 		0CBC1EE620F6F35B0023A9B8 /* MDFTweakConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EE520F6F35B0023A9B8 /* MDFTweakConfig.m */; };
 		0CBC1EE920F6F81A0023A9B8 /* MDFTweakConfig+config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */; };
 		0CBC1EEE20F74D810023A9B8 /* MDFTweakStoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBC1EED20F74D810023A9B8 /* MDFTweakStoreData.m */; };
+		0CBC1EF020F75EB80023A9B8 /* MDFTabBarControllerModify.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CBC1EEF20F75EB80023A9B8 /* MDFTabBarControllerModify.md */; };
 		0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */; };
 		0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */; };
 		0CCBD2E020ECA7BB00439CBF /* LNRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BE20ECA7BB00439CBF /* LNRefreshFooter.m */; };
@@ -97,6 +98,7 @@
 		0CBC1EE820F6F81A0023A9B8 /* MDFTweakConfig+config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MDFTweakConfig+config.m"; sourceTree = "<group>"; };
 		0CBC1EEC20F74D810023A9B8 /* MDFTweakStoreData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFTweakStoreData.h; sourceTree = "<group>"; };
 		0CBC1EED20F74D810023A9B8 /* MDFTweakStoreData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTweakStoreData.m; sourceTree = "<group>"; };
+		0CBC1EEF20F75EB80023A9B8 /* MDFTabBarControllerModify.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = MDFTabBarControllerModify.md; sourceTree = "<group>"; };
 		0CCBD2BB20ECA7BB00439CBF /* NSObject+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LNRefresh.h"; sourceTree = "<group>"; };
 		0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRefreshHeader.m; sourceTree = "<group>"; };
 		0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNRefreshAnimator.m; sourceTree = "<group>"; };
@@ -347,7 +349,7 @@
 		0CCBD2EF20ECA85300439CBF /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				0CD5513320F5FEE500413548 /* TabbarModify */,
+				0CD5513320F5FEE500413548 /* MDFTabBarControllerModify */,
 				0CD5513020F5F60700413548 /* Plays */,
 				0CD550E520F5E92D00413548 /* Animation */,
 				0CCBD2F120ECA87D00439CBF /* VideoList */,
@@ -630,13 +632,14 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
-		0CD5513320F5FEE500413548 /* TabbarModify */ = {
+		0CD5513320F5FEE500413548 /* MDFTabBarControllerModify */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC1EEF20F75EB80023A9B8 /* MDFTabBarControllerModify.md */,
 				0CBC1EEA20F747940023A9B8 /* Foundation */,
 				0CD5513920F5FF2600413548 /* ObtionViewControllers */,
 			);
-			path = TabbarModify;
+			path = MDFTabBarControllerModify;
 			sourceTree = "<group>";
 		};
 		0CD5513920F5FF2600413548 /* ObtionViewControllers */ = {
@@ -746,6 +749,7 @@
 				0CD5510220F5E9A700413548 /* vcTransition2.json in Resources */,
 				0CD5511220F5E9A700413548 /* vcTransition1.json in Resources */,
 				0CD5510C20F5E9A700413548 /* Boat_Loader.json in Resources */,
+				0CBC1EF020F75EB80023A9B8 /* MDFTabBarControllerModify.md in Resources */,
 				0CD5511020F5E9A700413548 /* HamburgerArrow.json in Resources */,
 				0CD5510F20F5E9A700413548 /* Switch.json in Resources */,
 				0CCBD30B20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.xib in Resources */,
