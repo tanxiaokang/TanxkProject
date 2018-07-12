@@ -83,7 +83,6 @@
 		0CD5512E20F5F01400413548 /* LADownloadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5512220F5F01300413548 /* LADownloadTestViewController.m */; };
 		0CD5512F20F5F01400413548 /* LAQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5512320F5F01300413548 /* LAQRScannerViewController.m */; };
 		0CD5513720F5FF1400413548 /* MDFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5513520F5FF1400413548 /* MDFTabBarController.m */; };
-		0CD5513820F5FF1400413548 /* MDFTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD5513620F5FF1400413548 /* MDFTabBarController.xib */; };
 		0CD8C0A120EC704300EB7FDA /* RegisterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */; };
 		7335C80A0A9EF4D419C7B040 /* libPods-TanxkProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A476C87C808037848059C1 /* libPods-TanxkProject.a */; };
 /* End PBXBuildFile section */
@@ -220,7 +219,6 @@
 		0CD5512720F5F01400413548 /* LAControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAControlsViewController.h; sourceTree = "<group>"; };
 		0CD5513420F5FF1400413548 /* MDFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFTabBarController.h; sourceTree = "<group>"; };
 		0CD5513520F5FF1400413548 /* MDFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTabBarController.m; sourceTree = "<group>"; };
-		0CD5513620F5FF1400413548 /* MDFTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MDFTabBarController.xib; sourceTree = "<group>"; };
 		0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAPI.m; sourceTree = "<group>"; };
 		0CD8C0A020EC704300EB7FDA /* RegisterAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAPI.h; sourceTree = "<group>"; };
 		26803BC77E7B1AD29136AFA2 /* Pods-TanxkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanxkProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanxkProject/Pods-TanxkProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,6 +252,15 @@
 				0C654EB820EE225400BAD881 /* FBTweak+Config.m */,
 			);
 			path = FBTweakCategory;
+			sourceTree = "<group>";
+		};
+		0CBC1EEA20F747940023A9B8 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				0CD5513420F5FF1400413548 /* MDFTabBarController.h */,
+				0CD5513520F5FF1400413548 /* MDFTabBarController.m */,
+			);
+			path = Foundation;
 			sourceTree = "<group>";
 		};
 		0CCBD2B820ECA78500439CBF /* MDFBase */ = {
@@ -611,10 +618,8 @@
 		0CD5513320F5FEE500413548 /* TabbarModify */ = {
 			isa = PBXGroup;
 			children = (
+				0CBC1EEA20F747940023A9B8 /* Foundation */,
 				0CD5513920F5FF2600413548 /* ObtionViewControllers */,
-				0CD5513420F5FF1400413548 /* MDFTabBarController.h */,
-				0CD5513520F5FF1400413548 /* MDFTabBarController.m */,
-				0CD5513620F5FF1400413548 /* MDFTabBarController.xib */,
 			);
 			path = TabbarModify;
 			sourceTree = "<group>";
@@ -716,7 +721,6 @@
 				0CD5510B20F5E9A700413548 /* PinJump.json in Resources */,
 				0CCBD30620ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.xib in Resources */,
 				0CD5510520F5E9A700413548 /* TwitterHeart.json in Resources */,
-				0CD5513820F5FF1400413548 /* MDFTabBarController.xib in Resources */,
 				0CD5510420F5E9A700413548 /* LottieLogo1.json in Resources */,
 				0CD5510920F5E9A700413548 /* IconTransitions.json in Resources */,
 				0CD5510020F5E9A700413548 /* Watermelon.json in Resources */,

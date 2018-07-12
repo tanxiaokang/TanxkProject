@@ -7,7 +7,12 @@
 //
 
 #import "MDFTweakConfig+config.h"
+#import "MDFTweakConfig.h"
 
 @implementation MDFTweakConfig (config)
+
+- (void)test {
+    MDFTweakValue(@"AAA", @"BBB", @"CCC");
+}
 
 @end

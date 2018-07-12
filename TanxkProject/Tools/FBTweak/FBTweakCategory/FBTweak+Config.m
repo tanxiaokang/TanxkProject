@@ -20,76 +20,64 @@
 {
     return FBTweakValue(BNTweakBaseFunctionCategory, BNTweakBaseFunctionCollection, @"开启控制台打印日志（网络请求）", NO);
 }
-#pragma mark - 环境切换
 
+#pragma mark - 环境切换
+#define BNTweakNetworkCategory @"环境切换"
+#define BNTweakNetworkSwitchCollection @"业务开关: 优先级\n OnLine > Test > config"
 + (BOOL)mdf_clientHttps {
+
+//    //属性 unused 用于函数和变量，表示该函数或变量可能不使用，这个属性可以避免 编译器产生警告信息。used反之 。
+//    __attribute__((used)) static FBTweakLiteralString category__ = @"环境切换";
+//    __attribute__((used)) static FBTweakLiteralString collection__ = @"HTTPS: 线上线下环境均有效";
+//    __attribute__((used)) static FBTweakLiteralString name__ = @"是否使用HTTPS";
+//    __attribute__((used)) static __typeof__(__objc_yes) default__ = __objc_yes;
+//    __attribute__((used)) static char *encoding__ = (char *)@encode(__typeof__(__objc_yes));
+//    
+//    // __attribute__((section("section_name"))) 其作用是将作用的函数或数据放入指定名为"section_name"输入段。
+//    __attribute__((used)) __attribute__((section ("__DATA" "," "FBTweak"))) static fb_tweak_entry entry = {
+//        &category__,
+//        &collection__,
+//        &name__,
+//        (void *)&default__,
+//        (void *)((void*)0),
+//        (void *)((void*)0),
+//        &encoding__
+//    };
     
-     return ((^{
-         FBTweak *__value_tweak = ((^{
-             return ((^{
-                 //属性 unused 用于函数和变量，表示该函数或变量可能不使用，这个属性可以避免 编译器产生警告信息。used反之 。
-                 __attribute__((used)) static FBTweakLiteralString category__ = @"环境切换";
-                 __attribute__((used)) static FBTweakLiteralString collection__ = @"HTTPS: 线上线下环境均有效";
-                 __attribute__((used)) static FBTweakLiteralString name__ = @"是否使用HTTPS";
-                 __attribute__((used)) static __typeof__(__objc_yes) default__ = __objc_yes;
-                 __attribute__((used)) static char *encoding__ = (char *)@encode(__typeof__(__objc_yes));
-                 
-                 // __attribute__((section("section_name"))) 其作用是将作用的函数或数据放入指定名为"section_name"输入段。
-                 __attribute__((used)) __attribute__((section ("__DATAQQQ" "," "FBTweak"))) static fb_tweak_entry entry = {
-                     
-                     &category__,
-                     &collection__,
-                     &name__,
-                     (void *)&default__,
-                     (void *)((void*)0),
-                     (void *)((void*)0),
-                     &encoding__
-                 };
-                 FBTweakStore *store = [FBTweakStore sharedInstance];
-                 FBTweakCategory *category = [store tweakCategoryWithName:category__];
-                 FBTweakCollection *collection = [category tweakCollectionWithName:collection__];
-                 NSString *identifier = _FBTweakIdentifier(&entry);
-                 FBTweak *__inline_tweak = [collection tweakWithIdentifier:identifier];
-                 return __inline_tweak;
-             })());
-             
-         })());
-         
-         return (
-                 (^{
-             FBTweakValue currentValue = __value_tweak.currentValue ?: __value_tweak.defaultValue;
-             return _Generic(
-                             __objc_yes,
-                             float: [currentValue floatValue],
-                             const float: [currentValue floatValue],
-                             double: [currentValue doubleValue],
-                             const double: [currentValue doubleValue],
-                             short: [currentValue shortValue],
-                             const short: [currentValue shortValue],
-                             unsigned short: [currentValue unsignedShortValue],
-                             const unsigned short: [currentValue unsignedShortValue],
-                             int: [currentValue intValue],
-                             const int: [currentValue intValue],
-                             unsigned int: [currentValue unsignedIntValue],
-                             const unsigned int: [currentValue unsignedIntValue],
-                             long: [currentValue longValue],
-                             const long: [currentValue longValue],
-                             unsigned long: [currentValue unsignedLongValue],
-                             const unsigned long: [currentValue unsignedLongValue],
-                             long long: [currentValue longLongValue],
-                             const long long: [currentValue longLongValue],
-                             unsigned long long: [currentValue unsignedLongLongValue],
-                             const unsigned long long: [currentValue unsignedLongLongValue],
-                             BOOL: [currentValue boolValue], const BOOL: [currentValue boolValue],
-                             id: currentValue, const id: currentValue,
-                             default: [currentValue UTF8String]
-                             );
-         }
-                  ) ()
-                 );
-     })());
+//     ((^{
+//         FBTweak *__value_tweak = ((^{
+//             return ((^{
+//                 //属性 unused 用于函数和变量，表示该函数或变量可能不使用，这个属性可以避免 编译器产生警告信息。used反之 。
+//                 __attribute__((used)) static FBTweakLiteralString category__ = @"环境切换";
+//                 __attribute__((used)) static FBTweakLiteralString collection__ = @"HTTPS: 线上线下环境均有效";
+//                 __attribute__((used)) static FBTweakLiteralString name__ = @"是否使用HTTPS";
+//                 __attribute__((used)) static __typeof__(__objc_yes) default__ = __objc_yes;
+//                 __attribute__((used)) static char *encoding__ = (char *)@encode(__typeof__(__objc_yes));
+//
+//                 // __attribute__((section("section_name"))) 其作用是将作用的函数或数据放入指定名为"section_name"输入段。
+//                 __attribute__((used)) __attribute__((section ("__DATA" "," "FBTweak"))) static fb_tweak_entry entry = {
+//
+//                     &category__,
+//                     &collection__,
+//                     &name__,
+//                     (void *)&default__,
+//                     (void *)((void*)0),
+//                     (void *)((void*)0),
+//                     &encoding__
+//                 };
+//                 FBTweakStore *store = [FBTweakStore sharedInstance];
+//                 FBTweakCategory *category = [store tweakCategoryWithName:category__];
+//                 FBTweakCollection *collection = [category tweakCollectionWithName:collection__];
+//                 NSString *identifier = _FBTweakIdentifier(&entry);
+//                 FBTweak *__inline_tweak = [collection tweakWithIdentifier:identifier];
+//                 return __inline_tweak;
+//             })());
+//
+//         })());
+//      return ((^{ FBTweakValue currentValue = __value_tweak.currentValue ?: __value_tweak.defaultValue; return _Generic(__objc_yes, float: [currentValue floatValue], const float: [currentValue floatValue], double: [currentValue doubleValue], const double: [currentValue doubleValue], short: [currentValue shortValue], const short: [currentValue shortValue], unsigned short: [currentValue unsignedShortValue], const unsigned short: [currentValue unsignedShortValue], int: [currentValue intValue], const int: [currentValue intValue], unsigned int: [currentValue unsignedIntValue], const unsigned int: [currentValue unsignedIntValue], long: [currentValue longValue], const long: [currentValue longValue], unsigned long: [currentValue unsignedLongValue], const unsigned long: [currentValue unsignedLongValue], long long: [currentValue longLongValue], const long long: [currentValue longLongValue], unsigned long long: [currentValue unsignedLongLongValue], const unsigned long long: [currentValue unsignedLongLongValue], BOOL: [currentValue boolValue], const BOOL: [currentValue boolValue], id: currentValue, const id: currentValue, default: [currentValue UTF8String] ); })());
+//     })());
     
-//    return FBTweakValue(BNTweakNetworkCategory, @"HTTPS: 线上线下环境均有效", @"是否使用HTTPS", YES);
+    return FBTweakValue(BNTweakNetworkCategory, @"HTTPS: 线上线下环境均有效", @"是否使用HTTPS", YES);
 }
 
 #pragma mark - 信息查看
