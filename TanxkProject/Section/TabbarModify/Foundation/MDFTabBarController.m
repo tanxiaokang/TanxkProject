@@ -25,8 +25,10 @@
     }
 }
 
-- (void)addViewController:(UIViewController *)vc title:(NSString *)title{
+- (void)addViewController:(UIViewController *)vc title:(NSString *)title {
     vc.title = title;
-    [self addChildViewController:vc];
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    [self addChildViewController:nvc];
 }
+
 @end

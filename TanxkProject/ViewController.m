@@ -23,7 +23,6 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"Root";
     
     [self _buildDataSource];
     
