@@ -20,10 +20,7 @@
 }
 
 - (void)test3 {
-    MDFTweakValue(@"PhotoLibraryViewController", @"图库",@"");
+    MDFTweakValue(@"ViewController", @"首页3",@"");
 }
-//- (void)test4 {
-//    MDFTweakValue(@"", @"首页3",@"");
-//}
 
 @end

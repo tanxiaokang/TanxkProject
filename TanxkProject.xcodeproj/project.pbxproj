@@ -86,6 +86,7 @@
 		0CD5512F20F5F01400413548 /* LAQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5512320F5F01300413548 /* LAQRScannerViewController.m */; };
 		0CD5513720F5FF1400413548 /* MDFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5513520F5FF1400413548 /* MDFTabBarController.m */; };
 		0CD8C0A120EC704300EB7FDA /* RegisterAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */; };
+		0CF96C6B2101DCA60038719B /* PhotoLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF96C6A2101DCA60038719B /* PhotoLibraryViewController.m */; };
 		7335C80A0A9EF4D419C7B040 /* libPods-TanxkProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A476C87C808037848059C1 /* libPods-TanxkProject.a */; };
 /* End PBXBuildFile section */
 
@@ -226,6 +227,8 @@
 		0CD5513520F5FF1400413548 /* MDFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFTabBarController.m; sourceTree = "<group>"; };
 		0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterAPI.m; sourceTree = "<group>"; };
 		0CD8C0A020EC704300EB7FDA /* RegisterAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterAPI.h; sourceTree = "<group>"; };
+		0CF96C692101DCA60038719B /* PhotoLibraryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoLibraryViewController.h; sourceTree = "<group>"; };
+		0CF96C6A2101DCA60038719B /* PhotoLibraryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoLibraryViewController.m; sourceTree = "<group>"; };
 		26803BC77E7B1AD29136AFA2 /* Pods-TanxkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanxkProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanxkProject/Pods-TanxkProject.release.xcconfig"; sourceTree = "<group>"; };
 		26A476C87C808037848059C1 /* libPods-TanxkProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TanxkProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C949C5E988F4E7D2DCCE44 /* Pods-TanxkProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanxkProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanxkProject/Pods-TanxkProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -349,6 +352,7 @@
 		0CCBD2EF20ECA85300439CBF /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				0CF96C682101DC840038719B /* PhotoLibrary */,
 				0CD5513320F5FEE500413548 /* MDFTabBarControllerModify */,
 				0CD5513020F5F60700413548 /* Plays */,
 				0CD550E520F5E92D00413548 /* Animation */,
@@ -651,6 +655,15 @@
 			path = ObtionViewControllers;
 			sourceTree = "<group>";
 		};
+		0CF96C682101DC840038719B /* PhotoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				0CF96C692101DCA60038719B /* PhotoLibraryViewController.h */,
+				0CF96C6A2101DCA60038719B /* PhotoLibraryViewController.m */,
+			);
+			path = PhotoLibrary;
+			sourceTree = "<group>";
+		};
 		1C1052F9422F6F184DBC964B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -829,6 +842,7 @@
 				0CD5512920F5F01400413548 /* JSONExplorerViewController.m in Sources */,
 				0CD5512C20F5F01400413548 /* AnimationTransitionViewController.m in Sources */,
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
+				0CF96C6B2101DCA60038719B /* PhotoLibraryViewController.m in Sources */,
 				0CCF2E6E20EB1CE50087169E /* main.m in Sources */,
 				0CCBD31920ECC73600439CBF /* NSObject+network.m in Sources */,
 				0CCF2E9A20EB395B0087169E /* FBTweakViewController.m in Sources */,

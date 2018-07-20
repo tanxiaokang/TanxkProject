@@ -22,20 +22,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
     
-    [self _buildDataSource];
-    
-    [self.view addSubview:self.tableView];
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.offset(0);
-    }];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSTimeZone* timeZone = [NSTimeZone timeZoneWithName:@"Asia/Shanghai"];
+    [formatter setTimeZone:timeZone];
+    NSDate *datenow = [formatter dateFromString:@"1990-02-18"];
+    NSString *timeSp = [NSString stringWithFormat:@"%ld", (long)[datenow timeIntervalSince1970] * 1000];
+    NSLog(@"%@",timeSp);
+//
+//    self.view.backgroundColor = [UIColor whiteColor];
+//
+//    [self _buildDataSource];
+//
+//    [self.view addSubview:self.tableView];
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.left.right.top.bottom.offset(0);
+//    }];
 }
 
+- (NSDate *)getNowDateFromatAnDate:(NSDate *)anyDate
+{
+    //设置源日期时区
+    NSTimeZone* sourceTimeZone = [NSTimeZone timeZoneWithAbbreviation:@"UTC"];//或GMT
+    //设置转换后的目标日期时区
+    NSTimeZone* destinationTimeZone = [NSTimeZone localTimeZone];
+    //得到源日期与世界标准时间的偏移量
+    NSInteger sourceGMTOffset = [sourceTimeZone secondsFromGMTForDate:anyDate];
+    //目标日期与本地时区的偏移量
+    NSInteger destinationGMTOffset = [destinationTimeZone secondsFromGMTForDate:anyDate];
+    //得到时间偏移量的差值
+    NSTimeInterval interval = destinationGMTOffset - sourceGMTOffset;
+    //转为现在时间
+    NSDate* destinationDateNow = [[NSDate alloc] initWithTimeInterval:interval sinceDate:anyDate];
+    return destinationDateNow;
+}
 #pragma mark - Handle Data
 - (void)_buildDataSource {
     self.tableViewItems = @[@{@"name" : @"Animation - lottie",
-                              @"vc" : @"LottieRootViewController"}];
+                              @"vc" : @"LottieRootViewController"},
+                            @{@"name" : @"视图",
+                              @"vc" : @"YETMultiSetListViewController"}];
 }
 
 #pragma mark - UITableViewDataSource、Delegate
@@ -76,7 +103,6 @@
     //        NSLog(@"%@",request.responseObject);
     //        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
     //    }];
-    
 }
 
 #pragma mark - Properties
