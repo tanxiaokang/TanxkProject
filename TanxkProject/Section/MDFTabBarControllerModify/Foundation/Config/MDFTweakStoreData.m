@@ -33,8 +33,11 @@
 }
 
 - (void)setTweakStore:(MDFTweakStoreData *)entry{
-    
-    [_orderedCategories addObject:entry];
+    if (entry == nil) {
+        
+    } else {
+        [_orderedCategories addObject:entry];
+    }
 }
 
 - (NSMutableArray *)getTweakStore {

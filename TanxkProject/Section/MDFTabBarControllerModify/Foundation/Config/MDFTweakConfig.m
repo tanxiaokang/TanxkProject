@@ -21,6 +21,9 @@ extern NSString *_MDFTweakIdentifier(mdf_tweak_entry *entry)
 static MDFTweakStoreData *_MDFTweakCreateWithEntry(mdf_tweak_entry *entry)
 {
     MDFTweakStoreData *tweak = [[MDFTweakStoreData alloc] init];
+    if (tweak.name == nil) {
+        return nil;
+    }
     tweak.name = *entry->name;
     tweak.category = *entry->category;
     tweak.collection = *entry->collection;

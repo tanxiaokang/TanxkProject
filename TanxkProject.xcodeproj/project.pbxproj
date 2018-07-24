@@ -55,6 +55,7 @@
 		0CCF2E9E20EB395B0087169E /* _FBTweakBindObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF2E8A20EB395B0087169E /* _FBTweakBindObserver.m */; };
 		0CCF2E9F20EB395B0087169E /* FBTweakInline.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF2E8B20EB395B0087169E /* FBTweakInline.m */; };
 		0CCF2EA020EB395B0087169E /* FBTweakCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF2E9220EB395B0087169E /* FBTweakCollection.m */; };
+		0CD5321A21073DD000AB417F /* PhotoLibraryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD5321921073DD000AB417F /* PhotoLibraryViewController.xib */; };
 		0CD550EA20F5E96100413548 /* LottieRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD550E820F5E96100413548 /* LottieRootViewController.m */; };
 		0CD5510020F5E9A700413548 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD550ED20F5E9A600413548 /* Watermelon.json */; };
 		0CD5510120F5E9A700413548 /* Switch_States.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD550EE20F5E9A600413548 /* Switch_States.json */; };
@@ -184,6 +185,7 @@
 		0CCF2E9320EB395B0087169E /* FBTweak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweak.h; sourceTree = "<group>"; };
 		0CCF2E9420EB395B0087169E /* FBTweakViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakViewController.h; sourceTree = "<group>"; };
 		0CCF2E9520EB395B0087169E /* FBTweakShakeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBTweakShakeWindow.h; sourceTree = "<group>"; };
+		0CD5321921073DD000AB417F /* PhotoLibraryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoLibraryViewController.xib; sourceTree = "<group>"; };
 		0CD550E720F5E96100413548 /* LottieRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieRootViewController.h; sourceTree = "<group>"; };
 		0CD550E820F5E96100413548 /* LottieRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieRootViewController.m; sourceTree = "<group>"; };
 		0CD550ED20F5E9A600413548 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
@@ -660,6 +662,7 @@
 			children = (
 				0CF96C692101DCA60038719B /* PhotoLibraryViewController.h */,
 				0CF96C6A2101DCA60038719B /* PhotoLibraryViewController.m */,
+				0CD5321921073DD000AB417F /* PhotoLibraryViewController.xib */,
 			);
 			path = PhotoLibrary;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				0CBC1EF020F75EB80023A9B8 /* MDFTabBarControllerModify.md in Resources */,
 				0CD5511020F5E9A700413548 /* HamburgerArrow.json in Resources */,
 				0CD5510F20F5E9A700413548 /* Switch.json in Resources */,
+				0CD5321A21073DD000AB417F /* PhotoLibraryViewController.xib in Resources */,
 				0CCBD30B20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.xib in Resources */,
 				0CCBD30920ECA87D00439CBF /* YETMuitiSetListHeaderCell.xib in Resources */,
 			);
