@@ -10,6 +10,7 @@
 #import "RegisterAPI.h"
 #import "YETMultiSetListViewController.h"
 
+@class TPSettingBundleViewController;
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -23,20 +24,22 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-    self.title = @"Root";
+    self.title = @"TestProject";
     
     [self _buildDataSource];
-    
+    self.automaticallyAdjustsScrollViewInsets = NO;
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.right.top.bottom.offset(0);
+        make.left.right.bottom.offset(0);
+        make.top.offset(64.f);
+        
     }];
 }
 
 #pragma mark - Handle Data
 - (void)_buildDataSource {
-    self.tableViewItems = @[@{@"name" : @"Animation - lottie",
-                              @"vc" : @"LottieRootViewController"}];
+    self.tableViewItems = @[@{@"name" : @"Animation - lottie",  @"vc" : @"LottieRootViewController"},
+                            @{@"name" : @"Setting.Bundle",      @"vc" : @"TPSettingBundleViewController"}];
 }
 
 #pragma mark - UITableViewDataSource、Delegate
@@ -55,19 +58,19 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *vcClassName = self.tableViewItems[indexPath.row][@"vc"];
-    Class vcClass = NSClassFromString(vcClassName);
-    if (vcClass) {
-        UIViewController *vc = [[vcClass alloc] init];
-        self.hidesBottomBarWhenPushed = YES;
-        [self.navigationController pushViewController:vc animated:YES];
-    }
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+//    NSString *vcClassName = self.tableViewItems[indexPath.row][@"vc"];
+//    Class vcClass = NSClassFromString(vcClassName);
+//    if (vcClass) {
+//        UIViewController *vc = [[vcClass alloc] init];
+//        self.hidesBottomBarWhenPushed = YES;
+//        [self.navigationController pushViewController:vc animated:YES];
+//    }
+//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     
-//    [self link:@"message/noticePushInfo" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {
-//        NSLog(@"%@",request.responseObject);
-//    }];
+    [self link:@"https://xueyezhenbiandujinshu.oss-cn-beijing.aliyuncs.com/xueyue/upgrade.json" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.responseObject);
+    }];
     
     //    RegisterAPI *api = [[RegisterAPI alloc] initWithUsername:@"123" password:@"123456"];
     //    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {

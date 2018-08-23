@@ -34,6 +34,9 @@
 		0CCBD30C20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD30120ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m */; };
 		0CCBD31620ECC69600439CBF /* MDFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD31520ECC69600439CBF /* MDFNetwork.m */; };
 		0CCBD31920ECC73600439CBF /* NSObject+network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD31820ECC73600439CBF /* NSObject+network.m */; };
+		0CCEA8C3212BBB9800F296D8 /* TPSettingBundleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEA8C1212BBB9800F296D8 /* TPSettingBundleViewController.m */; };
+		0CCEA8C4212BBB9800F296D8 /* TPSettingBundleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEA8C2212BBB9800F296D8 /* TPSettingBundleViewController.xib */; };
+		0CCEA8C6212BBD8600F296D8 /* TPSettingsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEA8C5212BBD8600F296D8 /* TPSettingsBundle.bundle */; };
 		0CCF2E6020EB1CE20087169E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF2E5F20EB1CE20087169E /* AppDelegate.m */; };
 		0CCF2E6320EB1CE20087169E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCF2E6220EB1CE20087169E /* ViewController.m */; };
 		0CCF2E6620EB1CE20087169E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCF2E6420EB1CE20087169E /* Main.storyboard */; };
@@ -136,6 +139,10 @@
 		0CCBD31520ECC69600439CBF /* MDFNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFNetwork.m; sourceTree = "<group>"; };
 		0CCBD31720ECC73600439CBF /* NSObject+network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+network.h"; sourceTree = "<group>"; };
 		0CCBD31820ECC73600439CBF /* NSObject+network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+network.m"; sourceTree = "<group>"; };
+		0CCEA8C0212BBB9800F296D8 /* TPSettingBundleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPSettingBundleViewController.h; sourceTree = "<group>"; };
+		0CCEA8C1212BBB9800F296D8 /* TPSettingBundleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPSettingBundleViewController.m; sourceTree = "<group>"; };
+		0CCEA8C2212BBB9800F296D8 /* TPSettingBundleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TPSettingBundleViewController.xib; sourceTree = "<group>"; };
+		0CCEA8C5212BBD8600F296D8 /* TPSettingsBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TPSettingsBundle.bundle; sourceTree = "<group>"; };
 		0CCF2E5B20EB1CE20087169E /* TanxkProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TanxkProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCF2E5E20EB1CE20087169E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0CCF2E5F20EB1CE20087169E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -314,6 +321,7 @@
 		0CCBD2EF20ECA85300439CBF /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				0CCEA8BF212BBB6000F296D8 /* SettingBundle */,
 				0CD5513020F5F60700413548 /* Plays */,
 				0CD550E520F5E92D00413548 /* Animation */,
 				0CCBD2F120ECA87D00439CBF /* VideoList */,
@@ -403,6 +411,17 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
+		0CCEA8BF212BBB6000F296D8 /* SettingBundle */ = {
+			isa = PBXGroup;
+			children = (
+				0CCEA8C0212BBB9800F296D8 /* TPSettingBundleViewController.h */,
+				0CCEA8C1212BBB9800F296D8 /* TPSettingBundleViewController.m */,
+				0CCEA8C2212BBB9800F296D8 /* TPSettingBundleViewController.xib */,
+				0CCEA8C5212BBD8600F296D8 /* TPSettingsBundle.bundle */,
+			);
+			path = SettingBundle;
+			sourceTree = "<group>";
+		};
 		0CCF2E5220EB1CE20087169E = {
 			isa = PBXGroup;
 			children = (
@@ -426,11 +445,11 @@
 			children = (
 				0CCF2E5E20EB1CE20087169E /* AppDelegate.h */,
 				0CCF2E5F20EB1CE20087169E /* AppDelegate.m */,
+				0CCF2E6120EB1CE20087169E /* ViewController.h */,
+				0CCF2E6220EB1CE20087169E /* ViewController.m */,
 				0CCBD2B820ECA78500439CBF /* MDFBase */,
 				0CCBD2EF20ECA85300439CBF /* Section */,
 				0CCF2E7C20EB395B0087169E /* Tools */,
-				0CCF2E6120EB1CE20087169E /* ViewController.h */,
-				0CCF2E6220EB1CE20087169E /* ViewController.m */,
 				0CCF2E6420EB1CE20087169E /* Main.storyboard */,
 				0CCF2E6720EB1CE50087169E /* Assets.xcassets */,
 				0CCF2E6920EB1CE50087169E /* LaunchScreen.storyboard */,
@@ -674,6 +693,7 @@
 			files = (
 				0CD5510820F5E9A700413548 /* keypathTest.json in Resources */,
 				0CCF2E6B20EB1CE50087169E /* LaunchScreen.storyboard in Resources */,
+				0CCEA8C6212BBD8600F296D8 /* TPSettingsBundle.bundle in Resources */,
 				0CD5510E20F5E9A700413548 /* GeometryTransformTest.json in Resources */,
 				0CD5510A20F5E9A700413548 /* timeremap.json in Resources */,
 				0CD5510120F5E9A700413548 /* Switch_States.json in Resources */,
@@ -683,6 +703,7 @@
 				0CCBD30620ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.xib in Resources */,
 				0CD5510520F5E9A700413548 /* TwitterHeart.json in Resources */,
 				0CD5510420F5E9A700413548 /* LottieLogo1.json in Resources */,
+				0CCEA8C4212BBB9800F296D8 /* TPSettingBundleViewController.xib in Resources */,
 				0CD5510920F5E9A700413548 /* IconTransitions.json in Resources */,
 				0CD5510020F5E9A700413548 /* Watermelon.json in Resources */,
 				0CD5511120F5E9A700413548 /* setValueTest.json in Resources */,
@@ -783,6 +804,7 @@
 				0CCBD30720ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.m in Sources */,
 				0CCF2E6020EB1CE20087169E /* AppDelegate.m in Sources */,
 				0CCF2E9920EB395B0087169E /* FBTweakCategory.m in Sources */,
+				0CCEA8C3212BBB9800F296D8 /* TPSettingBundleViewController.m in Sources */,
 				0CD5511620F5EDE400413548 /* UIView+Utility.m in Sources */,
 				0CCF2EA020EB395B0087169E /* FBTweakCollection.m in Sources */,
 				0CD5512B20F5F01400413548 /* TypingDemoViewController.m in Sources */,
