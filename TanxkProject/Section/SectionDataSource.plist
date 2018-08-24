@@ -20,5 +20,11 @@
 		<key>className</key>
 		<string>VVeboTableController</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>NSRegularExpression</string>
+		<key>className</key>
+		<string>NSRegularExpressionController</string>
+	</dict>
 </array>
 </plist>

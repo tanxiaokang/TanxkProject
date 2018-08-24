@@ -30,8 +30,13 @@
         datas = [[NSMutableArray alloc] init];
         needLoadArr = [[NSMutableArray alloc] init];
         
-        [self loadData];
-        [self reloadData];
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+            [self loadData];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self reloadData];
+            });
+        });
     }
     return self;
 }
@@ -147,6 +152,7 @@
 
 //读取信息
 - (void)loadData{
+    
     NSArray *temp = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"plist"]];
     for (NSDictionary *dict in temp) {
         NSDictionary *user = dict[@"user"];
