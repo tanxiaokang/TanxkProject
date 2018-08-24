@@ -59,6 +59,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSString *vcClassName = self.tableViewItems[indexPath.row][@"className"];
     Class vcClass = NSClassFromString(vcClassName);
     if (vcClass) {
@@ -68,10 +69,9 @@
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    
-    [self link:@"https://xueyezhenbiandujinshu.oss-cn-beijing.aliyuncs.com/xueyue/upgrade.json" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-    }];
+//    [self link:@"https://xueyezhenbiandujinshu.oss-cn-beijing.aliyuncs.com/xueyue/upgrade.json" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {
+//        NSLog(@"%@",request.responseObject);
+//    }];
     
     //    RegisterAPI *api = [[RegisterAPI alloc] initWithUsername:@"123" password:@"123456"];
     //    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
