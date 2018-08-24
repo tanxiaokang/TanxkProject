@@ -59,14 +59,14 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    NSString *vcClassName = self.tableViewItems[indexPath.row][@"vc"];
-//    Class vcClass = NSClassFromString(vcClassName);
-//    if (vcClass) {
-//        UIViewController *vc = [[vcClass alloc] init];
-//        self.hidesBottomBarWhenPushed = YES;
-//        [self.navigationController pushViewController:vc animated:YES];
-//    }
-//    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSString *vcClassName = self.tableViewItems[indexPath.row][@"className"];
+    Class vcClass = NSClassFromString(vcClassName);
+    if (vcClass) {
+        UIViewController *vc = [[vcClass alloc] init];
+        self.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     
     [self link:@"https://xueyezhenbiandujinshu.oss-cn-beijing.aliyuncs.com/xueyue/upgrade.json" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {

@@ -14,6 +14,11 @@
 		0C01B8B5212FAF80002B9DF9 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8AF212FAF80002B9DF9 /* NSString+Additions.m */; };
 		0C01B8B6212FAF80002B9DF9 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8B2212FAF80002B9DF9 /* UIScreen+Additions.m */; };
 		0C01B8B7212FAF80002B9DF9 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8B3212FAF80002B9DF9 /* UIView+Additions.m */; };
+		0C01B8BA212FB316002B9DF9 /* VVeboTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8B9212FB315002B9DF9 /* VVeboTableView.m */; };
+		0C01B8C2212FB35F002B9DF9 /* t_repost@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C01B8BE212FB35F002B9DF9 /* t_repost@2x.png */; };
+		0C01B8C3212FB35F002B9DF9 /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C01B8BF212FB35F002B9DF9 /* data.plist */; };
+		0C01B8C4212FB35F002B9DF9 /* corner_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C01B8C0212FB35F002B9DF9 /* corner_circle@2x.png */; };
+		0C01B8C5212FB35F002B9DF9 /* t_comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C01B8C1212FB35F002B9DF9 /* t_comments@2x.png */; };
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
 		0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */; };
 		0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */; };
@@ -108,6 +113,12 @@
 		0C01B8B2212FAF80002B9DF9 /* UIScreen+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Additions.m"; sourceTree = "<group>"; };
 		0C01B8B3212FAF80002B9DF9 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		0C01B8B4212FAF80002B9DF9 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
+		0C01B8B8212FB315002B9DF9 /* VVeboTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVeboTableView.h; sourceTree = "<group>"; };
+		0C01B8B9212FB315002B9DF9 /* VVeboTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVeboTableView.m; sourceTree = "<group>"; };
+		0C01B8BE212FB35F002B9DF9 /* t_repost@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_repost@2x.png"; sourceTree = "<group>"; };
+		0C01B8BF212FB35F002B9DF9 /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		0C01B8C0212FB35F002B9DF9 /* corner_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "corner_circle@2x.png"; sourceTree = "<group>"; };
+		0C01B8C1212FB35F002B9DF9 /* t_comments@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "t_comments@2x.png"; sourceTree = "<group>"; };
 		0C654EB720EE225400BAD881 /* FBTweak+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBTweak+Config.h"; sourceTree = "<group>"; };
 		0C654EB820EE225400BAD881 /* FBTweak+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FBTweak+Config.m"; sourceTree = "<group>"; };
 		0CCBD2BB20ECA7BB00439CBF /* NSObject+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LNRefresh.h"; sourceTree = "<group>"; };
@@ -301,10 +312,13 @@
 		0C01B8A1212FAE68002B9DF9 /* VVeboTableView */ = {
 			isa = PBXGroup;
 			children = (
+				0C01B8BD212FB351002B9DF9 /* data */,
 				0C01B8A8212FAF05002B9DF9 /* view */,
 				0C01B8A7212FAED3002B9DF9 /* support */,
 				0C01B8A2212FAE9E002B9DF9 /* VVeboTableController.h */,
 				0C01B8A3212FAE9E002B9DF9 /* VVeboTableController.m */,
+				0C01B8B8212FB315002B9DF9 /* VVeboTableView.h */,
+				0C01B8B9212FB315002B9DF9 /* VVeboTableView.m */,
 			);
 			path = VVeboTableView;
 			sourceTree = "<group>";
@@ -331,6 +345,17 @@
 				0C01B8A9212FAF24002B9DF9 /* VVeboTableViewCell.m */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		0C01B8BD212FB351002B9DF9 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0C01B8C0212FB35F002B9DF9 /* corner_circle@2x.png */,
+				0C01B8BF212FB35F002B9DF9 /* data.plist */,
+				0C01B8C1212FB35F002B9DF9 /* t_comments@2x.png */,
+				0C01B8BE212FB35F002B9DF9 /* t_repost@2x.png */,
+			);
+			path = data;
 			sourceTree = "<group>";
 		};
 		0C43BE3D20EE7E2B00AF05C4 /* YETMuitiSetListSourceCatalog */ = {
@@ -791,13 +816,16 @@
 				0CD5510820F5E9A700413548 /* keypathTest.json in Resources */,
 				0CCF2E6B20EB1CE50087169E /* LaunchScreen.storyboard in Resources */,
 				0CCEA8C6212BBD8600F296D8 /* TPSettingsBundle.bundle in Resources */,
+				0C01B8C3212FB35F002B9DF9 /* data.plist in Resources */,
 				0CD5510E20F5E9A700413548 /* GeometryTransformTest.json in Resources */,
 				0CD5510A20F5E9A700413548 /* timeremap.json in Resources */,
 				0CD5510120F5E9A700413548 /* Switch_States.json in Resources */,
+				0C01B8C5212FB35F002B9DF9 /* t_comments@2x.png in Resources */,
 				0CCF2E6820EB1CE50087169E /* Assets.xcassets in Resources */,
 				0CD5510320F5E9A700413548 /* LottieLogo2.json in Resources */,
 				0CD5510B20F5E9A700413548 /* PinJump.json in Resources */,
 				0C01B89F212FAC8A002B9DF9 /* SectionDataSource.plist in Resources */,
+				0C01B8C4212FB35F002B9DF9 /* corner_circle@2x.png in Resources */,
 				0CCBD30620ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.xib in Resources */,
 				0CD5510520F5E9A700413548 /* TwitterHeart.json in Resources */,
 				0CD5510420F5E9A700413548 /* LottieLogo1.json in Resources */,
@@ -808,6 +836,7 @@
 				0CCBD2EA20ECA7BB00439CBF /* MDFBaseTableViewCell.xib in Resources */,
 				0CD5510D20F5E9A700413548 /* LottieLogo1_masked.json in Resources */,
 				0CCF2E6620EB1CE20087169E /* Main.storyboard in Resources */,
+				0C01B8C2212FB35F002B9DF9 /* t_repost@2x.png in Resources */,
 				0CD5510720F5E9A700413548 /* MotionCorpse-Jrcanest.json in Resources */,
 				0CD5510620F5E9A700413548 /* 9squares-AlBoardman.json in Resources */,
 				0CD5510220F5E9A700413548 /* vcTransition2.json in Resources */,
@@ -886,6 +915,7 @@
 				0CCF2E9620EB395B0087169E /* _FBTweakCategoryViewController.m in Sources */,
 				0CCBD2EE20ECA7BB00439CBF /* MDFBaseTableViewCell.m in Sources */,
 				0CD5512820F5F01400413548 /* LAControlsViewController.m in Sources */,
+				0C01B8BA212FB316002B9DF9 /* VVeboTableView.m in Sources */,
 				0CD550EA20F5E96100413548 /* LottieRootViewController.m in Sources */,
 				0CCF2E6320EB1CE20087169E /* ViewController.m in Sources */,
 				0CCBD30C20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m in Sources */,
