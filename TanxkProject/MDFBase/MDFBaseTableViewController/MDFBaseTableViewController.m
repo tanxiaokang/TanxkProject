@@ -56,7 +56,11 @@
     if (self.PreviewingBlock) {
         UIViewController *VC = _PreviewingBlock(self.base_dataSource[indexPath.row]);
         VC.preferredContentSize = CGSizeMake(0, 0);
-        previewingContext.sourceRect = cell.frame;
+        if (@available(iOS 9.0, *)) {
+            previewingContext.sourceRect = cell.frame;
+        } else {
+            // Fallback on earlier versions
+        }
         return VC;
     } else {
         return nil;

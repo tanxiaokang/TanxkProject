@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Animation - lottie</string>
+		<key>className</key>
+		<string>LottieRootViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>SettingBundle</string>
+		<key>className</key>
+		<string>TPSettingBundleViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>VVeboTableview</string>
+		<key>className</key>
+		<string>VVeboTableController</string>
+	</dict>
+</array>
+</plist>

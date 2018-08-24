@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C01B89F212FAC8A002B9DF9 /* SectionDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C01B89E212FAC8A002B9DF9 /* SectionDataSource.plist */; };
+		0C01B8A4212FAE9E002B9DF9 /* VVeboTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8A3212FAE9E002B9DF9 /* VVeboTableController.m */; };
+		0C01B8AD212FAF25002B9DF9 /* VVeboTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8A9212FAF24002B9DF9 /* VVeboTableViewCell.m */; };
+		0C01B8AE212FAF25002B9DF9 /* VVeboLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8AC212FAF25002B9DF9 /* VVeboLabel.m */; };
+		0C01B8B5212FAF80002B9DF9 /* NSString+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8AF212FAF80002B9DF9 /* NSString+Additions.m */; };
+		0C01B8B6212FAF80002B9DF9 /* UIScreen+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8B2212FAF80002B9DF9 /* UIScreen+Additions.m */; };
+		0C01B8B7212FAF80002B9DF9 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8B3212FAF80002B9DF9 /* UIView+Additions.m */; };
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
 		0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */; };
 		0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */; };
@@ -88,6 +95,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C01B89E212FAC8A002B9DF9 /* SectionDataSource.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SectionDataSource.plist; sourceTree = "<group>"; };
+		0C01B8A2212FAE9E002B9DF9 /* VVeboTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVeboTableController.h; sourceTree = "<group>"; };
+		0C01B8A3212FAE9E002B9DF9 /* VVeboTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVeboTableController.m; sourceTree = "<group>"; };
+		0C01B8A9212FAF24002B9DF9 /* VVeboTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVeboTableViewCell.m; sourceTree = "<group>"; };
+		0C01B8AA212FAF25002B9DF9 /* VVeboTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVeboTableViewCell.h; sourceTree = "<group>"; };
+		0C01B8AB212FAF25002B9DF9 /* VVeboLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVeboLabel.h; sourceTree = "<group>"; };
+		0C01B8AC212FAF25002B9DF9 /* VVeboLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVeboLabel.m; sourceTree = "<group>"; };
+		0C01B8AF212FAF80002B9DF9 /* NSString+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Additions.m"; sourceTree = "<group>"; };
+		0C01B8B0212FAF80002B9DF9 /* UIScreen+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Additions.h"; sourceTree = "<group>"; };
+		0C01B8B1212FAF80002B9DF9 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		0C01B8B2212FAF80002B9DF9 /* UIScreen+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Additions.m"; sourceTree = "<group>"; };
+		0C01B8B3212FAF80002B9DF9 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		0C01B8B4212FAF80002B9DF9 /* NSString+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Additions.h"; sourceTree = "<group>"; };
 		0C654EB720EE225400BAD881 /* FBTweak+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBTweak+Config.h"; sourceTree = "<group>"; };
 		0C654EB820EE225400BAD881 /* FBTweak+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FBTweak+Config.m"; sourceTree = "<group>"; };
 		0CCBD2BB20ECA7BB00439CBF /* NSObject+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LNRefresh.h"; sourceTree = "<group>"; };
@@ -239,6 +259,7 @@
 		0C01B899212FABA3002B9DF9 /* Majorization(优化) */ = {
 			isa = PBXGroup;
 			children = (
+				0C01B8A1212FAE68002B9DF9 /* VVeboTableView */,
 			);
 			path = "Majorization(优化)";
 			sourceTree = "<group>";
@@ -258,6 +279,58 @@
 				0CCBD2F120ECA87D00439CBF /* VideoList */,
 			);
 			path = "Development(开发)";
+			sourceTree = "<group>";
+		};
+		0C01B89D212FAC57002B9DF9 /* Super */ = {
+			isa = PBXGroup;
+			children = (
+				0C01B89E212FAC8A002B9DF9 /* SectionDataSource.plist */,
+			);
+			name = Super;
+			sourceTree = "<group>";
+		};
+		0C01B8A0212FAE3D002B9DF9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0CCF2E6120EB1CE20087169E /* ViewController.h */,
+				0CCF2E6220EB1CE20087169E /* ViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0C01B8A1212FAE68002B9DF9 /* VVeboTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0C01B8A8212FAF05002B9DF9 /* view */,
+				0C01B8A7212FAED3002B9DF9 /* support */,
+				0C01B8A2212FAE9E002B9DF9 /* VVeboTableController.h */,
+				0C01B8A3212FAE9E002B9DF9 /* VVeboTableController.m */,
+			);
+			path = VVeboTableView;
+			sourceTree = "<group>";
+		};
+		0C01B8A7212FAED3002B9DF9 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				0C01B8B4212FAF80002B9DF9 /* NSString+Additions.h */,
+				0C01B8AF212FAF80002B9DF9 /* NSString+Additions.m */,
+				0C01B8B0212FAF80002B9DF9 /* UIScreen+Additions.h */,
+				0C01B8B2212FAF80002B9DF9 /* UIScreen+Additions.m */,
+				0C01B8B1212FAF80002B9DF9 /* UIView+Additions.h */,
+				0C01B8B3212FAF80002B9DF9 /* UIView+Additions.m */,
+			);
+			name = support;
+			sourceTree = "<group>";
+		};
+		0C01B8A8212FAF05002B9DF9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				0C01B8AB212FAF25002B9DF9 /* VVeboLabel.h */,
+				0C01B8AC212FAF25002B9DF9 /* VVeboLabel.m */,
+				0C01B8AA212FAF25002B9DF9 /* VVeboTableViewCell.h */,
+				0C01B8A9212FAF24002B9DF9 /* VVeboTableViewCell.m */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		0C43BE3D20EE7E2B00AF05C4 /* YETMuitiSetListSourceCatalog */ = {
@@ -345,6 +418,8 @@
 		0CCBD2EF20ECA85300439CBF /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				0C01B8A0212FAE3D002B9DF9 /* Base */,
+				0C01B89D212FAC57002B9DF9 /* Super */,
 				0C01B89C212FAC25002B9DF9 /* Development(开发) */,
 				0C01B89B212FABFC002B9DF9 /* FunctionUse(功能使用) */,
 				0C01B899212FABA3002B9DF9 /* Majorization(优化) */,
@@ -469,8 +544,6 @@
 			children = (
 				0CCF2E5E20EB1CE20087169E /* AppDelegate.h */,
 				0CCF2E5F20EB1CE20087169E /* AppDelegate.m */,
-				0CCF2E6120EB1CE20087169E /* ViewController.h */,
-				0CCF2E6220EB1CE20087169E /* ViewController.m */,
 				0CCBD2B820ECA78500439CBF /* MDFBase */,
 				0CCBD2EF20ECA85300439CBF /* Section */,
 				0CCF2E7C20EB395B0087169E /* Tools */,
@@ -724,6 +797,7 @@
 				0CCF2E6820EB1CE50087169E /* Assets.xcassets in Resources */,
 				0CD5510320F5E9A700413548 /* LottieLogo2.json in Resources */,
 				0CD5510B20F5E9A700413548 /* PinJump.json in Resources */,
+				0C01B89F212FAC8A002B9DF9 /* SectionDataSource.plist in Resources */,
 				0CCBD30620ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.xib in Resources */,
 				0CD5510520F5E9A700413548 /* TwitterHeart.json in Resources */,
 				0CD5510420F5E9A700413548 /* LottieLogo1.json in Resources */,
@@ -801,7 +875,9 @@
 				0CD5512D20F5F01400413548 /* AnimationExplorerViewController.m in Sources */,
 				0CCF2E9C20EB395B0087169E /* _FBTweakTableViewCell.m in Sources */,
 				0CCF2E9B20EB395B0087169E /* FBTweak.m in Sources */,
+				0C01B8AE212FAF25002B9DF9 /* VVeboLabel.m in Sources */,
 				0CCBD2E720ECA7BB00439CBF /* NSObject+LNRefresh.m in Sources */,
+				0C01B8B5212FAF80002B9DF9 /* NSString+Additions.m in Sources */,
 				0CD5512A20F5F01400413548 /* AnimatedTextField.m in Sources */,
 				0CCBD2E820ECA7BB00439CBF /* LNHeaderAnimator.m in Sources */,
 				0CCBD2E020ECA7BB00439CBF /* LNRefreshFooter.m in Sources */,
@@ -815,6 +891,7 @@
 				0CCBD30C20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m in Sources */,
 				0CCBD2E520ECA7BB00439CBF /* LNRefreshHandler.m in Sources */,
 				0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */,
+				0C01B8AD212FAF25002B9DF9 /* VVeboTableViewCell.m in Sources */,
 				0CD5512920F5F01400413548 /* JSONExplorerViewController.m in Sources */,
 				0CD5512C20F5F01400413548 /* AnimationTransitionViewController.m in Sources */,
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
@@ -836,11 +913,14 @@
 				0CCBD2EC20ECA7BB00439CBF /* MDFBaseTableViewController.m in Sources */,
 				0CCBD2ED20ECA7BB00439CBF /* MDFBaseTableViewController+LoadPlist.m in Sources */,
 				0CCBD2E420ECA7BB00439CBF /* LNHeaderDIYAnimator.m in Sources */,
+				0C01B8B7212FAF80002B9DF9 /* UIView+Additions.m in Sources */,
 				0CCBD30820ECA87D00439CBF /* YETMuitiSetListHeaderCell.m in Sources */,
 				0CCBD2E220ECA7BB00439CBF /* LNRefreshComponent.m in Sources */,
 				0CCF2E9D20EB395B0087169E /* FBTweakShakeWindow.m in Sources */,
+				0C01B8A4212FAE9E002B9DF9 /* VVeboTableController.m in Sources */,
 				0CCBD31620ECC69600439CBF /* MDFNetwork.m in Sources */,
 				0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */,
+				0C01B8B6212FAF80002B9DF9 /* UIScreen+Additions.m in Sources */,
 				0CCF2E9F20EB395B0087169E /* FBTweakInline.m in Sources */,
 				0CCBD30420ECA87D00439CBF /* YETMultiSetListViewController.m in Sources */,
 				0CCBD2E120ECA7BB00439CBF /* LNRefreshConst.m in Sources */,
@@ -992,7 +1072,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TanxkProject/PrefixHeader.pch;
 				INFOPLIST_FILE = TanxkProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1017,7 +1097,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TanxkProject/PrefixHeader.pch;
 				INFOPLIST_FILE = TanxkProject/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

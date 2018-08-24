@@ -38,8 +38,9 @@
 
 #pragma mark - Handle Data
 - (void)_buildDataSource {
-    self.tableViewItems = @[@{@"name" : @"Animation - lottie",  @"vc" : @"LottieRootViewController"},
-                            @{@"name" : @"Setting.Bundle",      @"vc" : @"TPSettingBundleViewController"}];
+
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"SectionDataSource" ofType:@"plist"];
+    self.tableViewItems = [[NSMutableArray alloc] initWithContentsOfFile:filePath];
 }
 
 #pragma mark - UITableViewDataSource、Delegate
