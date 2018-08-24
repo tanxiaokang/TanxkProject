@@ -236,6 +236,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C01B899212FABA3002B9DF9 /* Majorization(优化) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Majorization(优化)";
+			sourceTree = "<group>";
+		};
+		0C01B89B212FABFC002B9DF9 /* FunctionUse(功能使用) */ = {
+			isa = PBXGroup;
+			children = (
+				0CD5513020F5F60700413548 /* Plays */,
+				0CCEA8BF212BBB6000F296D8 /* SettingBundle */,
+			);
+			path = "FunctionUse(功能使用)";
+			sourceTree = "<group>";
+		};
+		0C01B89C212FAC25002B9DF9 /* Development(开发) */ = {
+			isa = PBXGroup;
+			children = (
+				0CCBD2F120ECA87D00439CBF /* VideoList */,
+			);
+			path = "Development(开发)";
+			sourceTree = "<group>";
+		};
 		0C43BE3D20EE7E2B00AF05C4 /* YETMuitiSetListSourceCatalog */ = {
 			isa = PBXGroup;
 			children = (
@@ -321,10 +345,10 @@
 		0CCBD2EF20ECA85300439CBF /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				0CCEA8BF212BBB6000F296D8 /* SettingBundle */,
-				0CD5513020F5F60700413548 /* Plays */,
-				0CD550E520F5E92D00413548 /* Animation */,
-				0CCBD2F120ECA87D00439CBF /* VideoList */,
+				0C01B89C212FAC25002B9DF9 /* Development(开发) */,
+				0C01B89B212FABFC002B9DF9 /* FunctionUse(功能使用) */,
+				0C01B899212FABA3002B9DF9 /* Majorization(优化) */,
+				0CD550E520F5E92D00413548 /* Animation(动画) */,
 			);
 			path = Section;
 			sourceTree = "<group>";
@@ -515,12 +539,12 @@
 			path = FBTweak;
 			sourceTree = "<group>";
 		};
-		0CD550E520F5E92D00413548 /* Animation */ = {
+		0CD550E520F5E92D00413548 /* Animation(动画) */ = {
 			isa = PBXGroup;
 			children = (
 				0CD550E620F5E94000413548 /* lottie */,
 			);
-			path = Animation;
+			path = "Animation(动画)";
 			sourceTree = "<group>";
 		};
 		0CD550E620F5E94000413548 /* lottie */ = {
