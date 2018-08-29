@@ -25,9 +25,9 @@
     NSString *string = @"baaaaaacb";
     [regex enumerateMatchesInString:string options:0 range:string.mdf_transRange usingBlock:^(NSTextCheckingResult * _Nullable match, NSMatchingFlags flags, BOOL * _Nonnull stop) {
         
-        NSRange matchRange = [match range];
-        NSRange firstHalfRange = [match rangeAtIndex:1];
-        NSRange secondHalfRange = [match rangeAtIndex:2];
+//        NSRange matchRange = [match range];
+//        NSRange firstHalfRange = [match rangeAtIndex:1];
+//        NSRange secondHalfRange = [match rangeAtIndex:2];
         if (++count >= 100) {
             *stop = YES;
         }

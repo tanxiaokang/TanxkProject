@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "RegisterAPI.h"
-#import "YETMultiSetListViewController.h"
 
 @class TPSettingBundleViewController;
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -68,20 +66,6 @@
         [self.navigationController pushViewController:vc animated:YES];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-//    [self link:@"https://xueyezhenbiandujinshu.oss-cn-beijing.aliyuncs.com/xueyue/upgrade.json" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {
-//        NSLog(@"%@",request.responseObject);
-//    }];
-    
-    //    RegisterAPI *api = [[RegisterAPI alloc] initWithUsername:@"123" password:@"123456"];
-    //    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-    //        NSLog(@"%@",request.responseObject);
-    //        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    //    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-    //        NSLog(@"%@",request.responseObject);
-    //        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    //    }];
-    
 }
 
 #pragma mark - Properties

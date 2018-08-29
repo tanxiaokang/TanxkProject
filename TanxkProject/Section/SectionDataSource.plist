@@ -26,5 +26,11 @@
 		<key>className</key>
 		<string>NSRegularExpressionController</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>网络请求</string>
+		<key>className</key>
+		<string>RequestViewController</string>
+	</dict>
 </array>
 </plist>
