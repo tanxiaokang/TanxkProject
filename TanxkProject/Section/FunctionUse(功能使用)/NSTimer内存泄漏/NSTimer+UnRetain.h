@@ -31,7 +31,7 @@ __strong __typeof(&*weakSelf_UnRetain)self = weakSelf_UnRetain;
 @interface NSTimer (UnRetain)
 
 /**
- 务必在当前线程调用invalidate方法，使得Runloop释放对timer的强引用(具体请参阅官方文档)
+ 务必在当前 dealloc 线程调用invalidate方法，使得Runloop释放对timer的强引用(具体请参阅官方文档)
  @param inerval 时间
  @param repeats 是否循环
  @param block 回调
