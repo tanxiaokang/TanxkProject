@@ -17,13 +17,15 @@ __weak __typeof(&*self)weakSelf_UnRetain = self;
 __strong __typeof(&*weakSelf_UnRetain)self = weakSelf_UnRetain;
 
 /** 用法
- weakifySelf_UnRetain;
- self.timer = [NSTimer mdf_scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer *timer) {
- strongifySelf_UnRetain;
- //to do something
- NSLog(@"%@", NSStringFromClass([self class]));
- [self.stopBtn setTitle:[NSString stringWithFormat:@"关闭：%df",arc4random()/10000] forState:UIControlStateNormal];
- }];
+ 
+    weakifySelf_UnRetain;
+ 
+    self.timer = [NSTimer mdf_scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer *timer) {
+ 
+        strongifySelf_UnRetain;
+        //to do something
+    }];
+ 
  */
 
 @interface NSTimer (UnRetain)
