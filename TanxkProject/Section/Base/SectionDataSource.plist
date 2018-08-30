@@ -32,5 +32,11 @@
 		<key>className</key>
 		<string>RequestViewController</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>NSTimer内存泄漏</string>
+		<key>className</key>
+		<string>NSTimerViewController</string>
+	</dict>
 </array>
 </plist>
