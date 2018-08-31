@@ -6,9 +6,9 @@
 //  Copyright © 2018年 runze. All rights reserved.
 //
 
-#import "YTKRequest.h"
+#import "MDFBaseRequest.h"
 
-@interface QueryBankNameAPI : YTKRequest
+@interface QueryBankNameAPI : MDFBaseRequest
 
 - (id)initWithBankCard:(NSString *)bankCard;
 

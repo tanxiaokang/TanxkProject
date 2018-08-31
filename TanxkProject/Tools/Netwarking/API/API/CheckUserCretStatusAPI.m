@@ -7,6 +7,7 @@
 //
 
 #import "CheckUserCretStatusAPI.h"
+#import "QueryBankNameItem.h"
 
 @implementation CheckUserCretStatusAPI
 {
@@ -17,6 +18,7 @@
     self = [super init];
     if (self) {
         _userNo = userNo;
+        self.parseCls = [QueryBankNameItem class];
     }
     return self;
 }

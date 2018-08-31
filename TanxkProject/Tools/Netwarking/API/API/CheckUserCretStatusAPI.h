@@ -6,9 +6,9 @@
 //  Copyright © 2018年 runze. All rights reserved.
 //
 
-#import "YTKRequest.h"
+#import "MDFBaseRequest.h"
 
-@interface CheckUserCretStatusAPI : YTKRequest
+@interface CheckUserCretStatusAPI : MDFBaseRequest
 
 - (id)initWithUserNo:(NSString *)userNo;
 
