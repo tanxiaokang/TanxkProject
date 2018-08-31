@@ -8,6 +8,8 @@
 
 #import "RequestViewController.h"
 #import "RegisterAPI.h"
+#import "QueryBankNameAPI.h"
+#import "CheckUserCretStatusAPI.h"
 
 @interface RequestViewController ()
 
@@ -34,6 +36,24 @@
 
 - (IBAction)Clicked1:(UIButton *)sender {
     
+    [[[CheckUserCretStatusAPI alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.responseObject);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.responseObject);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+    }];
+}
+
+- (IBAction)Clicked2:(UIButton *)sender {
+    
+    [[[QueryBankNameAPI alloc]initWithBankCard:@"6214830123854209"] startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.responseObject);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+        NSLog(@"%@",request.responseObject);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+    }];
 }
 
 @end

@@ -20,22 +20,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-DQ-eEJ">
-                    <rect key="frame" x="10" y="10" width="163" height="30"/>
-                    <state key="normal" title="带动画请求+带结果提示"/>
+                    <rect key="frame" x="10" y="74" width="123" height="30"/>
+                    <state key="normal" title="基础服务接口请求"/>
                     <connections>
                         <action selector="Clicked1:" destination="-1" eventType="touchUpInside" id="euq-MD-bLI"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-in-WEq">
-                    <rect key="frame" x="10" y="50" width="194" height="30"/>
-                    <state key="normal" title="不带动画请求+不带结果提示"/>
+                    <rect key="frame" x="10" y="114" width="123" height="30"/>
+                    <state key="normal" title="认证中心接口请求"/>
+                    <connections>
+                        <action selector="Clicked2:" destination="-1" eventType="touchUpInside" id="nVT-y7-3uU"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe9-1n-X0l">
-                    <rect key="frame" x="10" y="90" width="178" height="30"/>
+                    <rect key="frame" x="10" y="154" width="178" height="30"/>
                     <state key="normal" title="不带动画请求+带结果提示"/>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-Br-sQc">
-                    <rect key="frame" x="10" y="130" width="178" height="30"/>
+                    <rect key="frame" x="10" y="194" width="178" height="30"/>
                     <state key="normal" title="带动画请求+不带结果提示"/>
                 </button>
             </subviews>
@@ -46,10 +49,11 @@
                 <constraint firstItem="J8t-Br-sQc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="W2R-cc-Row"/>
                 <constraint firstItem="Qe9-1n-X0l" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="c2x-2q-0ct"/>
                 <constraint firstItem="mdK-in-WEq" firstAttribute="top" secondItem="FfI-DQ-eEJ" secondAttribute="bottom" constant="10" id="eMp-aI-k4j"/>
-                <constraint firstItem="FfI-DQ-eEJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="uDT-Dd-C1C"/>
+                <constraint firstItem="FfI-DQ-eEJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="uDT-Dd-C1C"/>
                 <constraint firstItem="FfI-DQ-eEJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="xLr-Ci-3Uu"/>
                 <constraint firstItem="Qe9-1n-X0l" firstAttribute="top" secondItem="mdK-in-WEq" secondAttribute="bottom" constant="10" id="xZI-0f-rlx"/>
             </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
         </view>
     </objects>
 </document>
