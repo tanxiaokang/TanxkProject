@@ -12,7 +12,7 @@
 #import <Masonry.h>
 #import <YTKNetwork.h>
 #import <SDWebImageManager.h>
-//#import <MJExtension.h>
+#import <MJExtension.h>
 #import <SVProgressHUD.h>
 //#import "FBTweak.h"
 #import "FBTweakShakeWindow.h"

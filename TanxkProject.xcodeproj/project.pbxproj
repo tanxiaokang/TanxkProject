@@ -664,16 +664,11 @@
 		0CCF2E7520EB28910087169E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0CFB59282138F372002483BF /* API */,
 				0CFB59152137ED4F002483BF /* runnongjinfu.cer */,
 				0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */,
 				0CFB59102137D9E2002483BF /* MDFBaseRequestItem.h */,
 				0CFB59112137D9E2002483BF /* MDFBaseRequestItem.m */,
-				0CFB59212138E661002483BF /* CheckUserCretStatusAPI.h */,
-				0CFB59222138E661002483BF /* CheckUserCretStatusAPI.m */,
-				0CFB59242138E6F1002483BF /* QueryBankNameAPI.h */,
-				0CFB59252138E6F1002483BF /* QueryBankNameAPI.m */,
-				0CD8C0A020EC704300EB7FDA /* RegisterAPI.h */,
-				0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */,
 				0CCBD31420ECC69600439CBF /* MDFNetwork.h */,
 				0CCBD31520ECC69600439CBF /* MDFNetwork.m */,
 				0CCBD31720ECC73600439CBF /* NSObject+network.h */,
@@ -834,6 +829,19 @@
 				0CFB590921379B75002483BF /* NSTimer+UnRetain.m */,
 			);
 			path = "NSTimer内存泄漏";
+			sourceTree = "<group>";
+		};
+		0CFB59282138F372002483BF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				0CFB59212138E661002483BF /* CheckUserCretStatusAPI.h */,
+				0CFB59222138E661002483BF /* CheckUserCretStatusAPI.m */,
+				0CFB59242138E6F1002483BF /* QueryBankNameAPI.h */,
+				0CFB59252138E6F1002483BF /* QueryBankNameAPI.m */,
+				0CD8C0A020EC704300EB7FDA /* RegisterAPI.h */,
+				0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		1C1052F9422F6F184DBC964B /* Pods */ = {

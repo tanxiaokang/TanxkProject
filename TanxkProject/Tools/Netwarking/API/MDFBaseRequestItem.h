@@ -17,6 +17,4 @@
 - (void)startWithCompletionBlockWithSuccess:(YTKRequestCompletionBlock)success
                                     failure:(YTKRequestCompletionBlock)failure;
 
-+ (AFSecurityPolicy*)configSecurityPolicy:(NSString *)policy;
-
 @end
