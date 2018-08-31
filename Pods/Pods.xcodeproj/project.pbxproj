@@ -18,6 +18,8 @@
 		0BCA75E473F4A5010C90D025AFF9713E /* WMPlayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FA90BED2321B99C46B57079800C069 /* WMPlayer-dummy.m */; };
 		0BCFE5568CCA0EA5A12BC0F7706B7D13 /* NSValue+Compat.h in Headers */ = {isa = PBXBuildFile; fileRef = C171E79C4BEF40FADA3A9480752A4972 /* NSValue+Compat.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0C1CCA5B24BB34D3D741C8D2738A9F5F /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C246D84C2483B65A2D1C1D824C7E574 /* NSButton+WebCache.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		0CFB591F2137F15B002483BF /* YTKNetworkAgent+securityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFB591D2137F15A002483BF /* YTKNetworkAgent+securityPolicy.h */; };
+		0CFB59202137F15B002483BF /* YTKNetworkAgent+securityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB591E2137F15B002483BF /* YTKNetworkAgent+securityPolicy.m */; };
 		0E674702E8B304B2284D71A0574C938D /* DFPlayerRemoteApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = 15B9C2F41D8557B05B29CDC0F917B7A9 /* DFPlayerRemoteApplication.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0ECC66A2A269AC7517F805707FB5A418 /* LOTStrokeRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 788484A6C29C64C95F3AC059C25097F4 /* LOTStrokeRenderer.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0ED30085F99F7C069DB1B61D50633E3B /* LOTTransformInterpolator.m in Sources */ = {isa = PBXBuildFile; fileRef = 330EB323DCE59F034B5F2CB962142729 /* LOTTransformInterpolator.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -447,6 +449,8 @@
 		093DA0AA2C68A471D1E3653E50F938FF /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		0BF098A6FD2CE82CB3F8BAA6F339A499 /* LOTNumberInterpolator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTNumberInterpolator.m; path = "lottie-ios/Classes/RenderSystem/InterpolatorNodes/LOTNumberInterpolator.m"; sourceTree = "<group>"; };
 		0BF151932EE85A4A97FB36E6DB11801E /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
+		0CFB591D2137F15A002483BF /* YTKNetworkAgent+securityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YTKNetworkAgent+securityPolicy.h"; path = "YTKNetwork/YTKNetworkAgent+securityPolicy.h"; sourceTree = "<group>"; };
+		0CFB591E2137F15B002483BF /* YTKNetworkAgent+securityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YTKNetworkAgent+securityPolicy.m"; path = "YTKNetwork/YTKNetworkAgent+securityPolicy.m"; sourceTree = "<group>"; };
 		0D647A37296C297BA3ADAFD53640321B /* LOTShapeGradientFill.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LOTShapeGradientFill.m; path = "lottie-ios/Classes/Models/LOTShapeGradientFill.m"; sourceTree = "<group>"; };
 		0DE3A7691E1E794AA51C882D7B186AD7 /* NSString+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "MJExtension/NSString+MJExtension.h"; sourceTree = "<group>"; };
 		0E30AFB51CE283F443CA29FDE1E8CE69 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
@@ -975,6 +979,8 @@
 		19ED16C77FBB56913C0D69A712D1C7A7 /* YTKNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				0CFB591D2137F15A002483BF /* YTKNetworkAgent+securityPolicy.h */,
+				0CFB591E2137F15B002483BF /* YTKNetworkAgent+securityPolicy.m */,
 				BC5FE041DB27A40040CD5DACB7D1ADA7 /* YTKBaseRequest.h */,
 				51479D1736C05FCA388414C17CD63C08 /* YTKBaseRequest.m */,
 				BDC4CDCCB40301CB11A8F14CFC3C71E7 /* YTKBatchRequest.h */,
@@ -1600,6 +1606,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CFB591F2137F15B002483BF /* YTKNetworkAgent+securityPolicy.h in Headers */,
 				DB11D96468F2FB045746DB2DC9EC878A /* AFAutoPurgingImageCache.h in Headers */,
 				6B5E29AF5CC52D74BF3101BC7E2C59A1 /* AFCompatibilityMacros.h in Headers */,
 				AB5E0668ECE58C8965EACB5078BA644A /* AFHTTPSessionManager.h in Headers */,
@@ -2030,6 +2037,7 @@
 			files = (
 				82640F9EE0076F032567A8C1E3EDDA82 /* AFAutoPurgingImageCache.m in Sources */,
 				302888D10A449158C46614ABA5B42B22 /* AFHTTPSessionManager.m in Sources */,
+				0CFB59202137F15B002483BF /* YTKNetworkAgent+securityPolicy.m in Sources */,
 				456F377DD03B42CFD65943C1347E0940 /* AFImageDownloader.m in Sources */,
 				DE737B5DADB0D0FF1E6029228BF393FA /* AFNetworkActivityIndicatorManager.m in Sources */,
 				67CC31341F522E0D3F13A0411613DE92 /* AFNetworking-dummy.m in Sources */,

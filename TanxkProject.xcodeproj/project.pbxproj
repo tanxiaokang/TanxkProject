@@ -106,6 +106,9 @@
 		0CFB59062137973E002483BF /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59042137973E002483BF /* NSTimerViewController.m */; };
 		0CFB59072137973E002483BF /* NSTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59052137973E002483BF /* NSTimerViewController.xib */; };
 		0CFB590A21379B75002483BF /* NSTimer+UnRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB590921379B75002483BF /* NSTimer+UnRetain.m */; };
+		0CFB59122137D9E2002483BF /* MDFBaseRequestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59112137D9E2002483BF /* MDFBaseRequestItem.m */; };
+		0CFB59142137E2C9002483BF /* api_runnongjinfu_com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */; };
+		0CFB59162137ED53002483BF /* runnongjinfu.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59152137ED4F002483BF /* runnongjinfu.cer */; };
 		7335C80A0A9EF4D419C7B040 /* libPods-TanxkProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A476C87C808037848059C1 /* libPods-TanxkProject.a */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +281,10 @@
 		0CFB59052137973E002483BF /* NSTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerViewController.xib; sourceTree = "<group>"; };
 		0CFB590821379B75002483BF /* NSTimer+UnRetain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+UnRetain.h"; sourceTree = "<group>"; };
 		0CFB590921379B75002483BF /* NSTimer+UnRetain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+UnRetain.m"; sourceTree = "<group>"; };
+		0CFB59102137D9E2002483BF /* MDFBaseRequestItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFBaseRequestItem.h; sourceTree = "<group>"; };
+		0CFB59112137D9E2002483BF /* MDFBaseRequestItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFBaseRequestItem.m; sourceTree = "<group>"; };
+		0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = api_runnongjinfu_com.cer; sourceTree = "<group>"; };
+		0CFB59152137ED4F002483BF /* runnongjinfu.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = runnongjinfu.cer; sourceTree = "<group>"; };
 		26803BC77E7B1AD29136AFA2 /* Pods-TanxkProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanxkProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-TanxkProject/Pods-TanxkProject.release.xcconfig"; sourceTree = "<group>"; };
 		26A476C87C808037848059C1 /* libPods-TanxkProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TanxkProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C949C5E988F4E7D2DCCE44 /* Pods-TanxkProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TanxkProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TanxkProject/Pods-TanxkProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -651,6 +658,10 @@
 		0CCF2E7520EB28910087169E /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0CFB59152137ED4F002483BF /* runnongjinfu.cer */,
+				0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */,
+				0CFB59102137D9E2002483BF /* MDFBaseRequestItem.h */,
+				0CFB59112137D9E2002483BF /* MDFBaseRequestItem.m */,
 				0CD8C0A020EC704300EB7FDA /* RegisterAPI.h */,
 				0CD8C09F20EC704300EB7FDA /* RegisterAPI.m */,
 				0CCBD31420ECC69600439CBF /* MDFNetwork.h */,
@@ -913,6 +924,7 @@
 				0CD5510020F5E9A700413548 /* Watermelon.json in Resources */,
 				0CD5511120F5E9A700413548 /* setValueTest.json in Resources */,
 				0CCBD2EA20ECA7BB00439CBF /* MDFBaseTableViewCell.xib in Resources */,
+				0CFB59142137E2C9002483BF /* api_runnongjinfu_com.cer in Resources */,
 				0CD5510D20F5E9A700413548 /* LottieLogo1_masked.json in Resources */,
 				0CCF2E6620EB1CE20087169E /* Main.storyboard in Resources */,
 				0C19CEB421368A3B005F63A5 /* SectionDataSource.plist in Resources */,
@@ -921,6 +933,7 @@
 				0CD5510620F5E9A700413548 /* 9squares-AlBoardman.json in Resources */,
 				0CD5510220F5E9A700413548 /* vcTransition2.json in Resources */,
 				0CD5511220F5E9A700413548 /* vcTransition1.json in Resources */,
+				0CFB59162137ED53002483BF /* runnongjinfu.cer in Resources */,
 				0CD5510C20F5E9A700413548 /* Boat_Loader.json in Resources */,
 				0CD5511020F5E9A700413548 /* HamburgerArrow.json in Resources */,
 				0CD5510F20F5E9A700413548 /* Switch.json in Resources */,
@@ -1024,6 +1037,7 @@
 				0CCEA8C3212BBB9800F296D8 /* TPSettingBundleViewController.m in Sources */,
 				0CD5511620F5EDE400413548 /* UIView+Utility.m in Sources */,
 				0CCF2EA020EB395B0087169E /* FBTweakCollection.m in Sources */,
+				0CFB59122137D9E2002483BF /* MDFBaseRequestItem.m in Sources */,
 				0CD5512B20F5F01400413548 /* TypingDemoViewController.m in Sources */,
 				0CD5512E20F5F01400413548 /* LADownloadTestViewController.m in Sources */,
 				0CCBD2EC20ECA7BB00439CBF /* MDFBaseTableViewController.m in Sources */,

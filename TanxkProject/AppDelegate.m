@@ -25,8 +25,8 @@
     [self.window makeKeyAndVisible];
     
     YTKNetworkConfig *config = [YTKNetworkConfig sharedConfig];
-    config.baseUrl = @"http://47.95.109.14:10002/rnjf-happyloan/api/v1";
-    config.cdnUrl = @"http://fen.bi";
+    config.baseUrl = @"https://api.runnongjinfu.com";
+    config.debugLogEnabled = YES;
     
     return YES;
 }

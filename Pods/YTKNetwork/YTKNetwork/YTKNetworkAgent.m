@@ -26,6 +26,8 @@
 #import "YTKNetworkPrivate.h"
 #import <pthread/pthread.h>
 
+#import "YTKNetworkAgent+securityPolicy.h"
+
 #if __has_include(<AFNetworking/AFNetworking.h>)
 #import <AFNetworking/AFNetworking.h>
 #else
@@ -62,7 +64,9 @@
     self = [super init];
     if (self) {
         _config = [YTKNetworkConfig sharedConfig];
-        _manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:_config.sessionConfiguration];
+//        _manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:_config.sessionConfiguration];
+        _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[NSURL URLWithString:_config.baseUrl] sessionConfiguration:_config.sessionConfiguration];
+
         _requestsRecord = [NSMutableDictionary dictionary];
         _processingQueue = dispatch_queue_create("com.yuantiku.networkagent.processing", DISPATCH_QUEUE_CONCURRENT);
         _allStatusCodes = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(100, 500)];
@@ -168,6 +172,9 @@
     YTKRequestMethod method = [request requestMethod];
     NSString *url = [self buildRequestUrl:request];
     id param = request.requestArgument;
+    
+    _manager.securityPolicy = [self configSecurityPolicy:url];
+
     AFConstructingBlock constructingBlock = [request constructingBodyBlock];
     AFHTTPRequestSerializer *requestSerializer = [self requestSerializerForRequest:request];
 

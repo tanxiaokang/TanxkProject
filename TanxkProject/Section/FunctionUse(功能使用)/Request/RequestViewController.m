@@ -31,7 +31,9 @@
         [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
     }];
 }
+
 - (IBAction)Clicked1:(UIButton *)sender {
+    
 }
 
 @end
