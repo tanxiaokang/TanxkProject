@@ -443,6 +443,24 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		0C33BB9C213D0EA30007F353 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				0CFB592C2138F6BE002483BF /* QueryBankNameItem.h */,
+				0CFB592D2138F6BE002483BF /* QueryBankNameItem.m */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		0C33BB9D213D0EEE0007F353 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0CFB59292138F44F002483BF /* MDFBaseRequestItem.h */,
+				0CFB592A2138F44F002483BF /* MDFBaseRequestItem.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		0C43BE3D20EE7E2B00AF05C4 /* YETMuitiSetListSourceCatalog */ = {
 			isa = PBXGroup;
 			children = (
@@ -675,10 +693,6 @@
 				0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */,
 				0CFB59102137D9E2002483BF /* MDFBaseRequest.h */,
 				0CFB59112137D9E2002483BF /* MDFBaseRequest.m */,
-				0CFB59292138F44F002483BF /* MDFBaseRequestItem.h */,
-				0CFB592A2138F44F002483BF /* MDFBaseRequestItem.m */,
-				0CFB592C2138F6BE002483BF /* QueryBankNameItem.h */,
-				0CFB592D2138F6BE002483BF /* QueryBankNameItem.m */,
 				0CCBD31420ECC69600439CBF /* MDFNetwork.h */,
 				0CCBD31520ECC69600439CBF /* MDFNetwork.m */,
 				0CCBD31720ECC73600439CBF /* NSObject+network.h */,
@@ -844,6 +858,8 @@
 		0CFB59282138F372002483BF /* API */ = {
 			isa = PBXGroup;
 			children = (
+				0C33BB9D213D0EEE0007F353 /* Base */,
+				0C33BB9C213D0EA30007F353 /* Item */,
 				0CFB59212138E661002483BF /* CheckUserCretStatusAPI.h */,
 				0CFB59222138E661002483BF /* CheckUserCretStatusAPI.m */,
 				0CFB59242138E6F1002483BF /* QueryBankNameAPI.h */,

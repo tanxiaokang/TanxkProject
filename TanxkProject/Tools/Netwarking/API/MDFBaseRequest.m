@@ -18,15 +18,17 @@
     MDFWeakSelf;
     [self setCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
         
-        MDFBaseRequestItem *item = [weakSelf.parseCls mj_setKeyValues:request.responseObject[@"resultObj"]];
+        MDFBaseRequestItem *item = [weakSelf.parseCls new];
+        item.code = [request.responseObject[@"code"] integerValue];
+        item.message = [NSString stringWithFormat:@"%@",request.responseObject[@"message"]];
+        item.timestamp = [NSString stringWithFormat:@"%@",request.responseObject[@"timestamp"]];
+        [item mj_setKeyValues:request.responseObject[@"resultObj"]];
         NSLog(@"%@",item);
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
     }];
     [self start];
-    
 }
-
 
 void HookBlockToPrintHelloWorld(id block) {
     struct {
@@ -36,10 +38,12 @@ void HookBlockToPrintHelloWorld(id block) {
     } *s = (__bridge void*)(block);
     s->p3 = &HookBlockToPrintHelloWorldRedirected;
 }
+
 id HookBlockToPrintHelloWorldRedirected(id self)  {
     NSLog(@"%s/%@ Hello world", __func__, self);
     return nil;
 }
+
 - (void)hookTest1 {
     
     void (^bglobal)(void) = ^{ NSLog(@"global block: hello world!"); };
