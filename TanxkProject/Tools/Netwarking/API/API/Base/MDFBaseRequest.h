@@ -9,11 +9,13 @@
 #import "YTKRequest.h"
 #import "MDFBaseRequestItem.h"
 
+typedef void(^MDFRequestCompletionBlock)(__kindof MDFBaseRequestItem *item);
+
 @interface MDFBaseRequest : YTKRequest
 
 @property (nonatomic, strong) Class parseCls;
 
-- (void)startWithCompletionBlockWithSuccess:(YTKRequestCompletionBlock)success
-                                    failure:(YTKRequestCompletionBlock)failure;
+- (void)startWithCompletionBlockWithSuccess:(MDFRequestCompletionBlock)success
+                                    failure:(MDFRequestCompletionBlock)failure;
 
 @end

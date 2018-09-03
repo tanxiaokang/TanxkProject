@@ -13,23 +13,37 @@
 
 #define MDFWeakSelf __weak __typeof(&*self)weakSelf = self;
 
-- (void)startWithCompletionBlockWithSuccess:(YTKRequestCompletionBlock)success
-                                    failure:(YTKRequestCompletionBlock)failure {
+- (void)startWithCompletionBlockWithSuccess:(MDFRequestCompletionBlock)success
+                                    failure:(MDFRequestCompletionBlock)failure {
     MDFWeakSelf;
     [self setCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
         
-        MDFBaseRequestItem *item = [weakSelf.parseCls new];
-        item.code = [request.responseObject[@"code"] integerValue];
-        item.message = [NSString stringWithFormat:@"%@",request.responseObject[@"message"]];
-        item.timestamp = [NSString stringWithFormat:@"%@",request.responseObject[@"timestamp"]];
-        [item mj_setKeyValues:request.responseObject[@"resultObj"]];
-        NSLog(@"%@",item);
+        MDFBaseRequestItem *item = [weakSelf configItem:request.responseObject];
+        if (success) {
+            success(item);
+        }
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
+        MDFBaseRequestItem *item = [weakSelf configItem:request.responseObject];
+        
+        if (failure) {
+            failure(item);
+        }
     }];
     [self start];
 }
 
+- (MDFBaseRequestItem *)configItem:(id)responseObject {
+    
+    MDFBaseRequestItem *item = [self.parseCls new];
+    item.code = [responseObject[@"code"] integerValue];
+    item.message = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
+    item.timestamp = [NSString stringWithFormat:@"%@",responseObject[@"timestamp"]];
+    [item mj_setKeyValues:responseObject[@"resultObj"]];
+    return item;
+}
+
+#pragma mark - Other
 void HookBlockToPrintHelloWorld(id block) {
     struct {
         void* p1;

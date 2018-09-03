@@ -1,5 +1,5 @@
 //
-//  CheckUserCretStatusAPI.h
+//  CheckUserCretStatusModel.h
 //  TanxkProject
 //
 //  Created by tanxiaokang on 2018/8/3135.
@@ -7,8 +7,9 @@
 //
 
 #import "MDFBaseRequest.h"
+#import "QueryBankNameItem.h"
 
-@interface CheckUserCretStatusAPI : MDFBaseRequest
+@interface CheckUserCretStatusModel : MDFBaseRequest
 
 - (id)initWithUserNo:(NSString *)userNo;
 

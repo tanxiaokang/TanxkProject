@@ -1,15 +1,14 @@
 //
-//  CheckUserCretStatusAPI.m
+//  CheckUserCretStatusModel.m
 //  TanxkProject
 //
 //  Created by tanxiaokang on 2018/8/3135.
 //  Copyright © 2018年 runze. All rights reserved.
 //
 
-#import "CheckUserCretStatusAPI.h"
-#import "QueryBankNameItem.h"
+#import "CheckUserCretStatusModel.h"
 
-@implementation CheckUserCretStatusAPI
+@implementation CheckUserCretStatusModel
 {
     NSString *_userNo;
 }

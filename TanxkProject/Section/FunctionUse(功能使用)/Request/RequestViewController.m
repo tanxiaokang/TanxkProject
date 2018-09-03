@@ -7,9 +7,8 @@
 //
 
 #import "RequestViewController.h"
-#import "RegisterAPI.h"
 #import "QueryBankNameAPI.h"
-#import "CheckUserCretStatusAPI.h"
+#import "CheckUserCretStatusModel.h"
 
 @interface RequestViewController ()
 
@@ -20,40 +19,28 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //    [self link:@"https://xueyezhenbiandujinshu.oss-cn-beijing.aliyuncs.com/xueyue/upgrade.json" parameters:@{@"12":@"21"} Success:^(__kindof YTKBaseRequest * _Nonnull request) {
-    //        NSLog(@"%@",request.responseObject);
-    //    }];
-    
-    RegisterAPI *api = [[RegisterAPI alloc] initWithUsername:@"123" password:@"123456"];
-    [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    }];
 }
 
 - (IBAction)Clicked1:(UIButton *)sender {
     
-    [[[CheckUserCretStatusAPI alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+    [[[CheckUserCretStatusModel alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    } failure:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
     }];
 }
 
 - (IBAction)Clicked2:(UIButton *)sender {
     
-    [[[QueryBankNameAPI alloc]initWithBankCard:@"6214830123854209"] startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSLog(@"%@",request.responseObject);
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-    }];
+//    [[[QueryBankNameAPI alloc]initWithBankCard:@"6214830123854209"] startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
+//        NSLog(@"%@",request.responseObject);
+//        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+//    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
+//        NSLog(@"%@",request.responseObject);
+//        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
+//    }];
 }
 
 @end
