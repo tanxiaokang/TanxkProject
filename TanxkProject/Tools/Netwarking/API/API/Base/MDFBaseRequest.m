@@ -13,12 +13,25 @@
 
 #define MDFWeakSelf __weak __typeof(&*self)weakSelf = self;
 
+#pragma mark - LifeCycle
 - (void)startWithCompletionBlockWithSuccess:(MDFRequestCompletionBlock)success
                                     failure:(MDFRequestCompletionBlock)failure {
+    
+    if (self.isAutoShowLoading == YES) {
+        [SVProgressHUD showWithStatus:@"加载中"];
+    }
     MDFWeakSelf;
     [self setCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        
+       
         MDFBaseRequestItem *item = [weakSelf configItem:request.responseObject];
+        
+        if (self.isAutoShowLoading == YES) {
+            [SVProgressHUD dismiss];
+        }
+        if (item.code == 401) {
+            //退出登录
+            return ;
+        }
         if (success) {
             success(item);
         }
@@ -26,6 +39,17 @@
         
         MDFBaseRequestItem *item = [weakSelf configItem:request.responseObject];
         
+        if (self.isAutoShowLoading == YES) {
+            [SVProgressHUD dismiss];
+        }
+        
+        if (request.responseObject == nil) {
+            if (weakSelf.isAutoShowNetworkErrorToast) {
+                if (request.responseStatusCode != 1) {
+                    [SVProgressHUD showErrorWithStatus:@"请求失败，请稍后重试"];
+                }
+            }
+        }
         if (failure) {
             failure(item);
         }
@@ -33,6 +57,7 @@
     [self start];
 }
 
+#pragma mark - Work
 - (MDFBaseRequestItem *)configItem:(id)responseObject {
     
     MDFBaseRequestItem *item = [self.parseCls new];
