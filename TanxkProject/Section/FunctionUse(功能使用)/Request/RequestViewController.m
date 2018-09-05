@@ -7,8 +7,8 @@
 //
 
 #import "RequestViewController.h"
-#import "QueryBankNameAPI.h"
 #import "CheckUserCretStatusModel.h"
+#import "Test401Model.h"
 
 @interface RequestViewController ()
 
@@ -34,13 +34,15 @@
 
 - (IBAction)Clicked2:(UIButton *)sender {
     
-//    [[[QueryBankNameAPI alloc]initWithBankCard:@"6214830123854209"] startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-//        NSLog(@"%@",request.responseObject);
-//        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-//    } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-//        NSLog(@"%@",request.responseObject);
-//        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",request.responseObject]];
-//    }];
+    Test401Model *model = [[Test401Model alloc] initWithUserNo:@"10042018062016540286310001"];
+    
+    [model startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    } failure:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    }];
 }
 
 @end

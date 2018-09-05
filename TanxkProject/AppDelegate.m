@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,6 +29,23 @@
     config.baseUrl = @"https://api.runnongjinfu.com";
     config.debugLogEnabled = YES;
     
+    [config setSignOutBlock:^(NSInteger code) {
+        
+//        if (self.window.rootViewController.presentedViewController) {
+//            return ;
+//        }
+        
+        printf("\n");
+        NSLog(@"parentViewController:%@",       self.window.rootViewController.parentViewController);
+        NSLog(@"presentationController:%@",     self.window.rootViewController.presentationController);
+        NSLog(@"presentedViewController:%@",    self.window.rootViewController.presentedViewController);
+        NSLog(@"presentingViewController:%@",   self.window.rootViewController.presentingViewController);
+        printf("\n");
+       
+        UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
+        
+        [self.window.rootViewController presentViewController:[LoginViewController new] animated:YES completion:nil];
+    }];
     return YES;
 }
 

@@ -1,14 +1,14 @@
 //
-//  CheckUserCretStatusModel.m
+//  Test401Model.m
 //  TanxkProject
 //
-//  Created by tanxiaokang on 2018/8/3135.
+//  Created by tanxiaokang on 2018/9/536.
 //  Copyright © 2018年 runze. All rights reserved.
 //
 
-#import "CheckUserCretStatusModel.h"
+#import "Test401Model.h"
 
-@implementation CheckUserCretStatusModel
+@implementation Test401Model
 {
     NSString *_userNo;
 }
@@ -32,8 +32,7 @@
 }
 
 - (NSString *)requestUrl {
-    // “ http://www.yuantiku.com ” 在 YTKNetworkConfig 中设置，这里只填除去域名剩余的网址信息
-    return @"/api-happyloan/rnjf-happyloan/api/v1/appuser/checkUserCretStatus";
+    return @"/api-happyloan/rnjf-happyloan/api/v1/appuer/checkUserCretStatu";
 }
 
 - (YTKRequestMethod)requestMethod {

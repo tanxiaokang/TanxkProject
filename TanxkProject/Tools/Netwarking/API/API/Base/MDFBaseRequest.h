@@ -10,6 +10,7 @@
 #import "MDFBaseRequestItem.h"
 
 typedef void(^MDFRequestCompletionBlock)(__kindof MDFBaseRequestItem *item);
+typedef void(^MDFRequestSignOutBlock)(NSInteger code);
 
 @interface MDFBaseRequest : YTKRequest
 
@@ -25,6 +26,8 @@ typedef void(^MDFRequestCompletionBlock)(__kindof MDFBaseRequestItem *item);
 @property (nonatomic, assign) BOOL isAutoShowBusinessErrorToast;
 /// 用户是否是可以操作的 默认YES
 @property (nonatomic, assign) BOOL isEnableUserInteraction;
+
+@property (nonatomic, copy) MDFRequestSignOutBlock signOutBlock;
 
 - (void)startWithCompletionBlockWithSuccess:(MDFRequestCompletionBlock)success
                                     failure:(MDFRequestCompletionBlock)failure;

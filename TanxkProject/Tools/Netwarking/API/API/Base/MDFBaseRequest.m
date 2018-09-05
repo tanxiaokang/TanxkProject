@@ -9,6 +9,8 @@
 #import "MDFBaseRequest.h"
 #import <AFNetworking.h>
 
+#import "YTKNetworkConfig+addFeature.h"
+
 @implementation MDFBaseRequest
 
 #define MDFWeakSelf __weak __typeof(&*self)weakSelf = self;
@@ -29,6 +31,8 @@
             [SVProgressHUD dismiss];
         }
         if (item.code == 401) {
+            
+            [YTKNetworkConfig sharedConfig].signOutBlock(401);
             //退出登录
             return ;
         }
