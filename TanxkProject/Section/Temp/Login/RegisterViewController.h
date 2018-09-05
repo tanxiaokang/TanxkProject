@@ -1,5 +1,5 @@
 //
-//  LoginViewController.h
+//  RegisterViewController.h
 //  TanxkProject
 //
 //  Created by tanxiaokang on 2018/9/536.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface RegisterViewController : UIViewController
 
 @end

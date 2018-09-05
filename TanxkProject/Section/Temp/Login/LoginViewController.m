@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "RegisterViewController.h"
 
 @interface LoginViewController ()
 
@@ -21,7 +22,9 @@
 
 - (IBAction)logClicked:(UIButton *)sender {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    RegisterViewController *vc = [RegisterViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
     
 //    LoginViewController *vc =  [LoginViewController new];
 //    vc.title = @"登录2";

@@ -26,6 +26,8 @@
 		0C19CEB921368AC6005F63A5 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEB721368AC6005F63A5 /* Network.m */; };
 		0C19CEBC21368AE1005F63A5 /* Network+ProductType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEBB21368AE1005F63A5 /* Network+ProductType.m */; };
 		0C19CEBF21369250005F63A5 /* MDFBaseNetwok.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEBE21369250005F63A5 /* MDFBaseNetwok.m */; };
+		0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DB627213FD1CF00105F4F /* RegisterViewController.m */; };
+		0C4DB62A213FD1CF00105F4F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */; };
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
 		0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BC20ECA7BB00439CBF /* LNRefreshHeader.m */; };
 		0CCBD2DF20ECA7BB00439CBF /* LNRefreshAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD2BD20ECA7BB00439CBF /* LNRefreshAnimator.m */; };
@@ -152,6 +154,9 @@
 		0C19CEBB21368AE1005F63A5 /* Network+ProductType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Network+ProductType.m"; sourceTree = "<group>"; };
 		0C19CEBD21369250005F63A5 /* MDFBaseNetwok.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFBaseNetwok.h; sourceTree = "<group>"; };
 		0C19CEBE21369250005F63A5 /* MDFBaseNetwok.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFBaseNetwok.m; sourceTree = "<group>"; };
+		0C4DB626213FD1CF00105F4F /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0C4DB627213FD1CF00105F4F /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		0C654EB720EE225400BAD881 /* FBTweak+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBTweak+Config.h"; sourceTree = "<group>"; };
 		0C654EB820EE225400BAD881 /* FBTweak+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FBTweak+Config.m"; sourceTree = "<group>"; };
 		0CCBD2BB20ECA7BB00439CBF /* NSObject+LNRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LNRefresh.h"; sourceTree = "<group>"; };
@@ -493,6 +498,19 @@
 			path = YETMuitiSetListSourceCatalog;
 			sourceTree = "<group>";
 		};
+		0C4DB624213FD1AC00105F4F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0CD2D9BB213F865E004A925C /* LoginViewController.h */,
+				0CD2D9BC213F865E004A925C /* LoginViewController.m */,
+				0CD2D9BD213F865E004A925C /* LoginViewController.xib */,
+				0C4DB626213FD1CF00105F4F /* RegisterViewController.h */,
+				0C4DB627213FD1CF00105F4F /* RegisterViewController.m */,
+				0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		0C654EB620EE220C00BAD881 /* FBTweakCategory */ = {
 			isa = PBXGroup;
 			children = (
@@ -770,9 +788,7 @@
 		0CD2D9BA213F864B004A925C /* Temp */ = {
 			isa = PBXGroup;
 			children = (
-				0CD2D9BB213F865E004A925C /* LoginViewController.h */,
-				0CD2D9BC213F865E004A925C /* LoginViewController.m */,
-				0CD2D9BD213F865E004A925C /* LoginViewController.xib */,
+				0C4DB624213FD1AC00105F4F /* Login */,
 			);
 			path = Temp;
 			sourceTree = "<group>";
@@ -989,6 +1005,7 @@
 				0CD5510320F5E9A700413548 /* LottieLogo2.json in Resources */,
 				0CD5510B20F5E9A700413548 /* PinJump.json in Resources */,
 				0C01B8C4212FB35F002B9DF9 /* corner_circle@2x.png in Resources */,
+				0C4DB62A213FD1CF00105F4F /* RegisterViewController.xib in Resources */,
 				0CCBD30620ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.xib in Resources */,
 				0CD5510520F5E9A700413548 /* TwitterHeart.json in Resources */,
 				0CD5510420F5E9A700413548 /* LottieLogo1.json in Resources */,
@@ -1097,6 +1114,7 @@
 				0C01B8AD212FAF25002B9DF9 /* VVeboTableViewCell.m in Sources */,
 				0CD5512920F5F01400413548 /* JSONExplorerViewController.m in Sources */,
 				0CD5512C20F5F01400413548 /* AnimationTransitionViewController.m in Sources */,
+				0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */,
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
 				0CD2D9C2213F9385004A925C /* Test401Model.m in Sources */,
 				0CCF2E6E20EB1CE50087169E /* main.m in Sources */,
