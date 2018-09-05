@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "LoginViewController.h"
+#import "GestureAuthenticationViewController.h"
 
 @interface AppDelegate ()
 
@@ -41,10 +42,8 @@
         NSLog(@"presentedViewController:%@",    self.window.rootViewController.presentedViewController);
         NSLog(@"presentingViewController:%@",   self.window.rootViewController.presentingViewController);
         printf("\n");
-        
-        UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
-        
-        [self.window.rootViewController presentViewController:[LoginViewController new] animated:YES completion:nil];
+                
+        [self.window.rootViewController presentViewController:[GestureAuthenticationViewController new] animated:YES completion:nil];
     }];
     return YES;
 }
