@@ -32,7 +32,7 @@
 }
 
 - (NSString *)requestUrl {
-    return @"/api-happyloan/rnjf-happyloan/api/v1/appuer/checkUserCretStatu";
+    return @"/api-happyloan/rnjf-happyloan/api/v1/appuer/checkUserCretStatus";
 }
 
 - (YTKRequestMethod)requestMethod {

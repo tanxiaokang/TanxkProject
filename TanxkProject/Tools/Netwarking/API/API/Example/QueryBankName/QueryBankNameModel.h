@@ -1,5 +1,5 @@
 //
-//  QueryBankNameAPI.h
+//  QueryBankNameModel.h
 //  TanxkProject
 //
 //  Created by tanxiaokang on 2018/8/3135.
@@ -8,7 +8,7 @@
 
 #import "MDFBaseRequest.h"
 
-@interface QueryBankNameAPI : MDFBaseRequest
+@interface QueryBankNameModel : MDFBaseRequest
 
 - (id)initWithBankCard:(NSString *)bankCard;
 

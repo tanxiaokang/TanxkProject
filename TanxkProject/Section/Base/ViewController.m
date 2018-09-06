@@ -62,7 +62,7 @@
     Class vcClass = NSClassFromString(vcClassName);
     if (vcClass) {
         UIViewController *vc = [[vcClass alloc] init];
-        self.hidesBottomBarWhenPushed = YES;
+        vc.hidesBottomBarWhenPushed = YES;
         [self.navigationController pushViewController:vc animated:YES];
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

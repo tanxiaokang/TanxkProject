@@ -7,7 +7,7 @@
 //
 
 #import "MDFBaseRequest.h"
-#import "QueryBankNameItem.h"
+#import "CheckUserCretStatusItem.h"
 
 @interface CheckUserCretStatusModel : MDFBaseRequest
 

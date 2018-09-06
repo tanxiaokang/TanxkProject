@@ -80,7 +80,6 @@
 		0CD2D9B9213F80C2004A925C /* YTKNetworkConfig+addFeature.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2D9B8213F80C2004A925C /* YTKNetworkConfig+addFeature.m */; };
 		0CD2D9BE213F865E004A925C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2D9BC213F865E004A925C /* LoginViewController.m */; };
 		0CD2D9BF213F865E004A925C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD2D9BD213F865E004A925C /* LoginViewController.xib */; };
-		0CD2D9C2213F9385004A925C /* Test401Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD2D9C1213F9385004A925C /* Test401Model.m */; };
 		0CD550EA20F5E96100413548 /* LottieRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD550E820F5E96100413548 /* LottieRootViewController.m */; };
 		0CD5510020F5E9A700413548 /* Watermelon.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD550ED20F5E9A600413548 /* Watermelon.json */; };
 		0CD5510120F5E9A700413548 /* Switch_States.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CD550EE20F5E9A600413548 /* Switch_States.json */; };
@@ -110,6 +109,8 @@
 		0CD5512D20F5F01400413548 /* AnimationExplorerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5512020F5F01300413548 /* AnimationExplorerViewController.m */; };
 		0CD5512E20F5F01400413548 /* LADownloadTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5512220F5F01300413548 /* LADownloadTestViewController.m */; };
 		0CD5512F20F5F01400413548 /* LAQRScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CD5512320F5F01300413548 /* LAQRScannerViewController.m */; };
+		0CE094EB2140D0940067D91B /* CheckUserCretStatusItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE094EA2140D0940067D91B /* CheckUserCretStatusItem.m */; };
+		0CE094F02140D15D0067D91B /* Test401Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE094EE2140D15C0067D91B /* Test401Model.m */; };
 		0CFB59062137973E002483BF /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59042137973E002483BF /* NSTimerViewController.m */; };
 		0CFB59072137973E002483BF /* NSTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59052137973E002483BF /* NSTimerViewController.xib */; };
 		0CFB590A21379B75002483BF /* NSTimer+UnRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB590921379B75002483BF /* NSTimer+UnRetain.m */; };
@@ -117,7 +118,7 @@
 		0CFB59142137E2C9002483BF /* api_runnongjinfu_com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */; };
 		0CFB59162137ED53002483BF /* runnongjinfu.cer in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59152137ED4F002483BF /* runnongjinfu.cer */; };
 		0CFB59232138E661002483BF /* CheckUserCretStatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59222138E661002483BF /* CheckUserCretStatusModel.m */; };
-		0CFB59262138E6F1002483BF /* QueryBankNameAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59252138E6F1002483BF /* QueryBankNameAPI.m */; };
+		0CFB59262138E6F1002483BF /* QueryBankNameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59252138E6F1002483BF /* QueryBankNameModel.m */; };
 		0CFB592B2138F44F002483BF /* MDFBaseRequestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB592A2138F44F002483BF /* MDFBaseRequestItem.m */; };
 		0CFB592E2138F6BE002483BF /* QueryBankNameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB592D2138F6BE002483BF /* QueryBankNameItem.m */; };
 		7335C80A0A9EF4D419C7B040 /* libPods-TanxkProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A476C87C808037848059C1 /* libPods-TanxkProject.a */; };
@@ -257,8 +258,6 @@
 		0CD2D9BB213F865E004A925C /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		0CD2D9BC213F865E004A925C /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0CD2D9BD213F865E004A925C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		0CD2D9C0213F9385004A925C /* Test401Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test401Model.h; sourceTree = "<group>"; };
-		0CD2D9C1213F9385004A925C /* Test401Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test401Model.m; sourceTree = "<group>"; };
 		0CD550E720F5E96100413548 /* LottieRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LottieRootViewController.h; sourceTree = "<group>"; };
 		0CD550E820F5E96100413548 /* LottieRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LottieRootViewController.m; sourceTree = "<group>"; };
 		0CD550ED20F5E9A600413548 /* Watermelon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Watermelon.json; sourceTree = "<group>"; };
@@ -298,6 +297,10 @@
 		0CD5512520F5F01400413548 /* LAQRScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAQRScannerViewController.h; sourceTree = "<group>"; };
 		0CD5512620F5F01400413548 /* TypingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypingDemoViewController.h; sourceTree = "<group>"; };
 		0CD5512720F5F01400413548 /* LAControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAControlsViewController.h; sourceTree = "<group>"; };
+		0CE094E92140D0940067D91B /* CheckUserCretStatusItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUserCretStatusItem.h; sourceTree = "<group>"; };
+		0CE094EA2140D0940067D91B /* CheckUserCretStatusItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUserCretStatusItem.m; sourceTree = "<group>"; };
+		0CE094EE2140D15C0067D91B /* Test401Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test401Model.m; sourceTree = "<group>"; };
+		0CE094EF2140D15D0067D91B /* Test401Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test401Model.h; sourceTree = "<group>"; };
 		0CFB59032137973E002483BF /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		0CFB59042137973E002483BF /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		0CFB59052137973E002483BF /* NSTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerViewController.xib; sourceTree = "<group>"; };
@@ -309,8 +312,8 @@
 		0CFB59152137ED4F002483BF /* runnongjinfu.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = runnongjinfu.cer; sourceTree = "<group>"; };
 		0CFB59212138E661002483BF /* CheckUserCretStatusModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckUserCretStatusModel.h; sourceTree = "<group>"; };
 		0CFB59222138E661002483BF /* CheckUserCretStatusModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckUserCretStatusModel.m; sourceTree = "<group>"; };
-		0CFB59242138E6F1002483BF /* QueryBankNameAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryBankNameAPI.h; sourceTree = "<group>"; };
-		0CFB59252138E6F1002483BF /* QueryBankNameAPI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryBankNameAPI.m; sourceTree = "<group>"; };
+		0CFB59242138E6F1002483BF /* QueryBankNameModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryBankNameModel.h; sourceTree = "<group>"; };
+		0CFB59252138E6F1002483BF /* QueryBankNameModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueryBankNameModel.m; sourceTree = "<group>"; };
 		0CFB59292138F44F002483BF /* MDFBaseRequestItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFBaseRequestItem.h; sourceTree = "<group>"; };
 		0CFB592A2138F44F002483BF /* MDFBaseRequestItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFBaseRequestItem.m; sourceTree = "<group>"; };
 		0CFB592C2138F6BE002483BF /* QueryBankNameItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueryBankNameItem.h; sourceTree = "<group>"; };
@@ -484,14 +487,10 @@
 		0C33BB9F213D10620007F353 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				0CFB592C2138F6BE002483BF /* QueryBankNameItem.h */,
-				0CFB592D2138F6BE002483BF /* QueryBankNameItem.m */,
-				0CFB59212138E661002483BF /* CheckUserCretStatusModel.h */,
-				0CFB59222138E661002483BF /* CheckUserCretStatusModel.m */,
-				0CFB59242138E6F1002483BF /* QueryBankNameAPI.h */,
-				0CFB59252138E6F1002483BF /* QueryBankNameAPI.m */,
-				0CD2D9C0213F9385004A925C /* Test401Model.h */,
-				0CD2D9C1213F9385004A925C /* Test401Model.m */,
+				0CE094F12140D16A0067D91B /* 401 */,
+				0CE094ED2140D1260067D91B /* Login */,
+				0CE094EC2140D1130067D91B /* QueryBankName */,
+				0CE094E82140D0600067D91B /* CheckUserCretStatus */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -901,6 +900,44 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		0CE094E82140D0600067D91B /* CheckUserCretStatus */ = {
+			isa = PBXGroup;
+			children = (
+				0CFB59212138E661002483BF /* CheckUserCretStatusModel.h */,
+				0CFB59222138E661002483BF /* CheckUserCretStatusModel.m */,
+				0CE094E92140D0940067D91B /* CheckUserCretStatusItem.h */,
+				0CE094EA2140D0940067D91B /* CheckUserCretStatusItem.m */,
+			);
+			path = CheckUserCretStatus;
+			sourceTree = "<group>";
+		};
+		0CE094EC2140D1130067D91B /* QueryBankName */ = {
+			isa = PBXGroup;
+			children = (
+				0CFB592C2138F6BE002483BF /* QueryBankNameItem.h */,
+				0CFB592D2138F6BE002483BF /* QueryBankNameItem.m */,
+				0CFB59242138E6F1002483BF /* QueryBankNameModel.h */,
+				0CFB59252138E6F1002483BF /* QueryBankNameModel.m */,
+			);
+			path = QueryBankName;
+			sourceTree = "<group>";
+		};
+		0CE094ED2140D1260067D91B /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0CE094F12140D16A0067D91B /* 401 */ = {
+			isa = PBXGroup;
+			children = (
+				0CE094EF2140D15D0067D91B /* Test401Model.h */,
+				0CE094EE2140D15C0067D91B /* Test401Model.m */,
+			);
+			path = 401;
+			sourceTree = "<group>";
+		};
 		0CFB59022137971F002483BF /* NSTimer内存泄漏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1100,6 +1137,7 @@
 				0CFB59062137973E002483BF /* NSTimerViewController.m in Sources */,
 				0CD5512D20F5F01400413548 /* AnimationExplorerViewController.m in Sources */,
 				0CCF2E9C20EB395B0087169E /* _FBTweakTableViewCell.m in Sources */,
+				0CE094EB2140D0940067D91B /* CheckUserCretStatusItem.m in Sources */,
 				0CCF2E9B20EB395B0087169E /* FBTweak.m in Sources */,
 				0C01B8AE212FAF25002B9DF9 /* VVeboLabel.m in Sources */,
 				0CCBD2E720ECA7BB00439CBF /* NSObject+LNRefresh.m in Sources */,
@@ -1112,6 +1150,7 @@
 				0CCF2E9820EB395B0087169E /* _FBTweakCollectionViewController.m in Sources */,
 				0CCF2E9620EB395B0087169E /* _FBTweakCategoryViewController.m in Sources */,
 				0CCBD2EE20ECA7BB00439CBF /* MDFBaseTableViewCell.m in Sources */,
+				0CE094F02140D15D0067D91B /* Test401Model.m in Sources */,
 				0CFB59232138E661002483BF /* CheckUserCretStatusModel.m in Sources */,
 				0CD5512820F5F01400413548 /* LAControlsViewController.m in Sources */,
 				0C01B8BA212FB316002B9DF9 /* VVeboTableView.m in Sources */,
@@ -1126,7 +1165,6 @@
 				0CD5512C20F5F01400413548 /* AnimationTransitionViewController.m in Sources */,
 				0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */,
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
-				0CD2D9C2213F9385004A925C /* Test401Model.m in Sources */,
 				0CCF2E6E20EB1CE50087169E /* main.m in Sources */,
 				0C19CEBC21368AE1005F63A5 /* Network+ProductType.m in Sources */,
 				0CCBD31920ECC73600439CBF /* NSObject+network.m in Sources */,
@@ -1143,7 +1181,7 @@
 				0CD5511620F5EDE400413548 /* UIView+Utility.m in Sources */,
 				0CD2D9B9213F80C2004A925C /* YTKNetworkConfig+addFeature.m in Sources */,
 				0CCF2EA020EB395B0087169E /* FBTweakCollection.m in Sources */,
-				0CFB59262138E6F1002483BF /* QueryBankNameAPI.m in Sources */,
+				0CFB59262138E6F1002483BF /* QueryBankNameModel.m in Sources */,
 				0CFB59122137D9E2002483BF /* MDFBaseRequest.m in Sources */,
 				0CD5512B20F5F01400413548 /* TypingDemoViewController.m in Sources */,
 				0CD5512E20F5F01400413548 /* LADownloadTestViewController.m in Sources */,

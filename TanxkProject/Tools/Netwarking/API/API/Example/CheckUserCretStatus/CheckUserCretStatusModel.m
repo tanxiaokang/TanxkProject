@@ -1,22 +1,23 @@
 //
-//  QueryBankNameAPI.m
+//  CheckUserCretStatusModel.m
 //  TanxkProject
 //
 //  Created by tanxiaokang on 2018/8/3135.
 //  Copyright © 2018年 runze. All rights reserved.
 //
 
-#import "QueryBankNameAPI.h"
+#import "CheckUserCretStatusModel.h"
 
-@implementation QueryBankNameAPI{
-    NSString *_bankCard;
+@implementation CheckUserCretStatusModel
+{
+    NSString *_userNo;
 }
 
-- (id)initWithBankCard:(NSString *)bankCard{
-    
+- (id)initWithUserNo:(NSString *)userNo{
     self = [super init];
     if (self) {
-        _bankCard = bankCard;
+        _userNo = userNo;
+        self.parseCls = [CheckUserCretStatusItem class];
     }
     return self;
 }
@@ -31,7 +32,8 @@
 }
 
 - (NSString *)requestUrl {
-    return @"/api-auth/rnjf/authentication/utils/queryBankName";
+    // “ http://www.yuantiku.com ” 在 YTKNetworkConfig 中设置，这里只填除去域名剩余的网址信息
+    return @"/api-happyloan/rnjf-happyloan/api/v1/appuser/checkUserCretStatus";
 }
 
 - (YTKRequestMethod)requestMethod {
@@ -39,8 +41,7 @@
 }
 
 - (id)requestArgument {
-    return @{
-              @"BankCard": _bankCard
-             };
+    return @{@"userNo": _userNo};
 }
+
 @end
