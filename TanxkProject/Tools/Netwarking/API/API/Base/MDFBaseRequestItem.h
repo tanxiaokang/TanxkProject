@@ -14,4 +14,7 @@
 @property (nonatomic, copy) NSString *message;
 @property (nonatomic, copy) NSString *timestamp;
 
+//查看原始数据
+@property (nonatomic, strong, nullable) id responseObject;
+
 @end

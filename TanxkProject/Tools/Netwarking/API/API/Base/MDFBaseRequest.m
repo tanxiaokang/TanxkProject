@@ -83,6 +83,7 @@
     item.message = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
     item.timestamp = [NSString stringWithFormat:@"%@",responseObject[@"timestamp"]];
     [item mj_setKeyValues:responseObject[@"resultObj"]];
+    item.responseObject = responseObject;
     return item;
 }
 

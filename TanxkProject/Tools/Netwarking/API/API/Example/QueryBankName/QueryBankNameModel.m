@@ -17,12 +17,14 @@
     self = [super init];
     if (self) {
         _bankCard = bankCard;
+        self.parseCls = [QueryBankNameItem class];
+
     }
     return self;
 }
 
 - (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary{
-    return @{@"token":@"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHBpcmVUaW1lIjoiMjAxOC0wOS0xMyAxMjoxMDozMSIsInVzZXJObyI6IjEwMDQyMDE4MDYyMDE2NTQwMjg2MzEwMDAxIn0.l8JUBiGVwIx6n9TpZInDITzFblPcX-tz0RUALjsg_1Y"};
+    return @{@"token":[[NSUserDefaults standardUserDefaults] valueForKey:TKPToken]};
 }
 
 - (NSString *)baseUrl

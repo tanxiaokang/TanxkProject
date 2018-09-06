@@ -36,10 +36,16 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qe9-1n-X0l">
                     <rect key="frame" x="10" y="154" width="168" height="30"/>
                     <state key="normal" title="查询银行卡号 - 不带动画"/>
+                    <connections>
+                        <action selector="Clicked3:" destination="-1" eventType="touchUpInside" id="b7B-k1-hTZ"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8t-Br-sQc">
                     <rect key="frame" x="10" y="194" width="184" height="30"/>
                     <state key="normal" title="获取个人信息状态 - 带动画"/>
+                    <connections>
+                        <action selector="Clicked4:" destination="-1" eventType="touchUpInside" id="0D1-wu-554"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

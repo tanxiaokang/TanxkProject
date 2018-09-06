@@ -7,7 +7,7 @@
 //
 
 #import "MDFBaseRequest.h"
-
+#import "QueryBankNameItem.h"
 @interface QueryBankNameModel : MDFBaseRequest
 
 - (id)initWithBankCard:(NSString *)bankCard;

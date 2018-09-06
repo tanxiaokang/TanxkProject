@@ -8,6 +8,7 @@
 
 #import "RequestViewController.h"
 #import "CheckUserCretStatusModel.h"
+#import "QueryBankNameModel.h"
 #import "LoginModel.h"
 #import "Test401Model.h"
 
@@ -31,9 +32,7 @@
             [[NSUserDefaults standardUserDefaults] setValue:item.userNo forKey:TKPUserNo];
             [[NSUserDefaults standardUserDefaults] setValue:item.token forKey:TKPToken];
             [SVProgressHUD showSuccessWithStatus:@"登录成功"];
-        } failure:^(__kindof MDFBaseRequestItem *item) {
-            
-        }];
+        } failure:nil];
     } else {
         
         [SVProgressHUD showSuccessWithStatus:@"退出登录成功"];
@@ -44,18 +43,11 @@
         });
     }
    
-//    [[[CheckUserCretStatusModel alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
-//        NSLog(@"%@",item.message);
-//        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
-//    } failure:^(__kindof MDFBaseRequestItem *item) {
-//        NSLog(@"%@",item.message);
-//        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
-//    }];
 }
 
 - (IBAction)Clicked2:(UIButton *)sender {
     
-    Test401Model *model = [[Test401Model alloc] initWithUserNo:@"10042018062016540286310001"];
+    Test401Model *model = [[Test401Model alloc] initWithUserNo:[[NSUserDefaults standardUserDefaults] valueForKey:TKPUserNo]];
     
     [model startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
         NSLog(@"%@",item.message);
@@ -65,5 +57,26 @@
         [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
     }];
 }
+- (IBAction)Clicked3:(UIButton *)sender {
+    
+    [[[QueryBankNameModel alloc] initWithBankCard:@"6214830123854209"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    } failure:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    }];
+}
+- (IBAction)Clicked4:(UIButton *)sender {
+    
+    [[[CheckUserCretStatusModel alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    } failure:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    }];
+}
+
 
 @end
