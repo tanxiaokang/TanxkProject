@@ -31,8 +31,13 @@
             [SVProgressHUD dismiss];
         }
         if (item.code == 401) {
+            [SVProgressHUD showErrorWithStatus:@"登录失效，请重新登录"];
+            [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
             
-            [YTKNetworkConfig sharedConfig].signOutBlock(401);
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [SVProgressHUD dismiss];
+                [YTKNetworkConfig sharedConfig].signOutBlock(401);
+            });
             //退出登录
             return ;
         }

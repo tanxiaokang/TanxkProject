@@ -16,11 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
 }
 
 - (IBAction)clicked:(UIButton *)sender {
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    
+    [self.navigationController dismissViewControllerAnimated:NO completion:^{
+        UIViewController *vc = [UIApplication sharedApplication].keyWindow.rootViewController.presentedViewController;
+        [vc dismissViewControllerAnimated:YES completion:nil];
+    }];
 }
 
 @end

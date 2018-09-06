@@ -27,8 +27,8 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdK-in-WEq">
-                    <rect key="frame" x="10" y="114" width="123" height="30"/>
-                    <state key="normal" title="认证中心接口请求"/>
+                    <rect key="frame" x="10" y="114" width="141" height="30"/>
+                    <state key="normal" title="模拟401，token失效"/>
                     <connections>
                         <action selector="Clicked2:" destination="-1" eventType="touchUpInside" id="nVT-y7-3uU"/>
                     </connections>
