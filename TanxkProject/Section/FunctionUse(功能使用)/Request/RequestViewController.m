@@ -57,26 +57,27 @@
         [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
     }];
 }
+
 - (IBAction)Clicked3:(UIButton *)sender {
     
     [[[QueryBankNameModel alloc] initWithBankCard:@"6214830123854209"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
         NSLog(@"%@",item.message);
-        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
-    } failure:^(__kindof MDFBaseRequestItem *item) {
-        NSLog(@"%@",item.message);
-        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
-    }];
-}
-- (IBAction)Clicked4:(UIButton *)sender {
-    
-    [[[CheckUserCretStatusModel alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
-        NSLog(@"%@",item.message);
-        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.responseObject]];
     } failure:^(__kindof MDFBaseRequestItem *item) {
         NSLog(@"%@",item.message);
         [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
     }];
 }
 
+- (IBAction)Clicked4:(UIButton *)sender {
+    
+    [[[CheckUserCretStatusModel alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.responseObject]];
+    } failure:^(__kindof MDFBaseRequestItem *item) {
+        NSLog(@"%@",item.message);
+        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",item.message]];
+    }];
+}
 
 @end

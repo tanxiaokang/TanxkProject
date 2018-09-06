@@ -1356,8 +1356,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = LM4E4529GY;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP2827HHV5;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TanxkProject/PrefixHeader.pch;
@@ -1369,8 +1369,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangzhixing.network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "33ed91c4-1cf3-459a-a1e7-1e0ff5836652";
-				PROVISIONING_PROFILE_SPECIFIER = NetworkModuleDev;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1380,9 +1380,9 @@
 			baseConfigurationReference = 26803BC77E7B1AD29136AFA2 /* Pods-TanxkProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Wuhai Jurongyi Technology Co., Ltd. (LM4E4529GY)";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = LM4E4529GY;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP2827HHV5;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TanxkProject/PrefixHeader.pch;
@@ -1394,8 +1394,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangzhixing.network;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "a0ceb96b-74b1-44dc-87ac-d0d170113f0d";
-				PROVISIONING_PROFILE_SPECIFIER = NetworkModuleRelease;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
