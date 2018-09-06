@@ -41,17 +41,25 @@
             //退出登录
             return ;
         }
+        
+        if (item.code != 1) {
+            if (self.isAutoShowBusinessErrorToast == YES) {
+                [SVProgressHUD showErrorWithStatus:item.message];
+                return;
+            }
+        }
         if (success) {
             success(item);
         }
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
-        MDFBaseRequestItem *item = [weakSelf configItem:request.responseObject];
-        
         if (self.isAutoShowLoading == YES) {
             [SVProgressHUD dismiss];
         }
-        
+        if (self.isAutoShowNetworkErrorToast == YES) {
+            [SVProgressHUD showErrorWithStatus:@"请求失败，请稍后重试"];
+            return ;
+        }
         if (request.responseObject == nil) {
             if (weakSelf.isAutoShowNetworkErrorToast) {
                 if (request.responseStatusCode != 1) {
@@ -60,16 +68,17 @@
             }
         }
         if (failure) {
-            failure(item);
+            failure(nil);
         }
     }];
     [self start];
 }
 
 #pragma mark - Work
+
 - (MDFBaseRequestItem *)configItem:(id)responseObject {
     
-    MDFBaseRequestItem *item = [self.parseCls new];
+    MDFBaseRequestItem *item = [self.parseCls?:[MDFBaseRequestItem class] new];
     item.code = [responseObject[@"code"] integerValue];
     item.message = [NSString stringWithFormat:@"%@",responseObject[@"message"]];
     item.timestamp = [NSString stringWithFormat:@"%@",responseObject[@"timestamp"]];

@@ -24,4 +24,8 @@
 
 #import "NSObject+network.h"
 
+
+static NSString *const TKPUserNo = @"userNo";
+static NSString *const TKPToken = @"token";
+
 #endif /* PrefixHeader_pch */

@@ -20,8 +20,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FfI-DQ-eEJ">
-                    <rect key="frame" x="10" y="74" width="123" height="30"/>
-                    <state key="normal" title="基础服务接口请求"/>
+                    <rect key="frame" x="10" y="74" width="31" height="30"/>
+                    <state key="normal" title="登录"/>
                     <connections>
                         <action selector="Clicked1:" destination="-1" eventType="touchUpInside" id="euq-MD-bLI"/>
                     </connections>
