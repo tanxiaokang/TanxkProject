@@ -11,6 +11,8 @@
 
 @interface GestureAuthenticationViewController ()
 
+@property (weak, nonatomic) IBOutlet UIButton *testBbtn;
+
 @end
 
 @implementation GestureAuthenticationViewController
@@ -35,6 +37,31 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)testClick:(UIButton *)sender {
+    
+    GestureAuthenticationViewController *vc = [GestureAuthenticationViewController new];
+    
+    [self presentViewController:vc animated:YES completion:nil];
+    
+    [vc.testBbtn setTitle:@"test" forState:UIControlStateNormal];
+}
+- (IBAction)deletebackVC:(id)sender {
+    
+    UIViewController *vc = self;
+    while (vc) {
+        if ([vc.title isEqualToString:@"qwe"]) {
+            [vc dismissViewControllerAnimated:NO completion:nil];
+            break;
+        } else {
+            vc = ((UIPresentationController *)vc.presentationController).presentingViewController;
+            NSLog(@"%@",vc);
+            NSLog(@"%@",vc.title);
+        }
+    }
+}
+- (IBAction)babck:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 /*

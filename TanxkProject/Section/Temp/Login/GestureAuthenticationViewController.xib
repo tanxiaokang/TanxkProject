@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GestureAuthenticationViewController">
             <connections>
+                <outlet property="testBbtn" destination="75U-1Q-bEe" id="jUF-Hi-kr9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -32,12 +33,39 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75U-1Q-bEe">
+                    <rect key="frame" x="309" y="617" width="46" height="30"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="testClick:" destination="-1" eventType="touchUpInside" id="eND-x4-Sst"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5CF-Ib-QZi">
+                    <rect key="frame" x="278" y="569" width="77" height="30"/>
+                    <state key="normal" title="删除上一个"/>
+                    <connections>
+                        <action selector="deletebackVC:" destination="-1" eventType="touchUpInside" id="hKr-0d-eXS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvZ-1x-mCi">
+                    <rect key="frame" x="10" y="627" width="31" height="30"/>
+                    <state key="normal" title="返回"/>
+                    <connections>
+                        <action selector="babck:" destination="-1" eventType="touchUpInside" id="hoh-aS-J3e"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="5CF-Ib-QZi" secondAttribute="trailing" constant="20" id="B4i-2z-pX5"/>
+                <constraint firstAttribute="trailing" secondItem="75U-1Q-bEe" secondAttribute="trailing" constant="20" id="MiU-BC-11G"/>
+                <constraint firstItem="75U-1Q-bEe" firstAttribute="top" secondItem="5CF-Ib-QZi" secondAttribute="bottom" constant="18" id="P1d-6Y-Tv4"/>
                 <constraint firstItem="Xz6-sn-2Gg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="156" id="SPS-re-KpB"/>
                 <constraint firstItem="Ofx-wI-d6R" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="T6V-ON-ALl"/>
+                <constraint firstItem="TvZ-1x-mCi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="XEH-I9-OPd"/>
                 <constraint firstItem="Ofx-wI-d6R" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="YuS-5m-3Jz"/>
+                <constraint firstAttribute="bottom" secondItem="75U-1Q-bEe" secondAttribute="bottom" constant="20" id="m02-EI-kFp"/>
+                <constraint firstAttribute="bottom" secondItem="TvZ-1x-mCi" secondAttribute="bottom" constant="10" id="naU-Kv-7VQ"/>
                 <constraint firstItem="Xz6-sn-2Gg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="168" id="tH5-iF-aj8"/>
             </constraints>
         </view>

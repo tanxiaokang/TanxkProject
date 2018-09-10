@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "LoginViewController.h"
 #import "GestureAuthenticationViewController.h"
+#import "ViewControllerA.h"
 
 @interface AppDelegate ()
 
@@ -42,8 +43,10 @@
         NSLog(@"presentedViewController:%@",    self.window.rootViewController.presentedViewController);
         NSLog(@"presentingViewController:%@",   self.window.rootViewController.presentingViewController);
         printf("\n");
-                
-        [self.window.rootViewController presentViewController:[GestureAuthenticationViewController new] animated:YES completion:nil];
+//        GestureAuthenticationViewController *vc = [GestureAuthenticationViewController new];
+        ViewControllerA *vc = [ViewControllerA new];
+        vc.title = @"qwe";
+        [self.window.rootViewController presentViewController:vc animated:YES completion:nil];
     }];
     return YES;
 }
