@@ -41,8 +41,8 @@
 }
 
 - (id)requestArgument {
-    return @{
-              @"BankCard": _bankCard
-             };
+    NSMutableDictionary *paramas = [NSMutableDictionary new];
+    paramas[@"BankCard"] = _bankCard;
+    return paramas;
 }
 @end

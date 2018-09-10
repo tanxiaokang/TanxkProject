@@ -22,9 +22,6 @@
 #pragma mark - Base
 #import "MDFBaseTableViewController.h"
 
-#import "NSObject+network.h"
-
-
 static NSString *const TKPUserNo = @"userNo";
 static NSString *const TKPToken = @"token";
 

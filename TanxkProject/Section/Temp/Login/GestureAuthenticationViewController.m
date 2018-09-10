@@ -31,10 +31,6 @@
         UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:[LoginViewController new]];
         [self presentViewController:nvc animated:YES completion:nil];
     }
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self Clicked:nil];
-    });
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

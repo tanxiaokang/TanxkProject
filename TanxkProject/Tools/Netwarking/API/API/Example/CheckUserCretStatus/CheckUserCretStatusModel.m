@@ -23,7 +23,10 @@
 }
 
 - (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary{
-    return @{@"token":[[NSUserDefaults standardUserDefaults] valueForKey:TKPToken]};
+    
+    NSMutableDictionary *dict = [NSMutableDictionary new];
+    dict[@"token"] = [[NSUserDefaults standardUserDefaults] valueForKey:TKPToken];
+    return dict;
 }
 
 - (NSString *)baseUrl
@@ -41,7 +44,10 @@
 }
 
 - (id)requestArgument {
-    return @{@"userNo": _userNo};
+    NSMutableDictionary *paramas = [[NSMutableDictionary alloc] initWithCapacity:10];
+    [paramas setValue:_userNo forKey:@"userNo"];
+//    paramas[@"userNo"] = _userNo;
+    return paramas;
 }
 
 @end

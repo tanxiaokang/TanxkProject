@@ -23,9 +23,6 @@
 		0C19CEB021368519005F63A5 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEAE21368519005F63A5 /* RequestViewController.m */; };
 		0C19CEB121368519005F63A5 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C19CEAF21368519005F63A5 /* RequestViewController.xib */; };
 		0C19CEB421368A3B005F63A5 /* SectionDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C19CEB321368A3B005F63A5 /* SectionDataSource.plist */; };
-		0C19CEB921368AC6005F63A5 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEB721368AC6005F63A5 /* Network.m */; };
-		0C19CEBC21368AE1005F63A5 /* Network+ProductType.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEBB21368AE1005F63A5 /* Network+ProductType.m */; };
-		0C19CEBF21369250005F63A5 /* MDFBaseNetwok.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEBE21369250005F63A5 /* MDFBaseNetwok.m */; };
 		0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DB627213FD1CF00105F4F /* RegisterViewController.m */; };
 		0C4DB62A213FD1CF00105F4F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */; };
 		0C4DB62E213FD86D00105F4F /* GestureAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DB62C213FD86D00105F4F /* GestureAuthenticationViewController.m */; };
@@ -55,8 +52,6 @@
 		0CCBD30920ECA87D00439CBF /* YETMuitiSetListHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCBD2FC20ECA87D00439CBF /* YETMuitiSetListHeaderCell.xib */; };
 		0CCBD30B20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCBD30020ECA87D00439CBF /* YETMuitiSetListRecommendationCell.xib */; };
 		0CCBD30C20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD30120ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m */; };
-		0CCBD31620ECC69600439CBF /* MDFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD31520ECC69600439CBF /* MDFNetwork.m */; };
-		0CCBD31920ECC73600439CBF /* NSObject+network.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCBD31820ECC73600439CBF /* NSObject+network.m */; };
 		0CCEA8C3212BBB9800F296D8 /* TPSettingBundleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CCEA8C1212BBB9800F296D8 /* TPSettingBundleViewController.m */; };
 		0CCEA8C4212BBB9800F296D8 /* TPSettingBundleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEA8C2212BBB9800F296D8 /* TPSettingBundleViewController.xib */; };
 		0CCEA8C6212BBD8600F296D8 /* TPSettingsBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0CCEA8C5212BBD8600F296D8 /* TPSettingsBundle.bundle */; };
@@ -153,12 +148,6 @@
 		0C19CEAE21368519005F63A5 /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		0C19CEAF21368519005F63A5 /* RequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
 		0C19CEB321368A3B005F63A5 /* SectionDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionDataSource.plist; sourceTree = "<group>"; };
-		0C19CEB721368AC6005F63A5 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
-		0C19CEB821368AC6005F63A5 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
-		0C19CEBA21368AE1005F63A5 /* Network+ProductType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Network+ProductType.h"; sourceTree = "<group>"; };
-		0C19CEBB21368AE1005F63A5 /* Network+ProductType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Network+ProductType.m"; sourceTree = "<group>"; };
-		0C19CEBD21369250005F63A5 /* MDFBaseNetwok.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFBaseNetwok.h; sourceTree = "<group>"; };
-		0C19CEBE21369250005F63A5 /* MDFBaseNetwok.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFBaseNetwok.m; sourceTree = "<group>"; };
 		0C4DB626213FD1CF00105F4F /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		0C4DB627213FD1CF00105F4F /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -212,10 +201,6 @@
 		0CCBD30020ECA87D00439CBF /* YETMuitiSetListRecommendationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YETMuitiSetListRecommendationCell.xib; sourceTree = "<group>"; };
 		0CCBD30120ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YETMuitiSetListRecommendationCell.m; sourceTree = "<group>"; };
 		0CCBD30220ECA87D00439CBF /* YETMuitiSetListRecommendationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YETMuitiSetListRecommendationCell.h; sourceTree = "<group>"; };
-		0CCBD31420ECC69600439CBF /* MDFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDFNetwork.h; sourceTree = "<group>"; };
-		0CCBD31520ECC69600439CBF /* MDFNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDFNetwork.m; sourceTree = "<group>"; };
-		0CCBD31720ECC73600439CBF /* NSObject+network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+network.h"; sourceTree = "<group>"; };
-		0CCBD31820ECC73600439CBF /* NSObject+network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+network.m"; sourceTree = "<group>"; };
 		0CCEA8C0212BBB9800F296D8 /* TPSettingBundleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPSettingBundleViewController.h; sourceTree = "<group>"; };
 		0CCEA8C1212BBB9800F296D8 /* TPSettingBundleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPSettingBundleViewController.m; sourceTree = "<group>"; };
 		0CCEA8C2212BBB9800F296D8 /* TPSettingBundleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TPSettingBundleViewController.xib; sourceTree = "<group>"; };
@@ -460,21 +445,8 @@
 		0C19CEB621368AAF005F63A5 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				0C19CEBA21368AE1005F63A5 /* Network+ProductType.h */,
-				0C19CEBB21368AE1005F63A5 /* Network+ProductType.m */,
-				0C19CEB821368AC6005F63A5 /* Network.h */,
-				0C19CEB721368AC6005F63A5 /* Network.m */,
-				0C19CEBD21369250005F63A5 /* MDFBaseNetwok.h */,
-				0C19CEBE21369250005F63A5 /* MDFBaseNetwok.m */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		0C33BB9C213D0EA30007F353 /* Item */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Item;
 			sourceTree = "<group>";
 		};
 		0C33BB9D213D0EEE0007F353 /* Base */ = {
@@ -748,10 +720,6 @@
 				0CFB59282138F372002483BF /* API */,
 				0CFB59152137ED4F002483BF /* runnongjinfu.cer */,
 				0CFB59132137E2C2002483BF /* api_runnongjinfu_com.cer */,
-				0CCBD31420ECC69600439CBF /* MDFNetwork.h */,
-				0CCBD31520ECC69600439CBF /* MDFNetwork.m */,
-				0CCBD31720ECC73600439CBF /* NSObject+network.h */,
-				0CCBD31820ECC73600439CBF /* NSObject+network.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -965,7 +933,6 @@
 			children = (
 				0C33BB9F213D10620007F353 /* Example */,
 				0C33BB9D213D0EEE0007F353 /* Base */,
-				0C33BB9C213D0EA30007F353 /* Item */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -1151,7 +1118,6 @@
 				0CCF2E9B20EB395B0087169E /* FBTweak.m in Sources */,
 				0C01B8AE212FAF25002B9DF9 /* VVeboLabel.m in Sources */,
 				0CCBD2E720ECA7BB00439CBF /* NSObject+LNRefresh.m in Sources */,
-				0C19CEBF21369250005F63A5 /* MDFBaseNetwok.m in Sources */,
 				0C01B8B5212FAF80002B9DF9 /* NSString+Additions.m in Sources */,
 				0CD5512A20F5F01400413548 /* AnimatedTextField.m in Sources */,
 				0CCBD2E820ECA7BB00439CBF /* LNHeaderAnimator.m in Sources */,
@@ -1176,8 +1142,6 @@
 				0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */,
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
 				0CCF2E6E20EB1CE50087169E /* main.m in Sources */,
-				0C19CEBC21368AE1005F63A5 /* Network+ProductType.m in Sources */,
-				0CCBD31920ECC73600439CBF /* NSObject+network.m in Sources */,
 				0CFB590A21379B75002483BF /* NSTimer+UnRetain.m in Sources */,
 				0CCF2E9A20EB395B0087169E /* FBTweakViewController.m in Sources */,
 				0CCBD2EB20ECA7BB00439CBF /* MDFBaseTableViewCellModel.m in Sources */,
@@ -1199,14 +1163,12 @@
 				0CCBD2EC20ECA7BB00439CBF /* MDFBaseTableViewController.m in Sources */,
 				0C19CEB021368519005F63A5 /* RequestViewController.m in Sources */,
 				0CCBD2ED20ECA7BB00439CBF /* MDFBaseTableViewController+LoadPlist.m in Sources */,
-				0C19CEB921368AC6005F63A5 /* Network.m in Sources */,
 				0CCBD2E420ECA7BB00439CBF /* LNHeaderDIYAnimator.m in Sources */,
 				0C01B8B7212FAF80002B9DF9 /* UIView+Additions.m in Sources */,
 				0CCBD30820ECA87D00439CBF /* YETMuitiSetListHeaderCell.m in Sources */,
 				0CCBD2E220ECA7BB00439CBF /* LNRefreshComponent.m in Sources */,
 				0CCF2E9D20EB395B0087169E /* FBTweakShakeWindow.m in Sources */,
 				0C01B8A4212FAE9E002B9DF9 /* VVeboTableController.m in Sources */,
-				0CCBD31620ECC69600439CBF /* MDFNetwork.m in Sources */,
 				0CCBD2DE20ECA7BB00439CBF /* LNRefreshHeader.m in Sources */,
 				0C01B8B6212FAF80002B9DF9 /* UIScreen+Additions.m in Sources */,
 				0CCF2E9F20EB395B0087169E /* FBTweakInline.m in Sources */,

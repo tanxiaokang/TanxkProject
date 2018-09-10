@@ -71,7 +71,7 @@
 
 - (IBAction)Clicked4:(UIButton *)sender {
     
-    [[[CheckUserCretStatusModel alloc] initWithUserNo:@"10042018062016540286310001"] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
+    [[[CheckUserCretStatusModel alloc] initWithUserNo:[[NSUserDefaults standardUserDefaults] valueForKey:TKPUserNo]] startWithCompletionBlockWithSuccess:^(__kindof MDFBaseRequestItem *item) {
         NSLog(@"%@",item.message);
         [SVProgressHUD showSuccessWithStatus:[NSString stringWithFormat:@"%@",item.responseObject]];
     } failure:^(__kindof MDFBaseRequestItem *item) {
