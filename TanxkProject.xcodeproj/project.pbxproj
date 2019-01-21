@@ -119,7 +119,9 @@
 		0CE094F02140D15D0067D91B /* Test401Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE094EE2140D15C0067D91B /* Test401Model.m */; };
 		0CE094F42140D2590067D91B /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE094F32140D2590067D91B /* LoginModel.m */; };
 		0CE094F72140E3E40067D91B /* LoginItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE094F62140E3E40067D91B /* LoginItem.m */; };
-		0CF09A0821F568490096979A /* home_gold.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CF09A0721F568480096979A /* home_gold.json */; };
+		0CF09A0E21F56BAA0096979A /* img_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF09A0A21F56BAA0096979A /* img_1.png */; };
+		0CF09A0F21F56BAA0096979A /* img_0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CF09A0B21F56BAA0096979A /* img_0.png */; };
+		0CF09A1021F56BAA0096979A /* home_gold.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CF09A0C21F56BAA0096979A /* home_gold.json */; };
 		0CFB59062137973E002483BF /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB59042137973E002483BF /* NSTimerViewController.m */; };
 		0CFB59072137973E002483BF /* NSTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CFB59052137973E002483BF /* NSTimerViewController.xib */; };
 		0CFB590A21379B75002483BF /* NSTimer+UnRetain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFB590921379B75002483BF /* NSTimer+UnRetain.m */; };
@@ -320,7 +322,9 @@
 		0CE094F32140D2590067D91B /* LoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		0CE094F52140E3E40067D91B /* LoginItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginItem.h; sourceTree = "<group>"; };
 		0CE094F62140E3E40067D91B /* LoginItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginItem.m; sourceTree = "<group>"; };
-		0CF09A0721F568480096979A /* home_gold.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_gold.json; sourceTree = "<group>"; };
+		0CF09A0A21F56BAA0096979A /* img_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_1.png; sourceTree = "<group>"; };
+		0CF09A0B21F56BAA0096979A /* img_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_0.png; sourceTree = "<group>"; };
+		0CF09A0C21F56BAA0096979A /* home_gold.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = home_gold.json; path = "../../../../../../../../00.Company/19.CardKing/需求文档/1.2.0/UI/金币动画/金币动画/home_gold.json"; sourceTree = "<group>"; };
 		0CFB59032137973E002483BF /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		0CFB59042137973E002483BF /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		0CFB59052137973E002483BF /* NSTimerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerViewController.xib; sourceTree = "<group>"; };
@@ -856,7 +860,8 @@
 		0CD550EC20F5E98100413548 /* Json */ = {
 			isa = PBXGroup;
 			children = (
-				0CF09A0721F568480096979A /* home_gold.json */,
+				0CF09A0C21F56BAA0096979A /* home_gold.json */,
+				0CF09A0921F56BAA0096979A /* images */,
 				0C08768E21F2D945000DDE75 /* logiSmall.json */,
 				0CD550F320F5E9A600413548 /* 9squares-AlBoardman.json */,
 				0CD550F920F5E9A600413548 /* Boat_Loader.json */,
@@ -978,6 +983,15 @@
 			path = 401;
 			sourceTree = "<group>";
 		};
+		0CF09A0921F56BAA0096979A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0CF09A0A21F56BAA0096979A /* img_1.png */,
+				0CF09A0B21F56BAA0096979A /* img_0.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		0CFB59022137971F002483BF /* NSTimer内存泄漏 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1092,6 +1106,7 @@
 				0C01B8C4212FB35F002B9DF9 /* corner_circle@2x.png in Resources */,
 				0C4DB62A213FD1CF00105F4F /* RegisterViewController.xib in Resources */,
 				0CCBD30620ECA87D00439CBF /* YETMuitiSetListSourceCatalogCell.xib in Resources */,
+				0CF09A0F21F56BAA0096979A /* img_0.png in Resources */,
 				0CD5510520F5E9A700413548 /* TwitterHeart.json in Resources */,
 				0CD5510420F5E9A700413548 /* LottieLogo1.json in Resources */,
 				0C0D580A2146778F00064426 /* ViewControllerC.xib in Resources */,
@@ -1100,6 +1115,7 @@
 				0CD5510020F5E9A700413548 /* Watermelon.json in Resources */,
 				0CD5511120F5E9A700413548 /* setValueTest.json in Resources */,
 				0CCBD2EA20ECA7BB00439CBF /* MDFBaseTableViewCell.xib in Resources */,
+				0CF09A1021F56BAA0096979A /* home_gold.json in Resources */,
 				0C0D58002146776500064426 /* ViewControllerA.xib in Resources */,
 				0CD2D9BF213F865E004A925C /* LoginViewController.xib in Resources */,
 				0CFB59142137E2C9002483BF /* api_runnongjinfu_com.cer in Resources */,
@@ -1110,12 +1126,12 @@
 				0CD5510720F5E9A700413548 /* MotionCorpse-Jrcanest.json in Resources */,
 				0CD5510620F5E9A700413548 /* 9squares-AlBoardman.json in Resources */,
 				0C08768F21F2D945000DDE75 /* logiSmall.json in Resources */,
-				0CF09A0821F568490096979A /* home_gold.json in Resources */,
 				0CD5510220F5E9A700413548 /* vcTransition2.json in Resources */,
 				0CD5511220F5E9A700413548 /* vcTransition1.json in Resources */,
 				0CFB59162137ED53002483BF /* runnongjinfu.cer in Resources */,
 				0CD5510C20F5E9A700413548 /* Boat_Loader.json in Resources */,
 				0CD5511020F5E9A700413548 /* HamburgerArrow.json in Resources */,
+				0CF09A0E21F56BAA0096979A /* img_1.png in Resources */,
 				0CD5510F20F5E9A700413548 /* Switch.json in Resources */,
 				0CCBD30B20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.xib in Resources */,
 				0C0D58052146777500064426 /* ViewControllerB.xib in Resources */,

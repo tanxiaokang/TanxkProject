@@ -30,16 +30,16 @@
     
     [self.view addSubview:self.lottieLogo];
     [self.lottieLogo mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.offset(64.f);
+        make.top.offset(64);
         make.left.right.offset(0);
-        make.height.equalTo(self.view).multipliedBy(0.3);
+        make.height.equalTo(self.view).multipliedBy(0.8);
     }];
     
     [self.view addSubview:self.tableView];
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.top.equalTo(self.lottieLogo.mas_bottom);
-        make.left.right.bottom.offset(0);
-    }];
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.top.equalTo(self.lottieLogo.mas_bottom);
+//        make.left.right.bottom.offset(0);
+//    }];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -95,11 +95,12 @@
 #pragma mark - Properties
 - (LOTAnimationView *)lottieLogo {
     if (!_lottieLogo) {
+        
         _lottieLogo = [LOTAnimationView animationNamed:@"home_gold"];
         _lottieLogo.contentMode = UIViewContentModeScaleAspectFill;
-        [_lottieLogo mdf_whenSingleTapped:^(UIGestureRecognizer *gestureRecognizer) {
-            [SVProgressHUD showInfoWithStatus:@"点击了 LottieLogo1 动画"];
-        }];
+        _lottieLogo.autoReverseAnimation = YES;
+        _lottieLogo.animationSpeed = 0.5;
+
     }
     return _lottieLogo;
 }
