@@ -59,6 +59,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString *vcClassName = self.tableViewItems[indexPath.row][@"className"];
+    
+    if ([vcClassName isEqualToString:@"WebViewController"]) {
+        Class vcClass = NSClassFromString(vcClassName);
+        UIViewController *vc = [[vcClass alloc] init];
+        [self presentViewController:vc animated:YES completion:nil];
+        return;
+    }
     Class vcClass = NSClassFromString(vcClassName);
     if (vcClass) {
         UIViewController *vc = [[vcClass alloc] init];

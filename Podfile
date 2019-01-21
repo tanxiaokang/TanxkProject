@@ -18,4 +18,5 @@ target 'TanxkProject' do
     pod 'DFPlayer'
     # 动画相关
     pod 'lottie-ios'
+
 end

@@ -95,10 +95,10 @@
 #pragma mark - Properties
 - (LOTAnimationView *)lottieLogo {
     if (!_lottieLogo) {
-        _lottieLogo = [LOTAnimationView animationNamed:@"LottieLogo1"];
+        _lottieLogo = [LOTAnimationView animationNamed:@"home_gold"];
         _lottieLogo.contentMode = UIViewContentModeScaleAspectFill;
         [_lottieLogo mdf_whenSingleTapped:^(UIGestureRecognizer *gestureRecognizer) {
-            
+            [SVProgressHUD showInfoWithStatus:@"点击了 LottieLogo1 动画"];
         }];
     }
     return _lottieLogo;

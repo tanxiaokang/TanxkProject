@@ -44,13 +44,13 @@
 }
 
 - (void)p_stopDoSomeThing {
-    [self.timer invalidate];
+//    [self.timer invalidate];
 //    self.timer = nil;
 }
 
 - (void)dealloc {
 
-    [self.timer invalidate];
+//    [self.timer invalidate];
 }
 
 @end

@@ -38,5 +38,11 @@
 		<key>className</key>
 		<string>NSTimerViewController</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>WebView</string>
+		<key>className</key>
+		<string>WebViewController</string>
+	</dict>
 </array>
 </plist>
