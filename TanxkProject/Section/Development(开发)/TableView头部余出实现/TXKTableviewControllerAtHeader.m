@@ -11,7 +11,7 @@
 @interface TXKTableviewControllerAtHeader ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic, strong) UITableView *tableView;
-
+@property(nonatomic, strong) UIView *head;
 @end
 
 @implementation TXKTableviewControllerAtHeader
@@ -27,20 +27,39 @@
     [self.tableView reloadData];
     
     UIView *head = [[UIView alloc] init];
-    head.frame = CGRectMake(0, 0, 100, 200);
     self.tableView.tableHeaderView = head;
-//    CGFloat red = ( arc4random() % 255 / 255.0 );
-//    CGFloat green = ( arc4random() % 255 / 255.0 );
-//    CGFloat blue = ( arc4random() % 255 / 255.0 );
-//    head.backgroundColor = [UIColor colorWithRed:red green:green blue:blue alpha:1.0];
-    
+    self.head = head;
+    [head mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(self.view.frame.size.width);
+        make.height.mas_equalTo(200);
+    }];
     UIImageView *headImageView = [[UIImageView alloc] init];
+    headImageView.contentMode = UIViewContentModeScaleAspectFit;
     headImageView.image = [UIImage imageNamed:@"bg_home_long"];
-//    headImageView.frame = CGRectMake(0, -100, 414, 300);
     [head addSubview:headImageView];
     [headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.offset(0);
     }];
+    [self.tableView.tableHeaderView layoutIfNeeded];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    if (self.tableView.tableHeaderView.frame.size.height == 200.f) {
+//        self.tableView.tableHeaderView.frame = CGRectMake(0, 0, 100, 300);
+//    } else {
+//        self.tableView.tableHeaderView.frame = CGRectMake(0, 0, 100, 200);
+//    }
+    
+    NSArray *array = [MASViewConstraint installedConstraintsForView:self.tableView];
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj uninstall];
+    }];
+    
+    [self.head mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(self.view.frame.size.width);
+        make.height.mas_equalTo(300);
+    }];
+    [self.head layoutIfNeeded];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
