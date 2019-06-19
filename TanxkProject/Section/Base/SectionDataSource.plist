@@ -44,5 +44,11 @@
 		<key>className</key>
 		<string>WebViewController</string>
 	</dict>
+    <dict>
+        <key>name</key>
+        <string>表视图头部扩容</string>
+        <key>className</key>
+        <string>TXKTableviewControllerAtHeader</string>
+    </dict>
 </array>
 </plist>

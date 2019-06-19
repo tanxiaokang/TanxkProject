@@ -11,7 +11,7 @@
 @interface MDFBaseRequestItem : NSObject
 
 @property (nonatomic, assign) NSInteger code;
-@property (nonatomic, copy) NSString *message;
+@property (nonatomic, copy) NSString * _Nullable message;
 @property (nonatomic, copy) NSString *timestamp;
 
 //查看原始数据

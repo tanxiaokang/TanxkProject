@@ -29,8 +29,7 @@
     [self.view addSubview:self.tableView];
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.bottom.offset(0);
-        make.top.offset(64.f);
-        
+        make.top.offset(64.f); 
     }];
 }
 
