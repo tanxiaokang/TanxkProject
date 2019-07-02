@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>collection动画</string>
+		<key>className</key>
+		<string>TXKUICollectionAnimationViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>Animation - lottie</string>
 		<key>className</key>
 		<string>LottieRootViewController</string>
@@ -44,11 +50,11 @@
 		<key>className</key>
 		<string>WebViewController</string>
 	</dict>
-    <dict>
-        <key>name</key>
-        <string>表视图头部扩容</string>
-        <key>className</key>
-        <string>TXKTableviewControllerAtHeader</string>
-    </dict>
+	<dict>
+		<key>name</key>
+		<string>表视图头部扩容</string>
+		<key>className</key>
+		<string>TXKTableviewControllerAtHeader</string>
+	</dict>
 </array>
 </plist>

@@ -34,6 +34,7 @@
 		0C19CEB021368519005F63A5 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEAE21368519005F63A5 /* RequestViewController.m */; };
 		0C19CEB121368519005F63A5 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C19CEAF21368519005F63A5 /* RequestViewController.xib */; };
 		0C19CEB421368A3B005F63A5 /* SectionDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C19CEB321368A3B005F63A5 /* SectionDataSource.plist */; };
+		0C2DCA5D22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2DCA5C22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m */; };
 		0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DB627213FD1CF00105F4F /* RegisterViewController.m */; };
 		0C4DB62A213FD1CF00105F4F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */; };
 		0C4DB62E213FD86D00105F4F /* GestureAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DB62C213FD86D00105F4F /* GestureAuthenticationViewController.m */; };
@@ -181,6 +182,8 @@
 		0C19CEAE21368519005F63A5 /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		0C19CEAF21368519005F63A5 /* RequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
 		0C19CEB321368A3B005F63A5 /* SectionDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionDataSource.plist; sourceTree = "<group>"; };
+		0C2DCA5B22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKCollectionLoadeAnimationViewController.h; sourceTree = "<group>"; };
+		0C2DCA5C22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKCollectionLoadeAnimationViewController.m; sourceTree = "<group>"; };
 		0C4DB626213FD1CF00105F4F /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		0C4DB627213FD1CF00105F4F /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0C4DB628213FD1CF00105F4F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
@@ -498,6 +501,7 @@
 			children = (
 				0C1538C522BA18E50038D563 /* TXKUICollectionAnimationViewController.h */,
 				0C1538C622BA18E50038D563 /* TXKUICollectionAnimationViewController.m */,
+				0C2DCA5A22C9AC7B00F6F879 /* 载入时使用的动画 */,
 			);
 			path = UICollectionAnimation;
 			sourceTree = "<group>";
@@ -525,6 +529,15 @@
 			children = (
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		0C2DCA5A22C9AC7B00F6F879 /* 载入时使用的动画 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2DCA5B22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.h */,
+				0C2DCA5C22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m */,
+			);
+			path = "载入时使用的动画";
 			sourceTree = "<group>";
 		};
 		0C33BB9D213D0EEE0007F353 /* Base */ = {
@@ -1269,6 +1282,7 @@
 				0CCF2E9920EB395B0087169E /* FBTweakCategory.m in Sources */,
 				0C01B8CC212FC568002B9DF9 /* NSString+range.m in Sources */,
 				0CCEA8C3212BBB9800F296D8 /* TPSettingBundleViewController.m in Sources */,
+				0C2DCA5D22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m in Sources */,
 				0CD5511620F5EDE400413548 /* UIView+Utility.m in Sources */,
 				0CD2D9B9213F80C2004A925C /* YTKNetworkConfig+addFeature.m in Sources */,
 				0CCF2EA020EB395B0087169E /* FBTweakCollection.m in Sources */,
