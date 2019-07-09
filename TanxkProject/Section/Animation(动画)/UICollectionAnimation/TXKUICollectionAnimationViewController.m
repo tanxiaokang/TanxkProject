@@ -8,6 +8,7 @@
 
 #import "TXKUICollectionAnimationViewController.h"
 #import "TXKCollectionLoadeAnimationViewController.h"
+#import "TXKCollectionSwitchCellAtAnimationViewController.h"
 
 @interface TXKUICollectionAnimationViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -25,7 +26,7 @@
     self.title = @"collection动画";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    self.dataSource = @[@"载入时使用的动画"];
+    self.dataSource = @[@"载入时使用的动画",@"切换cell时做动画"];
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     [self.view addSubview:self.tableView];
@@ -61,6 +62,9 @@
     
     if ([self.dataSource[indexPath.row] isEqualToString:@"载入时使用的动画"]) {
         TXKCollectionLoadeAnimationViewController *vc = [TXKCollectionLoadeAnimationViewController new];
+        [self.navigationController pushViewController:vc animated:YES];
+    } else if ([self.dataSource[indexPath.row] isEqualToString:@"切换cell时做动画"]) {
+        TXKCollectionSwitchCellAtAnimationViewController *vc = [TXKCollectionSwitchCellAtAnimationViewController new];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }

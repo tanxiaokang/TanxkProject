@@ -1,33 +1,34 @@
 //
-//  TXKCollectionLoadeAnimationViewController.m
+//  TXKCollectionSwitchCellAtAnimationViewController.m
 //  TanxkProject
 //
-//  Created by tanxk on 2019/7/127.
+//  Created by tanxk on 2019/7/227.
 //  Copyright © 2019 tanxk. All rights reserved.
 //
 
-#import "TXKCollectionLoadeAnimationViewController.h"
+#import "TXKCollectionSwitchCellAtAnimationViewController.h"
 
-@interface TXKCollectionLoadeAnimationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface TXKCollectionSwitchCellAtAnimationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic, strong) UICollectionView *collectionView;
 @property(nonatomic, strong) NSArray <NSString *>*dataSource;
 
+@property (nonatomic, strong) UICollectionViewFlowLayout *gridLayout;
+@property (nonatomic, strong) UICollectionViewFlowLayout *listLayout;
+@property (nonatomic, assign) BOOL isList;
+
 @end
 
-@implementation TXKCollectionLoadeAnimationViewController
+@implementation TXKCollectionSwitchCellAtAnimationViewController
 
 #pragma mark - LifeCycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"载入时使用的动画";
+    self.title = @"切换cell时做动画";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    layout.itemSize = CGSizeMake(100, 100);
-    
-    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
+    self.collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:self.gridLayout];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
     [self.view addSubview:self.collectionView];
@@ -49,12 +50,18 @@
 #pragma mark - Action
 - (void)rightItemClicked {
     
-    //增加layoutIfNeed的目的是让animateCollection在reload完成之后再执行
-    [self->_collectionView reloadData];
-    [self->_collectionView layoutIfNeeded];
-    [self animateCollection];
+    [self changeListButtonClick];
 }
 
+-(void)changeListButtonClick{
+    _isList = !_isList;
+    if (_isList) {
+        [self.collectionView setCollectionViewLayout:self.listLayout animated:YES];
+    }else{
+        [self.collectionView setCollectionViewLayout:self.gridLayout animated:YES];
+    }
+    //[self.myCollectionView reloadData];
+}
 #pragma mark - work
 
 -(void)animateCollection{
@@ -86,6 +93,29 @@
     cell.backgroundColor = [self qmui_randomColor];
     return cell;
 }
+#pragma mark - Getter
+-(UICollectionViewFlowLayout *)gridLayout{
+    if (!_gridLayout) {
+        _gridLayout = [[UICollectionViewFlowLayout alloc] init];
+        CGFloat width = (self.view.frame.size.width - 5) * 0.5;
+        _gridLayout.itemSize = CGSizeMake(width, 200 + width);
+        _gridLayout.minimumLineSpacing = 5;
+        _gridLayout.minimumInteritemSpacing = 5;
+        _gridLayout.sectionInset = UIEdgeInsetsZero;
+    }
+    return _gridLayout;
+}
+
+-(UICollectionViewFlowLayout *)listLayout{
+    if (!_listLayout) {
+        _listLayout = [[UICollectionViewFlowLayout alloc] init];
+        _listLayout.itemSize = CGSizeMake(self.view.frame.size.width, 190);
+        _listLayout.minimumLineSpacing = 0.5;
+        _listLayout.sectionInset = UIEdgeInsetsZero;
+    }
+    return _listLayout;
+}
+#pragma mark - Setter
 
 #pragma mark - other
 - (UIColor *)qmui_randomColor {
