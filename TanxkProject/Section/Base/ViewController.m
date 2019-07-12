@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+@import UIKit.UIView;
 @class TPSettingBundleViewController;
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 

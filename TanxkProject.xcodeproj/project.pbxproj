@@ -20,6 +20,10 @@
 		0C01B8C5212FB35F002B9DF9 /* t_comments@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C01B8C1212FB35F002B9DF9 /* t_comments@2x.png */; };
 		0C01B8C9212FC1A9002B9DF9 /* NSRegularExpressionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8C8212FC1A9002B9DF9 /* NSRegularExpressionController.m */; };
 		0C01B8CC212FC568002B9DF9 /* NSString+range.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C01B8CB212FC568002B9DF9 /* NSString+range.m */; };
+		0C067B4322D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C067B4222D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.m */; };
+		0C067B4622D874ED007F6DAD /* TXKNetworkAtInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C067B4522D874ED007F6DAD /* TXKNetworkAtInvoke.m */; };
+		0C067B4922D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C067B4822D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.m */; };
+		0C067B4C22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C067B4B22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.m */; };
 		0C08768F21F2D945000DDE75 /* logiSmall.json in Resources */ = {isa = PBXBuildFile; fileRef = 0C08768E21F2D945000DDE75 /* logiSmall.json */; };
 		0C0D57FF2146776500064426 /* ViewControllerA.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D57FD2146776500064426 /* ViewControllerA.m */; };
 		0C0D58002146776500064426 /* ViewControllerA.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D57FE2146776500064426 /* ViewControllerA.xib */; };
@@ -165,6 +169,14 @@
 		0C01B8C8212FC1A9002B9DF9 /* NSRegularExpressionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRegularExpressionController.m; sourceTree = "<group>"; };
 		0C01B8CA212FC568002B9DF9 /* NSString+range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+range.h"; sourceTree = "<group>"; };
 		0C01B8CB212FC568002B9DF9 /* NSString+range.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+range.m"; sourceTree = "<group>"; };
+		0C067B4122D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKDesignPatternsWithNetworkAtInvoke.h; sourceTree = "<group>"; };
+		0C067B4222D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKDesignPatternsWithNetworkAtInvoke.m; sourceTree = "<group>"; };
+		0C067B4422D874ED007F6DAD /* TXKNetworkAtInvoke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKNetworkAtInvoke.h; sourceTree = "<group>"; };
+		0C067B4522D874ED007F6DAD /* TXKNetworkAtInvoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKNetworkAtInvoke.m; sourceTree = "<group>"; };
+		0C067B4722D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKNetworkAtInvokeWithHaveLoadAnimation.h; sourceTree = "<group>"; };
+		0C067B4822D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKNetworkAtInvokeWithHaveLoadAnimation.m; sourceTree = "<group>"; };
+		0C067B4A22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKNetworkAtInvokeWithNoeHaveLoadAnimation.h; sourceTree = "<group>"; };
+		0C067B4B22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKNetworkAtInvokeWithNoeHaveLoadAnimation.m; sourceTree = "<group>"; };
 		0C08768E21F2D945000DDE75 /* logiSmall.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = logiSmall.json; sourceTree = "<group>"; };
 		0C0D57FC2146776500064426 /* ViewControllerA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerA.h; sourceTree = "<group>"; };
 		0C0D57FD2146776500064426 /* ViewControllerA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerA.m; sourceTree = "<group>"; };
@@ -390,6 +402,7 @@
 		0C01B89B212FABFC002B9DF9 /* FunctionUse(功能使用) */ = {
 			isa = PBXGroup;
 			children = (
+				0C067B4022D8740D007F6DAD /* 设计模式之网络框架调用 */,
 				0CD273622147C5A40072A2F7 /* WebView */,
 				0CFB59022137971F002483BF /* NSTimer内存泄漏 */,
 				0C19CEAC21368507005F63A5 /* Request */,
@@ -478,6 +491,21 @@
 				0C01B8CB212FC568002B9DF9 /* NSString+range.m */,
 			);
 			path = NSRegularExpression;
+			sourceTree = "<group>";
+		};
+		0C067B4022D8740D007F6DAD /* 设计模式之网络框架调用 */ = {
+			isa = PBXGroup;
+			children = (
+				0C067B4122D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.h */,
+				0C067B4222D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.m */,
+				0C067B4422D874ED007F6DAD /* TXKNetworkAtInvoke.h */,
+				0C067B4522D874ED007F6DAD /* TXKNetworkAtInvoke.m */,
+				0C067B4722D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.h */,
+				0C067B4822D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.m */,
+				0C067B4A22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.h */,
+				0C067B4B22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.m */,
+			);
+			path = "设计模式之网络框架调用";
 			sourceTree = "<group>";
 		};
 		0C0D57FB2146775300064426 /* New Group */ = {
@@ -1279,6 +1307,7 @@
 				0CE094EB2140D0940067D91B /* CheckUserCretStatusItem.m in Sources */,
 				0CCF2E9B20EB395B0087169E /* FBTweak.m in Sources */,
 				0C01B8AE212FAF25002B9DF9 /* VVeboLabel.m in Sources */,
+				0C067B4622D874ED007F6DAD /* TXKNetworkAtInvoke.m in Sources */,
 				0CCBD2E720ECA7BB00439CBF /* NSObject+LNRefresh.m in Sources */,
 				0CC914C322CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.m in Sources */,
 				0C01B8B5212FAF80002B9DF9 /* NSString+Additions.m in Sources */,
@@ -1288,10 +1317,12 @@
 				0CCBD2E020ECA7BB00439CBF /* LNRefreshFooter.m in Sources */,
 				0C1538C322B9C9610038D563 /* TXKTableviewControllerAtHeader.m in Sources */,
 				0CCF2E9E20EB395B0087169E /* _FBTweakBindObserver.m in Sources */,
+				0C067B4C22D8752A007F6DAD /* TXKNetworkAtInvokeWithNoeHaveLoadAnimation.m in Sources */,
 				0CCF2E9820EB395B0087169E /* _FBTweakCollectionViewController.m in Sources */,
 				0CCF2E9620EB395B0087169E /* _FBTweakCategoryViewController.m in Sources */,
 				0CCBD2EE20ECA7BB00439CBF /* MDFBaseTableViewCell.m in Sources */,
 				0CE094F02140D15D0067D91B /* Test401Model.m in Sources */,
+				0C067B4322D874B8007F6DAD /* TXKDesignPatternsWithNetworkAtInvoke.m in Sources */,
 				0CFB59232138E661002483BF /* CheckUserCretStatusModel.m in Sources */,
 				0C0D580E2146779A00064426 /* ViewControllerD.m in Sources */,
 				0CD5512820F5F01400413548 /* LAControlsViewController.m in Sources */,
@@ -1309,6 +1340,7 @@
 				0C4DB629213FD1CF00105F4F /* RegisterViewController.m in Sources */,
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
 				0CCF2E6E20EB1CE50087169E /* main.m in Sources */,
+				0C067B4922D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.m in Sources */,
 				0CFB590A21379B75002483BF /* NSTimer+UnRetain.m in Sources */,
 				0CCF2E9A20EB395B0087169E /* FBTweakViewController.m in Sources */,
 				0CCBD2EB20ECA7BB00439CBF /* MDFBaseTableViewCellModel.m in Sources */,
