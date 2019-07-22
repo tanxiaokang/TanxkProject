@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>mas改变约束</string>
+		<key>className</key>
+		<string>TXKMasonryViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>自定义cell，有mas管理高度</string>
 		<key>className</key>
 		<string>TXKTableviewAtMasManagerViewController</string>
