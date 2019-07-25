@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>日期相关</string>
+		<key>className</key>
+		<string>TXKCalendarViewController</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>mas改变约束</string>
 		<key>className</key>
 		<string>TXKMasonryViewController</string>

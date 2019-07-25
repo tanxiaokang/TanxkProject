@@ -49,6 +49,8 @@
 		0C4DB62F213FD86D00105F4F /* GestureAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4DB62D213FD86D00105F4F /* GestureAuthenticationViewController.xib */; };
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
 		0CA07F0E22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA07F0D22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m */; };
+		0CB643C822E6F0F700AE4324 /* TXKCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB643C622E6F0F700AE4324 /* TXKCalendarViewController.m */; };
+		0CB643C922E6F0F700AE4324 /* TXKCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB643C722E6F0F700AE4324 /* TXKCalendarViewController.xib */; };
 		0CC914C322CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC914C222CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.m */; };
 		0CC914C722CC58FC00CCCB89 /* TXKTXKTableviewAtMasManagerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC914C522CC58FC00CCCB89 /* TXKTXKTableviewAtMasManagerTableViewCell.m */; };
 		0CC914C822CC58FC00CCCB89 /* TXKTXKTableviewAtMasManagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CC914C622CC58FC00CCCB89 /* TXKTXKTableviewAtMasManagerTableViewCell.xib */; };
@@ -221,6 +223,9 @@
 		0C654EB820EE225400BAD881 /* FBTweak+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FBTweak+Config.m"; sourceTree = "<group>"; };
 		0CA07F0C22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKCollectionSwitchCellAtAnimationViewController.h; sourceTree = "<group>"; };
 		0CA07F0D22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKCollectionSwitchCellAtAnimationViewController.m; sourceTree = "<group>"; };
+		0CB643C522E6F0F700AE4324 /* TXKCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKCalendarViewController.h; sourceTree = "<group>"; };
+		0CB643C622E6F0F700AE4324 /* TXKCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKCalendarViewController.m; sourceTree = "<group>"; };
+		0CB643C722E6F0F700AE4324 /* TXKCalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TXKCalendarViewController.xib; sourceTree = "<group>"; };
 		0CC914C122CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKTableviewAtMasManagerViewController.h; sourceTree = "<group>"; };
 		0CC914C222CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKTableviewAtMasManagerViewController.m; sourceTree = "<group>"; };
 		0CC914C422CC58FC00CCCB89 /* TXKTXKTableviewAtMasManagerTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKTXKTableviewAtMasManagerTableViewCell.h; sourceTree = "<group>"; };
@@ -427,6 +432,7 @@
 		0C01B89C212FAC25002B9DF9 /* Development(开发) */ = {
 			isa = PBXGroup;
 			children = (
+				0C724FF322E6F06A00E349B4 /* 日期相关 */,
 				0C4A1A8F22E55E2700844EE1 /* Masonry */,
 				0CC914C022CC573F00CCCB89 /* 自定义cell，有mas管理高度 */,
 				0C1538BD22B9C8340038D563 /* TableView头部余出实现 */,
@@ -661,6 +667,16 @@
 				0C654EB820EE225400BAD881 /* FBTweak+Config.m */,
 			);
 			path = FBTweakCategory;
+			sourceTree = "<group>";
+		};
+		0C724FF322E6F06A00E349B4 /* 日期相关 */ = {
+			isa = PBXGroup;
+			children = (
+				0CB643C522E6F0F700AE4324 /* TXKCalendarViewController.h */,
+				0CB643C622E6F0F700AE4324 /* TXKCalendarViewController.m */,
+				0CB643C722E6F0F700AE4324 /* TXKCalendarViewController.xib */,
+			);
+			path = "日期相关";
 			sourceTree = "<group>";
 		};
 		0CA07F0B22CB4FEF00F93B43 /* 切换cell时做动画 */ = {
@@ -1251,6 +1267,7 @@
 				0CFB59142137E2C9002483BF /* api_runnongjinfu_com.cer in Resources */,
 				0CD5510D20F5E9A700413548 /* LottieLogo1_masked.json in Resources */,
 				0CCF2E6620EB1CE20087169E /* Main.storyboard in Resources */,
+				0CB643C922E6F0F700AE4324 /* TXKCalendarViewController.xib in Resources */,
 				0C19CEB421368A3B005F63A5 /* SectionDataSource.plist in Resources */,
 				0C01B8C2212FB35F002B9DF9 /* t_repost@2x.png in Resources */,
 				0CD5510720F5E9A700413548 /* MotionCorpse-Jrcanest.json in Resources */,
@@ -1391,6 +1408,7 @@
 				0CD5512B20F5F01400413548 /* TypingDemoViewController.m in Sources */,
 				0CD5512E20F5F01400413548 /* LADownloadTestViewController.m in Sources */,
 				0C0D58042146777500064426 /* ViewControllerB.m in Sources */,
+				0CB643C822E6F0F700AE4324 /* TXKCalendarViewController.m in Sources */,
 				0CCBD2EC20ECA7BB00439CBF /* MDFBaseTableViewController.m in Sources */,
 				0C19CEB021368519005F63A5 /* RequestViewController.m in Sources */,
 				0CD2736B2147C5C40072A2F7 /* WebViewController.m in Sources */,
