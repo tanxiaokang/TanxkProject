@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "TXKChainedGrammarManager.h"
+
 @import UIKit.UIView;
 @class TPSettingBundleViewController;
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -31,6 +33,8 @@
         make.left.right.bottom.offset(0);
         make.top.offset(64.f); 
     }];
+    
+    [TXKChainedGrammarManager manager].addRequest([NSObject new]).addCompletion([NSObject new]);
 }
 
 #pragma mark - Handle Data

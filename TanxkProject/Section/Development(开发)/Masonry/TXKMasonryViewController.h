@@ -32,6 +32,10 @@ NS_ASSUME_NONNULL_BEGIN
  
  Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch this in the debugger.
  */
+///
+///3. xib view 设置比例后，能否改,
+///
+/// 写了个f分类解决了 能设置等比缩放
 @interface TXKMasonryViewController : UIViewController
 
 @end

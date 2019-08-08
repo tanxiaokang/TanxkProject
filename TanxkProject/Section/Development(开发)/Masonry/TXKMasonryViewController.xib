@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TXKMasonryViewController">
             <connections>
+                <outlet property="constraint" destination="ma1-6b-cbE" id="OC8-Oe-jH1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,12 +27,23 @@
                         <action selector="btnClicked:" destination="-1" eventType="touchUpInside" id="j8k-Ar-jIM"/>
                     </connections>
                 </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeW-mc-u7N">
+                    <rect key="frame" x="20" y="64" width="374" height="449"/>
+                    <color key="backgroundColor" red="1" green="0.85490196080000003" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="TeW-mc-u7N" secondAttribute="height" multiplier="1:1.2" id="ma1-6b-cbE"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="FSL-lv-W6Q" secondAttribute="bottom" constant="100" id="54o-9p-6cJ"/>
+                <constraint firstItem="TeW-mc-u7N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" constant="20" id="VCT-0l-6Ph"/>
                 <constraint firstAttribute="trailing" secondItem="FSL-lv-W6Q" secondAttribute="trailing" constant="100" id="XDo-HE-e3i"/>
+                <constraint firstAttribute="trailing" secondItem="TeW-mc-u7N" secondAttribute="trailing" constant="20" id="kJO-R2-kL6"/>
+                <constraint firstItem="TeW-mc-u7N" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="ycW-tM-3Mk"/>
             </constraints>
+            <point key="canvasLocation" x="-100" y="119"/>
         </view>
     </objects>
 </document>

@@ -38,6 +38,8 @@
 		0C19CEB021368519005F63A5 /* RequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C19CEAE21368519005F63A5 /* RequestViewController.m */; };
 		0C19CEB121368519005F63A5 /* RequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C19CEAF21368519005F63A5 /* RequestViewController.xib */; };
 		0C19CEB421368A3B005F63A5 /* SectionDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C19CEB321368A3B005F63A5 /* SectionDataSource.plist */; };
+		0C25E61922E9649400A34706 /* NSLayoutConstraint+tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C25E61822E9649400A34706 /* NSLayoutConstraint+tools.m */; };
+		0C2943D022EE99EE00D51140 /* TXKChainedGrammarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2943CF22EE99EE00D51140 /* TXKChainedGrammarManager.m */; };
 		0C2DCA5D22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2DCA5C22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m */; };
 		0C4A1A9322E55E6200844EE1 /* TXKMasonryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4A1A9122E55E6200844EE1 /* TXKMasonryViewController.m */; };
 		0C4A1A9422E55E6200844EE1 /* TXKMasonryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4A1A9222E55E6200844EE1 /* TXKMasonryViewController.xib */; };
@@ -48,7 +50,9 @@
 		0C4DB62E213FD86D00105F4F /* GestureAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4DB62C213FD86D00105F4F /* GestureAuthenticationViewController.m */; };
 		0C4DB62F213FD86D00105F4F /* GestureAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C4DB62D213FD86D00105F4F /* GestureAuthenticationViewController.xib */; };
 		0C654EB920EE225400BAD881 /* FBTweak+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C654EB820EE225400BAD881 /* FBTweak+Config.m */; };
+		0C78821A22F413FE001B8685 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C78821922F413FE001B8685 /* main.m */; };
 		0CA07F0E22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA07F0D22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m */; };
+		0CA480D922F284D400728C5D /* LLDB.md in Resources */ = {isa = PBXBuildFile; fileRef = 0CA480D822F284D400728C5D /* LLDB.md */; };
 		0CB643C822E6F0F700AE4324 /* TXKCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CB643C622E6F0F700AE4324 /* TXKCalendarViewController.m */; };
 		0CB643C922E6F0F700AE4324 /* TXKCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB643C722E6F0F700AE4324 /* TXKCalendarViewController.xib */; };
 		0CC914C322CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC914C222CC576C00CCCB89 /* TXKTableviewAtMasManagerViewController.m */; };
@@ -152,6 +156,18 @@
 		7335C80A0A9EF4D419C7B040 /* libPods-TanxkProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A476C87C808037848059C1 /* libPods-TanxkProject.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		0C78821522F413FE001B8685 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0C01B8A2212FAE9E002B9DF9 /* VVeboTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VVeboTableController.h; sourceTree = "<group>"; };
 		0C01B8A3212FAE9E002B9DF9 /* VVeboTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VVeboTableController.m; sourceTree = "<group>"; };
@@ -204,6 +220,10 @@
 		0C19CEAE21368519005F63A5 /* RequestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewController.m; sourceTree = "<group>"; };
 		0C19CEAF21368519005F63A5 /* RequestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RequestViewController.xib; sourceTree = "<group>"; };
 		0C19CEB321368A3B005F63A5 /* SectionDataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SectionDataSource.plist; sourceTree = "<group>"; };
+		0C25E61722E9649400A34706 /* NSLayoutConstraint+tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+tools.h"; sourceTree = "<group>"; };
+		0C25E61822E9649400A34706 /* NSLayoutConstraint+tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+tools.m"; sourceTree = "<group>"; };
+		0C2943CE22EE99EE00D51140 /* TXKChainedGrammarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKChainedGrammarManager.h; sourceTree = "<group>"; };
+		0C2943CF22EE99EE00D51140 /* TXKChainedGrammarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKChainedGrammarManager.m; sourceTree = "<group>"; };
 		0C2DCA5B22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKCollectionLoadeAnimationViewController.h; sourceTree = "<group>"; };
 		0C2DCA5C22C9ACC100F6F879 /* TXKCollectionLoadeAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKCollectionLoadeAnimationViewController.m; sourceTree = "<group>"; };
 		0C4A1A9022E55E6200844EE1 /* TXKMasonryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKMasonryViewController.h; sourceTree = "<group>"; };
@@ -221,8 +241,11 @@
 		0C4DB62D213FD86D00105F4F /* GestureAuthenticationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GestureAuthenticationViewController.xib; sourceTree = "<group>"; };
 		0C654EB720EE225400BAD881 /* FBTweak+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBTweak+Config.h"; sourceTree = "<group>"; };
 		0C654EB820EE225400BAD881 /* FBTweak+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FBTweak+Config.m"; sourceTree = "<group>"; };
+		0C78821722F413FE001B8685 /* 临时计算用 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "临时计算用"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C78821922F413FE001B8685 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0CA07F0C22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKCollectionSwitchCellAtAnimationViewController.h; sourceTree = "<group>"; };
 		0CA07F0D22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKCollectionSwitchCellAtAnimationViewController.m; sourceTree = "<group>"; };
+		0CA480D822F284D400728C5D /* LLDB.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LLDB.md; sourceTree = "<group>"; };
 		0CB643C522E6F0F700AE4324 /* TXKCalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TXKCalendarViewController.h; sourceTree = "<group>"; };
 		0CB643C622E6F0F700AE4324 /* TXKCalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXKCalendarViewController.m; sourceTree = "<group>"; };
 		0CB643C722E6F0F700AE4324 /* TXKCalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TXKCalendarViewController.xib; sourceTree = "<group>"; };
@@ -396,6 +419,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0C78821422F413FE001B8685 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CCF2E5820EB1CE20087169E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,6 +462,7 @@
 		0C01B89C212FAC25002B9DF9 /* Development(开发) */ = {
 			isa = PBXGroup;
 			children = (
+				0C2943CD22EE991E00D51140 /* 链式语法 */,
 				0C724FF322E6F06A00E349B4 /* 日期相关 */,
 				0C4A1A8F22E55E2700844EE1 /* Masonry */,
 				0CC914C022CC573F00CCCB89 /* 自定义cell，有mas管理高度 */,
@@ -590,6 +621,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		0C2943CD22EE991E00D51140 /* 链式语法 */ = {
+			isa = PBXGroup;
+			children = (
+				0C2943CE22EE99EE00D51140 /* TXKChainedGrammarManager.h */,
+				0C2943CF22EE99EE00D51140 /* TXKChainedGrammarManager.m */,
+			);
+			path = "链式语法";
+			sourceTree = "<group>";
+		};
 		0C2DCA5A22C9AC7B00F6F879 /* 载入时使用的动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +673,8 @@
 		0C4A1A8F22E55E2700844EE1 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
+				0C25E61722E9649400A34706 /* NSLayoutConstraint+tools.h */,
+				0C25E61822E9649400A34706 /* NSLayoutConstraint+tools.m */,
 				0C4A1A9022E55E6200844EE1 /* TXKMasonryViewController.h */,
 				0C4A1A9122E55E6200844EE1 /* TXKMasonryViewController.m */,
 				0C4A1A9222E55E6200844EE1 /* TXKMasonryViewController.xib */,
@@ -679,6 +721,14 @@
 			path = "日期相关";
 			sourceTree = "<group>";
 		};
+		0C78821822F413FE001B8685 /* 临时计算用 */ = {
+			isa = PBXGroup;
+			children = (
+				0C78821922F413FE001B8685 /* main.m */,
+			);
+			path = "临时计算用";
+			sourceTree = "<group>";
+		};
 		0CA07F0B22CB4FEF00F93B43 /* 切换cell时做动画 */ = {
 			isa = PBXGroup;
 			children = (
@@ -686,6 +736,30 @@
 				0CA07F0D22CB503800F93B43 /* TXKCollectionSwitchCellAtAnimationViewController.m */,
 			);
 			path = "切换cell时做动画";
+			sourceTree = "<group>";
+		};
+		0CA480D622F2828000728C5D /* Advanced(进阶) */ = {
+			isa = PBXGroup;
+			children = (
+				0CA480D722F282D400728C5D /* LLDB */,
+			);
+			path = "Advanced(进阶)";
+			sourceTree = "<group>";
+		};
+		0CA480D722F282D400728C5D /* LLDB */ = {
+			isa = PBXGroup;
+			children = (
+				0CA480D822F284D400728C5D /* LLDB.md */,
+				0CA480DA22F288E800728C5D /* 例子 */,
+			);
+			path = LLDB;
+			sourceTree = "<group>";
+		};
+		0CA480DA22F288E800728C5D /* 例子 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "例子";
 			sourceTree = "<group>";
 		};
 		0CC914C022CC573F00CCCB89 /* 自定义cell，有mas管理高度 */ = {
@@ -769,6 +843,7 @@
 		0CCBD2EF20ECA85300439CBF /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				0CA480D622F2828000728C5D /* Advanced(进阶) */,
 				0CD2D9BA213F864B004A925C /* Temp */,
 				0C01B8A0212FAE3D002B9DF9 /* Base */,
 				0C01B89C212FAC25002B9DF9 /* Development(开发) */,
@@ -877,6 +952,7 @@
 			isa = PBXGroup;
 			children = (
 				0CCF2E5D20EB1CE20087169E /* TanxkProject */,
+				0C78821822F413FE001B8685 /* 临时计算用 */,
 				0CCF2E5C20EB1CE20087169E /* Products */,
 				1C1052F9422F6F184DBC964B /* Pods */,
 				8A05D46DBD94C06463C01FC6 /* Frameworks */,
@@ -887,6 +963,7 @@
 			isa = PBXGroup;
 			children = (
 				0CCF2E5B20EB1CE20087169E /* TanxkProject.app */,
+				0C78821722F413FE001B8685 /* 临时计算用 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1176,6 +1253,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0C78821622F413FE001B8685 /* 临时计算用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C78821D22F413FE001B8685 /* Build configuration list for PBXNativeTarget "临时计算用" */;
+			buildPhases = (
+				0C78821322F413FE001B8685 /* Sources */,
+				0C78821422F413FE001B8685 /* Frameworks */,
+				0C78821522F413FE001B8685 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "临时计算用";
+			productName = "临时计算用";
+			productReference = 0C78821722F413FE001B8685 /* 临时计算用 */;
+			productType = "com.apple.product-type.tool";
+		};
 		0CCF2E5A20EB1CE20087169E /* TanxkProject */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CCF2E7120EB1CE50087169E /* Build configuration list for PBXNativeTarget "TanxkProject" */;
@@ -1205,6 +1299,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = tanxk;
 				TargetAttributes = {
+					0C78821622F413FE001B8685 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					0CCF2E5A20EB1CE20087169E = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -1224,6 +1321,7 @@
 			projectRoot = "";
 			targets = (
 				0CCF2E5A20EB1CE20087169E /* TanxkProject */,
+				0C78821622F413FE001B8685 /* 临时计算用 */,
 			);
 		};
 /* End PBXProject section */
@@ -1263,6 +1361,7 @@
 				0CCBD2EA20ECA7BB00439CBF /* MDFBaseTableViewCell.xib in Resources */,
 				0CF09A1021F56BAA0096979A /* home_gold.json in Resources */,
 				0C0D58002146776500064426 /* ViewControllerA.xib in Resources */,
+				0CA480D922F284D400728C5D /* LLDB.md in Resources */,
 				0CD2D9BF213F865E004A925C /* LoginViewController.xib in Resources */,
 				0CFB59142137E2C9002483BF /* api_runnongjinfu_com.cer in Resources */,
 				0CD5510D20F5E9A700413548 /* LottieLogo1_masked.json in Resources */,
@@ -1334,6 +1433,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0C78821322F413FE001B8685 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C78821A22F413FE001B8685 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CCF2E5720EB1CE20087169E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1376,6 +1483,7 @@
 				0CCF2E6320EB1CE20087169E /* ViewController.m in Sources */,
 				0C1538C722BA18E50038D563 /* TXKUICollectionAnimationViewController.m in Sources */,
 				0C4DB62E213FD86D00105F4F /* GestureAuthenticationViewController.m in Sources */,
+				0C25E61922E9649400A34706 /* NSLayoutConstraint+tools.m in Sources */,
 				0CCBD30C20ECA87D00439CBF /* YETMuitiSetListRecommendationCell.m in Sources */,
 				0C4A1A9A22E59EC600844EE1 /* TXKMasonryView2.m in Sources */,
 				0CCBD2E520ECA7BB00439CBF /* LNRefreshHandler.m in Sources */,
@@ -1387,6 +1495,7 @@
 				0CCF2E9720EB395B0087169E /* FBTweakStore.m in Sources */,
 				0CCF2E6E20EB1CE50087169E /* main.m in Sources */,
 				0C067B4922D8750C007F6DAD /* TXKNetworkAtInvokeWithHaveLoadAnimation.m in Sources */,
+				0C2943D022EE99EE00D51140 /* TXKChainedGrammarManager.m in Sources */,
 				0CFB590A21379B75002483BF /* NSTimer+UnRetain.m in Sources */,
 				0CCF2E9A20EB395B0087169E /* FBTweakViewController.m in Sources */,
 				0CCBD2EB20ECA7BB00439CBF /* MDFBaseTableViewCellModel.m in Sources */,
@@ -1453,6 +1562,33 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0C78821B22F413FE001B8685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV8S2WV693;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0C78821C22F413FE001B8685 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NV8S2WV693;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		0CCF2E6F20EB1CE50087169E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1616,6 +1752,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0C78821D22F413FE001B8685 /* Build configuration list for PBXNativeTarget "临时计算用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C78821B22F413FE001B8685 /* Debug */,
+				0C78821C22F413FE001B8685 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0CCF2E5620EB1CE20087169E /* Build configuration list for PBXProject "TanxkProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
