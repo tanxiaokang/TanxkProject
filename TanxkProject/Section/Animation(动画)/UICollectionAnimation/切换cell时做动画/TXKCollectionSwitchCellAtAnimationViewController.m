@@ -7,13 +7,14 @@
 //
 
 #import "TXKCollectionSwitchCellAtAnimationViewController.h"
+#import "TXKWalletCollectionViewLayout.h"
 
 @interface TXKCollectionSwitchCellAtAnimationViewController ()<UICollectionViewDelegate,UICollectionViewDataSource>
 
 @property(nonatomic, strong) UICollectionView *collectionView;
 @property(nonatomic, strong) NSArray <NSString *>*dataSource;
 
-@property (nonatomic, strong) UICollectionViewFlowLayout *gridLayout;
+@property (nonatomic, strong) TXKWalletCollectionViewLayout *gridLayout;
 @property (nonatomic, strong) UICollectionViewFlowLayout *listLayout;
 @property (nonatomic, assign) BOOL isList;
 
@@ -49,8 +50,8 @@
 
 #pragma mark - Action
 - (void)rightItemClicked {
-    
-    [self changeListButtonClick];
+    [self.collectionView reloadData];
+//    [self changeListButtonClick];
 }
 
 -(void)changeListButtonClick{
@@ -62,6 +63,7 @@
     }
     //[self.myCollectionView reloadData];
 }
+
 #pragma mark - work
 
 -(void)animateCollection{
@@ -93,15 +95,14 @@
     cell.backgroundColor = [self qmui_randomColor];
     return cell;
 }
+- (nonnull UICollectionViewTransitionLayout *)collectionView:(UICollectionView *)collectionView transitionLayoutForOldLayout:(UICollectionViewLayout *)fromLayout newLayout:(UICollectionViewLayout *)toLayout {
+    return nil;
+}
+
 #pragma mark - Getter
--(UICollectionViewFlowLayout *)gridLayout{
+-(TXKWalletCollectionViewLayout *)gridLayout{
     if (!_gridLayout) {
-        _gridLayout = [[UICollectionViewFlowLayout alloc] init];
-        CGFloat width = (self.view.frame.size.width - 5) * 0.5;
-        _gridLayout.itemSize = CGSizeMake(width, 200 + width);
-        _gridLayout.minimumLineSpacing = 5;
-        _gridLayout.minimumInteritemSpacing = 5;
-        _gridLayout.sectionInset = UIEdgeInsetsZero;
+        _gridLayout = [[TXKWalletCollectionViewLayout alloc] init];
     }
     return _gridLayout;
 }
@@ -109,9 +110,9 @@
 -(UICollectionViewFlowLayout *)listLayout{
     if (!_listLayout) {
         _listLayout = [[UICollectionViewFlowLayout alloc] init];
-        _listLayout.itemSize = CGSizeMake(self.view.frame.size.width, 190);
-        _listLayout.minimumLineSpacing = 0.5;
-        _listLayout.sectionInset = UIEdgeInsetsZero;
+//        _listLayout.itemSize = CGSizeMake(self.view.frame.size.width, 190);
+//        _listLayout.minimumLineSpacing = 0.5;
+//        _listLayout.sectionInset = UIEdgeInsetsZero;
     }
     return _listLayout;
 }
