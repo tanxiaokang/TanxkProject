@@ -26,7 +26,15 @@
     //获取item的个数
 //    int itemCounts = (int)[self.collectionView numberOfItemsInSection:0];
     //设置每个item的大小为260*100
-    atti.size = CGSizeMake(260, 100);
+    
+    if (indexPath.row == 0) {
+        atti.size = CGSizeMake(260, 100);
+        atti.frame = CGRectMake(0, indexPath.row*100+20, 260, atti.size.height);
+    } else {
+        atti.size = CGSizeMake(260, 50);
+        atti.frame = CGRectMake(0, indexPath.row*50+20, 260, atti.size.height);
+    }
+    
 //    atti.center = CGPointMake(self.collectionView.frame.size.width/2, self.collectionView.frame.size.height/2+self.collectionView.contentOffset.y);
 //    CATransform3D tran3d = CATransform3DIdentity;
 //    tran3d.m34 = -1/2000.0;
@@ -44,9 +52,10 @@
     return atti;
 }
 
--(CGSize)collectionViewContentSize{
-    return CGSizeMake(self.collectionView.frame.size.width, self.collectionView.frame.size.height*([self.collectionView numberOfItemsInSection:0]+2));
-}
+
+//-(CGSize)collectionViewContentSize{
+//    return CGSizeMake(self.collectionView.frame.size.width, self.collectionView.frame.size.height*([self.collectionView numberOfItemsInSection:0]+2));
+//}
 
 //返回yes，则一有变化就会刷新布局
 -(BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{

@@ -95,14 +95,12 @@
     cell.backgroundColor = [self qmui_randomColor];
     return cell;
 }
-- (nonnull UICollectionViewTransitionLayout *)collectionView:(UICollectionView *)collectionView transitionLayoutForOldLayout:(UICollectionViewLayout *)fromLayout newLayout:(UICollectionViewLayout *)toLayout {
-    return nil;
-}
 
 #pragma mark - Getter
 -(TXKWalletCollectionViewLayout *)gridLayout{
     if (!_gridLayout) {
         _gridLayout = [[TXKWalletCollectionViewLayout alloc] init];
+        _gridLayout.itemSize = CGSizeMake(self.view.frame.size.width, 190);
     }
     return _gridLayout;
 }
