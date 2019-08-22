@@ -43,7 +43,7 @@
 {
     [super viewDidAppear:animated];
     [self->_collectionView reloadData];
-    self.dataSource = @[@"btn_edit",@"btn_edit",@"btn_edit",@"btn_edit",@"btn_edit",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""];
+    self.dataSource = @[@"btn_edit",@"btn_edit",@"btn_edit",@"btn_edit",@"btn_edit",@"",@"",@"",@""];//,@"",@"",@"",@"",@"",@"",@"",@"",@""
     [self->_collectionView layoutIfNeeded];
     [self animateCollection];
 }

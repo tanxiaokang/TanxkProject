@@ -27,13 +27,12 @@
 //    int itemCounts = (int)[self.collectionView numberOfItemsInSection:0];
     //设置每个item的大小为260*100
     
+    CGFloat height = [UIScreen mainScreen].bounds.size.height/6;
+    
     if (indexPath.row == 0) {
-        atti.size = CGSizeMake(260, 100);
-        atti.frame = CGRectMake(0, indexPath.row*100+20, 260, atti.size.height);
-    } else {
-        atti.size = CGSizeMake(260, 50);
-        atti.frame = CGRectMake(0, indexPath.row*50+20, 260, atti.size.height);
+        height = height*2;
     }
+    atti.frame = CGRectMake(0, indexPath.row*height, [UIScreen mainScreen].bounds.size.width, height);
     
 //    atti.center = CGPointMake(self.collectionView.frame.size.width/2, self.collectionView.frame.size.height/2+self.collectionView.contentOffset.y);
 //    CATransform3D tran3d = CATransform3DIdentity;
